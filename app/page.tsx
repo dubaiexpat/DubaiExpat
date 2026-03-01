@@ -23,28 +23,22 @@ export default function Home() {
                   Your Complete Guide to Moving to Dubai
                 </h1>
                 <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-200 sm:text-base">
-                  Everything UK and US expats need to relocate to the UAE —
+                  Everything UK expats need to relocate to the UAE —
                   visas, housing, schools, removals and more. Practical,
                   up‑to‑date advice written for families and professionals.
                 </p>
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/visa-checker"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C9A84C] px-6 py-3 text-sm font-semibold text-[#0A1628] shadow-sm transition hover:bg-[#d5b760]"
-                >
-                  Find My Visa Route →
-                </Link>
                 <a
                   href="#categories"
-                  className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                  className="inline-flex items-center justify-center rounded-full bg-[#C9A84C] px-6 py-3 text-sm font-semibold text-[#0A1628] shadow-sm transition hover:bg-[#d5b760]"
                 >
                   Browse Guides
                 </a>
               </div>
               <p className="text-xs text-slate-300">
-                Free, independent guidance for UK &amp; US citizens
+                Free, independent guidance for UK citizens
               </p>
             </div>
 
@@ -56,7 +50,7 @@ export default function Home() {
                 <ul className="space-y-3 text-sm text-slate-100">
                   <li className="flex gap-3">
                     <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#C9A84C]" />
-                    Step‑by‑step visa and residency guidance for UK &amp; US
+                    Step‑by‑step visa and residency guidance for UK
                     passport holders.
                   </li>
                   <li className="flex gap-3">
@@ -67,22 +61,16 @@ export default function Home() {
                   <li className="flex gap-3">
                     <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#C9A84C]" />
                     How schools, banking, healthcare and everyday life differ
-                    from the UK and US.
+                    from the UK.
                   </li>
                 </ul>
               </div>
 
-              <div className="grid grid-cols-2 gap-3 text-xs text-slate-100 sm:text-sm">
+              <div className="text-xs text-slate-100 sm:text-sm">
                 <div className="rounded-xl bg-white/5 p-3 ring-1 ring-white/10">
                   <p className="font-semibold text-white">Tailored to UK expats</p>
                   <p className="mt-1 text-[11px] text-slate-200 sm:text-xs">
                     HMRC, pensions, and keeping ties with home.
-                  </p>
-                </div>
-                <div className="rounded-xl bg-white/5 p-3 ring-1 ring-white/10">
-                  <p className="font-semibold text-white">Tailored to US expats</p>
-                  <p className="mt-1 text-[11px] text-slate-200 sm:text-xs">
-                    FATCA, US taxes and banking overseas.
                   </p>
                 </div>
               </div>
@@ -166,7 +154,7 @@ export default function Home() {
                   </h3>
                   <p className="text-sm text-slate-600">
                     Compare popular areas, typical rental prices, contracts,
-                    agents&apos; fees and what&apos;s different vs the UK and US.
+                    agents&apos; fees and what&apos;s different vs back home.
                   </p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
@@ -188,7 +176,7 @@ export default function Home() {
                     Schools &amp; Education
                   </h3>
                   <p className="text-sm text-slate-600">
-                    British, American and IB curriculum options, fees, waiting
+                    British and IB curriculum options, fees, waiting
                     lists and how applications work for new arrivals.
                   </p>
                 </div>
@@ -212,7 +200,7 @@ export default function Home() {
                   </h3>
                   <p className="text-sm text-slate-600">
                     How to move your belongings, typical costs from the UK and
-                    US, customs rules and what&apos;s better to buy in Dubai.
+                    customs rules and what&apos;s better to buy in Dubai.
                   </p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
@@ -234,7 +222,7 @@ export default function Home() {
                     Banking &amp; Finance
                   </h3>
                   <p className="text-sm text-slate-600">
-                    Opening bank accounts, getting paid, managing UK/US
+                    Opening bank accounts, getting paid, managing UK
                     obligations and understanding tax in a zero‑tax environment.
                   </p>
                 </div>
@@ -360,7 +348,7 @@ export default function Home() {
                   Marcus
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  Set up a UAE company and secured a Green Visa after leaving his corporate job in the US.
+                  Set up a UAE company and secured a Green Visa after leaving his corporate job in London.
                 </p>
                 <p className="mt-3 text-xs font-medium text-[#0A1628]">
                   Visa: Green (5 years)

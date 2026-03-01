@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NAV_LINKS = [
+  { href: "/", label: "Home" },
   { href: "/visa-checker", label: "Visa Checker", highlight: true },
   { href: "/#visa-residency", label: "Visa Guides" },
   { href: "/#housing", label: "Housing" },
@@ -28,7 +29,7 @@ export default function Header() {
             Dubai Expat
           </Link>
           <span className="hidden text-sm text-slate-500 sm:inline">
-            Relocation guide for UK &amp; US expats
+            Relocation guide for UK expats
           </span>
         </div>
 

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dubai Expat | Your Complete Guide to Moving to Dubai",
   description:
-    "Dubai Expat is a relocation guide for UK and US expats moving to Dubai and the UAE — covering visas, housing, schools, removals, banking, and community life.",
+    "Dubai Expat is a relocation guide for UK expats moving to Dubai and the UAE — covering visas, housing, schools, removals, banking, and community life.",
 };
 
 export default function RootLayout({

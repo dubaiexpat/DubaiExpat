@@ -216,7 +216,17 @@ export default function VisaCheckerPage() {
       <div className="mx-auto flex min-h-screen max-w-3xl flex-col px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-8">
         <Header />
 
-        <main className="mt-8 flex flex-1 flex-col">
+        {/* Breadcrumb */}
+        <div className="mt-4 flex items-center gap-2 text-sm text-slate-500">
+          <Link href="/" className="flex items-center gap-1 hover:text-[#0A1628]">
+            <span>←</span>
+            <span>Home</span>
+          </Link>
+          <span>/</span>
+          <span className="font-medium text-[#0A1628]">Visa Checker</span>
+        </div>
+
+        <main className="mt-6 flex flex-1 flex-col">
           {!showResult ? (
             <>
               <div className="mb-6">
@@ -439,8 +449,8 @@ export default function VisaCheckerPage() {
         <footer className="mt-10 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">
             <p>© 2025 Dubai Expat. All rights reserved.</p>
-            <Link href="/" className="hover:text-[#0A1628]">
-              Back to home
+            <Link href="/" className="flex items-center gap-1 font-medium text-[#0A1628] hover:underline">
+              ← Back to home
             </Link>
           </div>
         </footer>
