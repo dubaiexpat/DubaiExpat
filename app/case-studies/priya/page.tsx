@@ -34,16 +34,25 @@ export default function PriyaPage() {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#0A1628] to-[#0F1F35] text-white">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <div className="flex items-baseline gap-3 mb-6">
-            <h1 className="text-4xl font-bold">Priya</h1>
-            <span className="inline-block px-3 py-1 bg-[#C9A84C] text-[#0A1628] text-xs font-semibold rounded">
-              Career Mover
-            </span>
+          <div className="flex flex-col sm:flex-row gap-8 items-start">
+            <div className="flex-shrink-0">
+              <div className="w-44 h-44 rounded-2xl overflow-hidden border-2 shadow-lg" style={{ borderColor: "#C9A84C" }}>
+                <img src="/priya.svg" alt="Priya" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-baseline gap-3 mb-6">
+                <h1 className="text-4xl font-bold">Priya</h1>
+                <span className="inline-block px-3 py-1 bg-[#C9A84C] text-[#0A1628] text-xs font-semibold rounded">
+                  Career Mover
+                </span>
+              </div>
+              <p className="text-xl text-gray-300 max-w-2xl">
+                From NHS burnout to thriving as a healthcare manager in Dubai Marina.
+                How Priya found career growth and better work-life balance in the UAE.
+              </p>
+            </div>
           </div>
-          <p className="text-xl text-gray-300 max-w-2xl">
-            From NHS burnout to thriving as a healthcare manager in Dubai Marina.
-            How Priya found career growth and better work-life balance in the UAE.
-          </p>
         </div>
       </div>
 

@@ -23,6 +23,15 @@ export default function JamesAndEmmaCaseStudy() {
         {/* Hero Section */}
         <section className="mb-16 border-b-2" style={{ borderColor: "#C9A84C" }}>
           <div className="pb-12">
+            {/* Family portrait */}
+            <div className="w-full rounded-2xl overflow-hidden border-2 shadow-md mb-8" style={{ borderColor: "#C9A84C" }}>
+              <img
+                src="/james-and-emma.svg"
+                alt="James, Emma, and their two children"
+                className="w-full object-cover"
+                style={{ maxHeight: "280px", objectFit: "cover", objectPosition: "center top" }}
+              />
+            </div>
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <h1 className="text-5xl font-bold" style={{ color: "#0A1628" }}>
                 James & Emma

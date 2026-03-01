@@ -435,10 +435,15 @@ export default function Home() {
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                  Digital Nomad
-                </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
+                    <img src="/sarah.svg" alt="Sarah" className="h-full w-full object-cover" />
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    Digital Nomad
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-[#0A1628]">
                   Sarah
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">
@@ -456,10 +461,15 @@ export default function Home() {
                 </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                  Family Relocation
-                </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
+                    <img src="/james-and-emma.svg" alt="James and Emma" className="h-full w-full object-cover" style={{ objectPosition: "15% center" }} />
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    Family Relocation
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-[#0A1628]">
                   James &amp; Emma
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">
@@ -477,10 +487,15 @@ export default function Home() {
                 </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                  Entrepreneur
-                </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
+                    <img src="/marcus.svg" alt="Marcus" className="h-full w-full object-cover" />
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    Entrepreneur
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-[#0A1628]">
                   Marcus
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">
@@ -498,10 +513,15 @@ export default function Home() {
                 </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                  Career Mover
-                </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
+                    <img src="/priya.svg" alt="Priya" className="h-full w-full object-cover" />
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    Career Mover
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-[#0A1628]">
                   Priya
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">

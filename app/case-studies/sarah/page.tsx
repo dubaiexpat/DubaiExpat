@@ -23,29 +23,38 @@ export default function SarahCaseStudy() {
         {/* Hero Section */}
         <section className="mb-16 border-b-2" style={{ borderColor: "#C9A84C" }}>
           <div className="pb-12">
-            <div className="flex flex-wrap items-center gap-4 mb-4">
-              <h1 className="text-5xl font-bold" style={{ color: "#0A1628" }}>
-                Sarah Chen
-              </h1>
-              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: "#0A1628" }}>
-                Digital Nomad
-              </span>
-            </div>
-            <p className="text-lg text-gray-700 mb-6">
-              London-based graphic designer who traded the grey skies for the Arabian sun
-            </p>
-            <div className="grid grid-cols-2 gap-6">
-              <div>
-                <p className="text-sm text-gray-600 mb-1">Visa Type</p>
-                <p className="text-lg font-semibold" style={{ color: "#0A1628" }}>
-                  UAE Freelancer Visa
-                </p>
+            <div className="flex flex-col sm:flex-row gap-8 items-start mb-6">
+              <div className="flex-shrink-0">
+                <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 shadow-md" style={{ borderColor: "#C9A84C" }}>
+                  <img src="/sarah.svg" alt="Sarah" className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div>
-                <p className="text-sm text-gray-600 mb-1">Duration</p>
-                <p className="text-lg font-semibold" style={{ color: "#0A1628" }}>
-                  2 years (renewable)
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center gap-4 mb-4">
+                  <h1 className="text-5xl font-bold" style={{ color: "#0A1628" }}>
+                    Sarah Chen
+                  </h1>
+                  <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: "#0A1628" }}>
+                    Digital Nomad
+                  </span>
+                </div>
+                <p className="text-lg text-gray-700 mb-6">
+                  London-based graphic designer who traded the grey skies for the Arabian sun
                 </p>
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-sm text-gray-600 mb-1">Visa Type</p>
+                    <p className="text-lg font-semibold" style={{ color: "#0A1628" }}>
+                      UAE Freelancer Visa
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-600 mb-1">Duration</p>
+                    <p className="text-lg font-semibold" style={{ color: "#0A1628" }}>
+                      2 years (renewable)
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
