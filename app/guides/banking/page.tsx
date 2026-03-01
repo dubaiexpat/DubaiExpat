@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Banking & Finance in Dubai: A Guide for UK Expats (2026)',
+  title: 'Banking & Personal Finance in Dubai: A Guide for UK Expats (2026)',
   description:
     'How to open a bank account in Dubai, the best banks for UK expats, sending money back to the UK, understanding UAE tax, and managing your UK financial obligations.',
 };

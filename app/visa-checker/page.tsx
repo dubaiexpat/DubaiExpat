@@ -48,10 +48,12 @@ const QUESTIONS = [
   },
   {
     id: "freelance",
-    question: "Are you freelance or self-employed?",
+    question: "What best describes your working situation?",
     options: [
-      { value: "yes", label: "Yes" },
-      { value: "no", label: "No" },
+      { value: "yes", label: "Freelance or self-employed" },
+      { value: "no", label: "Employed by a company" },
+      { value: "business_owner", label: "I own or run a business" },
+      { value: "not_working", label: "Not currently working" },
     ],
   },
   {

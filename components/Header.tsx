@@ -12,13 +12,14 @@ const NAV_LINKS = [
   { href: "/#removals", label: "Removals" },
   { href: "/#banking", label: "Banking" },
   { href: "/#community", label: "Community" },
+  { href: "/guides/pets", label: "Pets" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-slate-200 pb-4">
+    <header className="border-b border-slate-200 bg-white pb-4">
       <nav className="flex items-center justify-between gap-4">
         {/* Logo */}
         <div className="flex items-baseline gap-2">

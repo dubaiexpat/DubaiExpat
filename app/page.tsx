@@ -219,7 +219,7 @@ export default function Home() {
                     <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
                   <h3 className="text-base font-semibold text-[#0A1628]">
-                    Banking &amp; Finance
+                    Banking &amp; Personal Finance
                   </h3>
                   <p className="text-sm text-slate-600">
                     Opening bank accounts, getting paid, managing UK
@@ -247,6 +247,29 @@ export default function Home() {
                   <p className="text-sm text-slate-600">
                     Day‑to‑day life, expat communities, healthcare, driving and
                     practical tips to help you settle quickly.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/pets"
+                id="pets"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    07
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Bringing Your Pet
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    UAE import rules, the rabies titre test, breed restrictions,
+                    costs and the specialists who handle it all for you.
                   </p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#C9A84C]">
