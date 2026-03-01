@@ -1,0 +1,214 @@
+import { Metadata } from 'next';
+import Header from '@/components/Header';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Community & Life in Dubai: A Guide for UK Expats (2026)',
+  description:
+    'Day-to-day life in Dubai for UK expats — healthcare, driving, culture, expat communities, things to do, and practical tips to help you settle quickly.',
+};
+
+export default function CommunityGuide() {
+  return (
+    <div style={{ backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' }}>
+      <Header />
+
+      <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
+        {/* Hero Section */}
+        <section style={{ marginBottom: '3rem', paddingBottom: '2rem', borderBottom: `3px solid #C9A84C` }}>
+          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Community & Life in Dubai: A Guide for UK Expats (2026)
+          </h1>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' }}>
+            Beyond the logistics of visas and housing, what is it actually like to live in Dubai as a British expat? The honest answer is: very good, with some genuine adjustments to make. Dubai is a safe, modern, well-organised city that looks after its residents well. But it is culturally different from the UK in ways that matter.
+          </p>
+        </section>
+
+        {/* Healthcare */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Healthcare
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Dubai has excellent private healthcare. All residents are required to have health insurance (usually provided by employer). Key hospitals include:
+            </p>
+            <ul style={{ marginBottom: '1rem', paddingLeft: '2rem' }}>
+              <li>American Hospital Dubai</li>
+              <li>Mediclinic</li>
+              <li>Aster Hospital</li>
+              <li>Cleveland Clinic Abu Dhabi</li>
+            </ul>
+            <p style={{ marginBottom: '1rem' }}>
+              NHS-style care does not exist — all healthcare is private and insurance-funded. Prescriptions work differently: many UK medications require a new UAE prescription. Bring a 3-month supply of any regular medication and a letter from your UK GP.
+            </p>
+          </div>
+        </section>
+
+        {/* Driving in Dubai */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Driving in Dubai
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Dubai is a car-centric city. UK driving licence holders can exchange for a UAE licence without a test (straightforward process, takes 1–2 days, cost approx AED 500). You must do this within the first year. RTA (Roads and Transport Authority) handles licences.
+            </p>
+            <p style={{ marginBottom: '1rem' }}>
+              Traffic can be heavy — rush hour on Sheikh Zayed Road can be brutal. Salik toll gates operate on major roads (small charges, registered to your car). Speed cameras are everywhere, and fines are significant.
+            </p>
+          </div>
+        </section>
+
+        {/* Culture and Etiquette */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Culture and Etiquette
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Dubai is a Muslim city in a Muslim country. Important cultural norms to be aware of:
+            </p>
+            <ul style={{ marginBottom: '1rem', paddingLeft: '2rem' }}>
+              <li><strong>During Ramadan:</strong> no eating, drinking or smoking in public during daylight hours (includes your car)</li>
+              <li><strong>Modest dress:</strong> expected in malls, souks and public spaces (shoulders and knees covered — swimwear is fine at pools/beaches)</li>
+              <li><strong>Public displays of affection:</strong> should be kept minimal</li>
+              <li><strong>Alcohol:</strong> legal in licensed premises (restaurants, hotels, bars) but cannot be consumed in public</li>
+            </ul>
+            <p>
+              Respecting these norms is not just polite — it's the law.
+            </p>
+          </div>
+        </section>
+
+        {/* Finding Your Community */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Finding Your Community
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Dubai has a huge and welcoming British expat community. Best ways to find it:
+            </p>
+            <ul style={{ paddingLeft: '2rem' }}>
+              <li><strong>InterNations</strong> — global expat network, very active in Dubai</li>
+              <li><strong>Facebook Groups</strong> — Dubai Expats, British Expats Dubai, specific area groups like JVC Community or Arabian Ranches Residents</li>
+              <li><strong>British Business Group Dubai</strong></li>
+              <li><strong>Sports clubs and recreational groups</strong> — rugby, cricket, running clubs, cycling</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Things to Do */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Things to Do
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Dubai offers an extraordinary range of activities:
+            </p>
+            <ul style={{ paddingLeft: '2rem' }}>
+              <li><strong>Beaches:</strong> JBR, Kite Beach, La Mer</li>
+              <li><strong>Outdoor adventures:</strong> desert safaris, day trips to Abu Dhabi and Oman</li>
+              <li><strong>Food and dining:</strong> world-class restaurants, Michelin-starred chefs</li>
+              <li><strong>Fitness and wellness:</strong> corniche and parks (beautiful Oct–April), skiing (indoors at Mall of the Emirates)</li>
+              <li><strong>Family entertainment:</strong> theme parks</li>
+              <li><strong>Culture:</strong> Al Fahidi, Dubai Frame, Alserkal Avenue arts district</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* The Heat */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            The Heat
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Summer (June to September) is extreme: 40–48°C with high humidity. Most expat families leave for 4–6 weeks in summer. Air conditioning is universal and powerful — factor in higher utility bills (DEWA — Dubai Electricity and Water Authority).
+            </p>
+            <p>
+              October to April is genuinely beautiful: warm, sunny, low humidity. This is when Dubai shines.
+            </p>
+          </div>
+        </section>
+
+        {/* Schooling, Religion and Daily Life */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Schooling, Religion and Daily Life
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Some key aspects of daily life in Dubai:
+            </p>
+            <ul style={{ marginBottom: '1rem', paddingLeft: '2rem' }}>
+              <li><strong>Weekend:</strong> Friday is the Islamic holy day; the UAE weekend is Saturday–Sunday (changed from Fri–Sat in 2022)</li>
+              <li><strong>Prayer calls (Adhan):</strong> broadcast from mosques five times daily — a beautiful part of daily life but one to be aware of</li>
+              <li><strong>Pork products:</strong> available in some supermarkets (marked in separate sections)</li>
+              <li><strong>Alcohol:</strong> sold in licensed stores (MMI, African+Eastern) with a personal licence</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Domestic Help */}
+        <section style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Domestic Help
+          </h2>
+          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              Many expat families employ domestic helpers (housekeepers, nannies, drivers). This is culturally normal and more affordable than in the UK. Standard live-in housekeeper salary is AED 1,500–2,500/month plus accommodation and flights home.
+            </p>
+            <p>
+              There are specific visa requirements and contracts required — use a reputable agency.
+            </p>
+          </div>
+        </section>
+
+        {/* Patrick's Tip */}
+        <section
+          style={{
+            marginBottom: '2.5rem',
+            padding: '1.5rem',
+            backgroundColor: '#1A2942',
+            borderLeft: `5px solid #C9A84C`,
+          }}
+        >
+          <h2 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem', color: '#C9A84C' }}>
+            Patrick's Tip
+          </h2>
+          <p style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+            "Give yourself six months before you judge whether Dubai is right for you. The first three months are disorienting — you're dealing with admin, adjusting to heat, missing home. By month six, most people are genuinely thriving. The ones who leave early almost always say they wish they'd given it longer."
+          </p>
+        </section>
+
+        {/* Related Guides */}
+        <section
+          style={{
+            marginTop: '3rem',
+            paddingTop: '2rem',
+            borderTop: `2px solid #C9A84C`,
+          }}
+        >
+          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+            Related Guides
+          </h2>
+          <ul style={{ lineHeight: '2', paddingLeft: '2rem', color: '#E0E0E0' }}>
+            <li>
+              <Link href="/guides/housing" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+                Housing & Accommodation Guide
+              </Link>
+            </li>
+            <li>
+              <Link href="/guides/banking" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+                Banking & Finance in Dubai
+              </Link>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  );
+}

@@ -139,8 +139,8 @@ export default function Home() {
                 </p>
               </Link>
 
-              <a
-                href="/#housing"
+              <Link
+                href="/guides/housing"
                 id="housing"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -157,13 +157,13 @@ export default function Home() {
                     agents&apos; fees and what&apos;s different vs back home.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Neighbourhoods · Renting · Buying
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/#schools"
+              <Link
+                href="/guides/schools"
                 id="schools"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -180,13 +180,13 @@ export default function Home() {
                     lists and how applications work for new arrivals.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Curricula · Admissions · Fees
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/#removals"
+              <Link
+                href="/guides/removals"
                 id="removals"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -203,13 +203,13 @@ export default function Home() {
                     customs rules and what&apos;s better to buy in Dubai.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Movers · Timelines · Customs
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/#banking"
+              <Link
+                href="/guides/banking"
                 id="banking"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -226,13 +226,13 @@ export default function Home() {
                     obligations and understanding tax in a zero‑tax environment.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Banking · Tax · Currency
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/#community"
+              <Link
+                href="/guides/community"
                 id="community"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -249,10 +249,10 @@ export default function Home() {
                     practical tips to help you settle quickly.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Lifestyle · Healthcare · Driving
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
                 </p>
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -311,13 +311,13 @@ export default function Home() {
                 <p className="mt-3 text-xs font-medium text-[#0A1628]">
                   Visa: Freelance (2 years)
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/case-studies/sarah"
                   className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
                 >
-                  Read their story
+                  Read her story
                   <span className="text-[#C9A84C]">→</span>
-                </a>
+                </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -332,13 +332,13 @@ export default function Home() {
                 <p className="mt-3 text-xs font-medium text-[#0A1628]">
                   Visa: Employment (sponsored)
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/case-studies/james-and-emma"
                   className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
                 >
                   Read their story
                   <span className="text-[#C9A84C]">→</span>
-                </a>
+                </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -353,13 +353,13 @@ export default function Home() {
                 <p className="mt-3 text-xs font-medium text-[#0A1628]">
                   Visa: Green (5 years)
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/case-studies/marcus"
                   className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
                 >
-                  Read their story
+                  Read his story
                   <span className="text-[#C9A84C]">→</span>
-                </a>
+                </Link>
               </article>
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -374,13 +374,13 @@ export default function Home() {
                 <p className="mt-3 text-xs font-medium text-[#0A1628]">
                   Visa: Employment (2–3 years)
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/case-studies/priya"
                   className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
                 >
-                  Read their story
+                  Read her story
                   <span className="text-[#C9A84C]">→</span>
-                </a>
+                </Link>
               </article>
             </div>
           </section>
