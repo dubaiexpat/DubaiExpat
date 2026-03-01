@@ -117,7 +117,7 @@ export default function Home() {
 
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               <Link
-                href="/visa-checker"
+                href="/guides/visa-residency"
                 id="visa-residency"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >

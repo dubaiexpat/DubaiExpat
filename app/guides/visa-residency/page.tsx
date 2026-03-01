@@ -11,7 +11,20 @@ export const metadata: Metadata = {
 export default function VisaResidencyGuide() {
   return (
     <>
-      <Header />
+      <div className="bg-white px-4 sm:px-8">
+        <div className="mx-auto max-w-4xl">
+          <Header />
+          <div className="flex items-center gap-2 py-3 text-sm text-slate-500">
+            <Link href="/" className="flex items-center gap-1 hover:text-[#0A1628]">
+              <span>←</span><span>Home</span>
+            </Link>
+            <span>/</span>
+            <Link href="/#categories" className="hover:text-[#0A1628]">Guides</Link>
+            <span>/</span>
+            <span className="font-medium text-[#0A1628]">Visa &amp; Residency</span>
+          </div>
+        </div>
+      </div>
       <main className="min-h-screen" style={{ backgroundColor: "#0A1628" }}>
         {/* Hero Section */}
         <section className="px-4 py-16 md:px-8 md:py-24">
@@ -617,6 +630,14 @@ export default function VisaResidencyGuide() {
           </div>
         </section>
       </main>
+      <footer style={{ backgroundColor: "#0A1628", borderTop: "1px solid rgba(201,168,76,0.3)" }}>
+        <div className="mx-auto max-w-4xl px-4 py-4 sm:px-8 flex flex-col items-center justify-between gap-2 text-xs text-slate-400 sm:flex-row">
+          <p>© 2025 Dubai Expat. All rights reserved.</p>
+          <Link href="/" className="font-medium text-[#C9A84C] hover:underline">
+            ← Back to home
+          </Link>
+        </div>
+      </footer>
     </>
   );
 }
