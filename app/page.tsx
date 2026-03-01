@@ -109,8 +109,9 @@ export default function Home() {
                   Explore the relocation guides
                 </h2>
                 <p className="mt-1 max-w-2xl text-sm text-slate-600">
-                  Six focused sections that walk you through your move from
-                  planning and paperwork through to feeling at home in Dubai.
+                  Comprehensive guides covering every aspect of your move —
+                  from visas and housing through to daily life, social scene
+                  and finding the best services in Dubai.
                 </p>
               </div>
             </div>
@@ -270,6 +271,121 @@ export default function Home() {
                   <p className="text-sm text-slate-600">
                     UAE import rules, the rabies titre test, breed restrictions,
                     costs and the specialists who handle it all for you.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/nightlife"
+                id="nightlife"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    08
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Nightlife &amp; Social Scene
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Bars, beach clubs, Friday brunch, alcohol rules and the best
+                    areas for a night out in Dubai.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/concierge"
+                id="concierge"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    09
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Concierge
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Trusted recommendations for tailors, jewellers, vets,
+                    tutors, members clubs, sports clubs and kids&apos; parties.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/domestic-help"
+                id="domestic-help"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    10
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Domestic Help &amp; Drivers
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    How to hire household staff and a private driver legally —
+                    visas, contracts, costs and what to expect.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/food-drink"
+                id="food-drink"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    11
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Food &amp; Drink
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Best restaurants by area, where to buy wine, spirits and
+                    cigars, plus organic meat and veg deliveries.
+                  </p>
+                </div>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Read the guide →
+                </p>
+              </Link>
+
+              <Link
+                href="/guides/furniture"
+                id="furniture"
+                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <div className="space-y-2">
+                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
+                    12
+                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-[#0A1628]">
+                    Furniture &amp; Interiors
+                  </h3>
+                  <p className="text-sm text-slate-600">
+                    Where to buy the best furniture in Dubai — from affordable
+                    and mid-range to high-end design and bespoke pieces.
                   </p>
                 </div>
                 <p className="mt-4 text-xs font-medium text-[#C9A84C]">
