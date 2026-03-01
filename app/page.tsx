@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import PatrickPhoto from "@/components/PatrickPhoto";
 
 export default function Home() {
   return (
@@ -401,13 +402,9 @@ export default function Home() {
               Meet Patrick
             </h2>
             <div className="flex flex-col items-start gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:gap-8 sm:p-8">
-              <div
-                className="h-32 w-32 flex-shrink-0 overflow-hidden rounded-full bg-slate-200 sm:h-40 sm:w-40"
-                aria-hidden
-              >
-                <div className="flex h-full w-full items-center justify-center text-sm font-medium text-slate-400">
-                  Photo
-                </div>
+              <div className="h-32 w-32 flex-shrink-0 overflow-hidden rounded-full sm:h-40 sm:w-40">
+                {/* Drop patrick.jpg into /public to replace the fallback avatar */}
+                <PatrickPhoto />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="text-lg font-semibold text-[#0A1628]">Patrick</p>
