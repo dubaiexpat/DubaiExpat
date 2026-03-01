@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "@/components/Header";
 
 export default function Home() {
@@ -29,16 +30,22 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
+                <Link
+                  href="/visa-checker"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C9A84C] px-6 py-3 text-sm font-semibold text-[#0A1628] shadow-sm transition hover:bg-[#d5b760]"
+                >
+                  Find My Visa Route →
+                </Link>
                 <a
                   href="#categories"
-                  className="inline-flex items-center justify-center rounded-full bg-[#C9A84C] px-6 py-3 text-sm font-semibold text-[#0A1628] shadow-sm transition hover:bg-[#d5b760]"
+                  className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
-                  Get Started
+                  Browse Guides
                 </a>
-                <p className="text-xs text-slate-200 sm:text-sm">
-                  Free, independent guidance for UK &amp; US citizens
-                </p>
               </div>
+              <p className="text-xs text-slate-300">
+                Free, independent guidance for UK &amp; US citizens
+              </p>
             </div>
 
             <div className="flex flex-col justify-between gap-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 p-5 ring-1 ring-white/10">
@@ -82,6 +89,30 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Visa Checker Promo Banner */}
+          <section className="rounded-2xl bg-gradient-to-r from-[#0A1628] to-[#1a2f4a] p-6 text-white shadow-sm sm:p-8">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C]">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+                  Free tool — takes 2 minutes
+                </div>
+                <h2 className="text-xl font-semibold sm:text-2xl">
+                  Not sure which visa you need?
+                </h2>
+                <p className="max-w-xl text-sm leading-relaxed text-slate-300">
+                  Answer 8 quick questions and we&apos;ll tell you exactly which UAE visa route fits your situation — Golden, Green, Employment, Freelance or Retirement.
+                </p>
+              </div>
+              <Link
+                href="/visa-checker"
+                className="inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-full bg-[#C9A84C] px-8 py-3 text-sm font-semibold text-[#0A1628] shadow transition hover:bg-[#d5b760]"
+              >
+                Find My Visa Route →
+              </Link>
+            </div>
+          </section>
+
           {/* Categories section */}
           <section id="categories" className="space-y-6">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -97,7 +128,8 @@ export default function Home() {
             </div>
 
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              <article
+              <Link
+                href="/visa-checker"
                 id="visa-residency"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -114,12 +146,13 @@ export default function Home() {
                     to sponsor dependants and domestic staff.
                   </p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#0A1628]">
-                  Visa routes · Sponsorship · Timelines
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
+                  Try the Visa Checker →
                 </p>
-              </article>
+              </Link>
 
-              <article
+              <a
+                href="/#housing"
                 id="housing"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -139,9 +172,10 @@ export default function Home() {
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
                   Neighbourhoods · Renting · Buying
                 </p>
-              </article>
+              </a>
 
-              <article
+              <a
+                href="/#schools"
                 id="schools"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -161,9 +195,10 @@ export default function Home() {
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
                   Curricula · Admissions · Fees
                 </p>
-              </article>
+              </a>
 
-              <article
+              <a
+                href="/#removals"
                 id="removals"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -183,9 +218,10 @@ export default function Home() {
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
                   Movers · Timelines · Customs
                 </p>
-              </article>
+              </a>
 
-              <article
+              <a
+                href="/#banking"
                 id="banking"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -205,9 +241,10 @@ export default function Home() {
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
                   Banking · Tax · Currency
                 </p>
-              </article>
+              </a>
 
-              <article
+              <a
+                href="/#community"
                 id="community"
                 className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
               >
@@ -227,7 +264,7 @@ export default function Home() {
                 <p className="mt-4 text-xs font-medium text-[#0A1628]">
                   Lifestyle · Healthcare · Driving
                 </p>
-              </article>
+              </a>
             </div>
           </section>
 
