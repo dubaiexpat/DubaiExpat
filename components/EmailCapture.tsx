@@ -45,7 +45,7 @@ export default function EmailCapture({
         {/* Badge */}
         <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/15 px-3 py-1 text-xs font-semibold text-[#C9A84C] ring-1 ring-[#C9A84C]/30">
           <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
-          Free — no credit card required
+          Free
         </div>
 
         <h2 className="text-2xl font-bold text-white sm:text-3xl">{headline}</h2>
