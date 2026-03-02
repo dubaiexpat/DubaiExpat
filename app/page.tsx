@@ -118,281 +118,307 @@ export default function Home() {
             </div>
 
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+
+              {/* 01 — Visa & Residency */}
               <Link
                 href="/guides/visa-residency"
                 id="visa-residency"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    01
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    01 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Visa &amp; Residency
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Understand work, family, investor and golden visas, plus how
-                    to sponsor dependants and domestic staff.
+                  <h3 className="text-base font-semibold text-white">Visa &amp; Residency</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Work, family, investor and golden visas — plus how to sponsor dependants.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Try the Visa Checker →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Try the Visa Checker →
-                </p>
               </Link>
 
+              {/* 02 — Finding a Home */}
               <Link
                 href="/guides/housing"
                 id="housing"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    02
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    02 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Finding a Home
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Compare popular areas, typical rental prices, contracts,
-                    agents&apos; fees and what&apos;s different vs back home.
+                  <h3 className="text-base font-semibold text-white">Finding a Home</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Popular areas, rental prices, contracts and what&apos;s different vs back home.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 03 — Schools */}
               <Link
                 href="/guides/schools"
                 id="schools"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    03
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    03 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Schools &amp; Education
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    British and IB curriculum options, fees, waiting
-                    lists and how applications work for new arrivals.
+                  <h3 className="text-base font-semibold text-white">Schools &amp; Education</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    British and IB curriculum options, fees, waiting lists and applications.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 04 — Removals & Shipping */}
               <Link
                 href="/guides/removals"
                 id="removals"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    04
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    04 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Removals &amp; Shipping
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    How to move your belongings, typical costs from the UK and
-                    customs rules and what&apos;s better to buy in Dubai.
+                  <h3 className="text-base font-semibold text-white">Removals &amp; Shipping</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Moving your belongings, costs from the UK, customs rules and what to buy in Dubai.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 05 — Banking */}
               <Link
                 href="/guides/banking"
                 id="banking"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    05
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    05 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Banking &amp; Personal Finance
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Opening bank accounts, getting paid, managing UK
-                    obligations and understanding tax in a zero‑tax environment.
+                  <h3 className="text-base font-semibold text-white">Banking &amp; Personal Finance</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Opening accounts, getting paid and managing UK obligations in a zero‑tax environment.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 06 — Community & Life */}
               <Link
                 href="/guides/community"
                 id="community"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    06
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    06 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Community &amp; Life
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Day‑to‑day life, expat communities, healthcare, driving and
-                    practical tips to help you settle quickly.
+                  <h3 className="text-base font-semibold text-white">Community &amp; Life</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Day‑to‑day life, expat communities, healthcare, driving and settling-in tips.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 07 — Pets */}
               <Link
                 href="/guides/pets"
                 id="pets"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    07
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    07 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Bringing Your Pet
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    UAE import rules, the rabies titre test, breed restrictions,
-                    costs and the specialists who handle it all for you.
+                  <h3 className="text-base font-semibold text-white">Bringing Your Pet</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    UAE import rules, rabies titre test, breed restrictions and specialist services.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 08 — Nightlife */}
               <Link
                 href="/guides/nightlife"
                 id="nightlife"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    08
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    08 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Nightlife &amp; Social Scene
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Bars, beach clubs, Friday brunch, alcohol rules and the best
-                    areas for a night out in Dubai.
+                  <h3 className="text-base font-semibold text-white">Nightlife &amp; Social Scene</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Bars, beach clubs, Friday brunch, alcohol rules and the best areas for a night out.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 09 — Concierge */}
               <Link
                 href="/guides/concierge"
                 id="concierge"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    09
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    09 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Concierge
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Trusted recommendations for tailors, jewellers, vets,
-                    tutors, members clubs, sports clubs and kids&apos; parties.
+                  <h3 className="text-base font-semibold text-white">Concierge</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Tailors, jewellers, vets, tutors, members clubs, sports clubs and kids&apos; parties.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 10 — Domestic Help */}
               <Link
                 href="/guides/domestic-help"
                 id="domestic-help"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    10
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    10 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Domestic Help &amp; Drivers
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    How to hire household staff and a private driver legally —
-                    visas, contracts, costs and what to expect.
+                  <h3 className="text-base font-semibold text-white">Domestic Help &amp; Drivers</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Hiring household staff and a private driver legally — visas, contracts and costs.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 11 — Food & Drink */}
               <Link
                 href="/guides/food-drink"
                 id="food-drink"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    11
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    11 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Food &amp; Drink
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Best restaurants by area, where to buy wine, spirits and
-                    cigars, plus organic meat and veg deliveries.
+                  <h3 className="text-base font-semibold text-white">Food &amp; Drink</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Best restaurants by area, where to buy wine, spirits and organic deliveries.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
 
+              {/* 12 — Furniture & Interiors */}
               <Link
                 href="/guides/furniture"
                 id="furniture"
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
               >
-                <div className="space-y-2">
-                  <span className="inline-flex items-center rounded-full bg-[#0A1628]/5 px-2 py-1 text-xs font-medium text-[#0A1628]">
-                    12
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                <img
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    12 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
                   </span>
-                  <h3 className="text-base font-semibold text-[#0A1628]">
-                    Furniture &amp; Interiors
-                  </h3>
-                  <p className="text-sm text-slate-600">
-                    Where to buy the best furniture in Dubai — from affordable
-                    and mid-range to high-end design and bespoke pieces.
+                  <h3 className="text-base font-semibold text-white">Furniture &amp; Interiors</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    Affordable to high-end — the best places to buy furniture and bespoke pieces in Dubai.
                   </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
                 </div>
-                <p className="mt-4 text-xs font-medium text-[#C9A84C]">
-                  Read the guide →
-                </p>
               </Link>
+
             </div>
           </section>
 
