@@ -437,7 +437,7 @@ export default function Home() {
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/sarah.svg" alt="Sarah" className="h-full w-full object-cover" />
+                    <img src="/sarah.jpg" alt="Sarah" className="h-full w-full object-cover" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
                     Digital Nomad
@@ -463,7 +463,7 @@ export default function Home() {
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/james-and-emma.svg" alt="James and Emma" className="h-full w-full object-cover" style={{ objectPosition: "15% center" }} />
+                    <img src="/james-and-emma.jpg" alt="James and Emma" className="h-full w-full object-cover" style={{ objectPosition: "15% center" }} />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
                     Family Relocation
@@ -489,7 +489,7 @@ export default function Home() {
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/marcus.svg" alt="Marcus" className="h-full w-full object-cover" />
+                    <img src="/marcus.jpg" alt="Marcus" className="h-full w-full object-cover" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
                     Entrepreneur
@@ -515,7 +515,7 @@ export default function Home() {
               <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/priya.svg" alt="Priya" className="h-full w-full object-cover" />
+                    <img src="/priya.jpg" alt="Priya" className="h-full w-full object-cover" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
                     Career Mover

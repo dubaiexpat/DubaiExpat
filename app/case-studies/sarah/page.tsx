@@ -26,7 +26,7 @@ export default function SarahCaseStudy() {
             <div className="flex flex-col sm:flex-row gap-8 items-start mb-6">
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 shadow-md" style={{ borderColor: "#C9A84C" }}>
-                  <img src="/sarah.svg" alt="Sarah" className="w-full h-full object-cover" />
+                  <img src="/sarah.jpg" alt="Sarah" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="flex-1">

@@ -37,7 +37,7 @@ export default function PriyaPage() {
           <div className="flex flex-col sm:flex-row gap-8 items-start">
             <div className="flex-shrink-0">
               <div className="w-44 h-44 rounded-2xl overflow-hidden border-2 shadow-lg" style={{ borderColor: "#C9A84C" }}>
-                <img src="/priya.svg" alt="Priya" className="w-full h-full object-cover" />
+                <img src="/priya.jpg" alt="Priya" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="flex-1">
