@@ -11,7 +11,7 @@ const PRIMARY_NAV = [
   { href: "/guides/tax-and-hmrc", label: "Tax & HMRC" },
   { href: "/guides/banking", label: "Banking & Finance" },
   { href: "/guides/schools", label: "Schools & Family" },
-  { href: "/guides/removals", label: "Moving to Dubai" },
+  { href: "/guides/removals", label: "Removals & Shipping" },
 ];
 
 const SECONDARY_NAV = [
