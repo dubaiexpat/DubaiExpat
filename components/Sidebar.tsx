@@ -4,21 +4,22 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const NAV_LINKS = [
+const PRIMARY_NAV = [
   { href: "/", label: "Home" },
-  { href: "/visa-checker", label: "Visa Checker", highlight: true },
-  { href: "/guides/visa-residency", label: "Visa & Residency" },
+  { href: "/guides/visa-residency", label: "Visas & Residency" },
   { href: "/guides/housing", label: "Housing" },
-  { href: "/guides/schools", label: "Schools" },
-  { href: "/guides/removals", label: "Removals" },
-  { href: "/guides/banking", label: "Banking & Personal Finance" },
+  { href: "/guides/tax-and-hmrc", label: "Tax & HMRC" },
+  { href: "/guides/banking", label: "Banking & Finance" },
+  { href: "/guides/schools", label: "Schools & Family" },
+  { href: "/guides/removals", label: "Moving to Dubai" },
+];
+
+const SECONDARY_NAV = [
+  { href: "/cost-of-living", label: "Cost of Living" },
   { href: "/guides/community", label: "Community & Life" },
-  { href: "/guides/pets", label: "Pets" },
   { href: "/guides/nightlife", label: "Nightlife" },
   { href: "/guides/concierge", label: "Concierge" },
   { href: "/guides/domestic-help", label: "Domestic Help & Drivers" },
-  { href: "/guides/food-drink", label: "Food & Drink" },
-  { href: "/guides/furniture", label: "Furniture & Interiors" },
 ];
 
 export default function Sidebar() {
@@ -71,7 +72,7 @@ export default function Sidebar() {
           >
             Visa Checker →
           </Link>
-          {NAV_LINKS.filter((l) => !l.highlight).map((link) => (
+          {PRIMARY_NAV.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -85,6 +86,27 @@ export default function Sidebar() {
               {link.label}
             </Link>
           ))}
+
+          {/* Secondary links on mobile */}
+          <div className="mt-4 border-t border-white/10 pt-4">
+            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+              More guides
+            </p>
+            {SECONDARY_NAV.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={`block rounded-lg px-4 py-2.5 text-sm font-medium transition ${
+                  pathname === link.href
+                    ? "bg-white/10 text-white"
+                    : "text-slate-400 hover:bg-white/5 hover:text-slate-200"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 
@@ -103,7 +125,7 @@ export default function Sidebar() {
           </p>
         </div>
 
-        {/* Nav links */}
+        {/* Primary nav links */}
         <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-0.5">
           <Link
             href="/visa-checker"
@@ -111,7 +133,7 @@ export default function Sidebar() {
           >
             Visa Checker →
           </Link>
-          {NAV_LINKS.filter((l) => !l.highlight).map((link) => (
+          {PRIMARY_NAV.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -126,10 +148,26 @@ export default function Sidebar() {
           ))}
         </nav>
 
-        {/* Sidebar footer */}
-        <div className="border-t border-white/10 px-6 py-4 flex-shrink-0">
-          <p className="text-[11px] text-slate-500 leading-tight">
-            © 2025 Dubai Expat
+        {/* Secondary nav + footer */}
+        <div className="border-t border-white/10 px-3 py-4 flex-shrink-0">
+          <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+            More guides
+          </p>
+          {SECONDARY_NAV.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`flex items-center rounded-lg px-3 py-2 text-xs transition ${
+                pathname === link.href
+                  ? "bg-white/10 text-white font-semibold"
+                  : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <p className="mt-4 px-3 text-[11px] text-slate-600 leading-tight">
+            © 2026 Dubai Expat
           </p>
         </div>
       </aside>
