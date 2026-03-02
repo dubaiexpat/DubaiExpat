@@ -545,7 +545,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="mt-10 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">
-            <p>© 2025 Dubai Expat. All rights reserved.</p>
+            <p>© 2026 Dubai Expat. All rights reserved.</p>
             <p className="text-[11px]">
               Information only, not financial, tax or legal advice.
             </p>

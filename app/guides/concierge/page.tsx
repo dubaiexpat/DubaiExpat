@@ -350,7 +350,7 @@ export default function ConciergeGuidePage() {
 
         <footer className="mt-12 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">
-            <p>© 2025 Dubai Expat. All rights reserved.</p>
+            <p>© 2026 Dubai Expat. All rights reserved.</p>
             <Link href="/" className="flex items-center gap-1 font-medium text-[#0A1628] hover:underline">
               ← Back to home
             </Link>

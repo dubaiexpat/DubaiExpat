@@ -208,7 +208,7 @@ export default function SarahCaseStudy() {
 
         {/* Footer */}
         <footer className="py-8 text-center border-t-2 text-gray-600">
-          <p className="mb-4">© 2025 Dubai Expat. All rights reserved.</p>
+          <p className="mb-4">© 2026 Dubai Expat. All rights reserved.</p>
           <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
             Back to home
           </Link>

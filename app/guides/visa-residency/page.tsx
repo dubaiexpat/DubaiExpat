@@ -632,7 +632,7 @@ export default function VisaResidencyGuide() {
       </main>
       <footer style={{ backgroundColor: "#0A1628", borderTop: "1px solid rgba(201,168,76,0.3)" }}>
         <div className="mx-auto max-w-4xl px-4 py-4 sm:px-8 flex flex-col items-center justify-between gap-2 text-xs text-slate-400 sm:flex-row">
-          <p>© 2025 Dubai Expat. All rights reserved.</p>
+          <p>© 2026 Dubai Expat. All rights reserved.</p>
           <Link href="/" className="font-medium text-[#C9A84C] hover:underline">
             ← Back to home
           </Link>
