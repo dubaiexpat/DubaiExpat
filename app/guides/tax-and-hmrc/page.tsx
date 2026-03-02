@@ -64,6 +64,33 @@ export default function TaxAndHmrcGuide() {
           </p>
         </section>
 
+        {/* Upfront advisory notice */}
+        <div style={{ backgroundColor: '#1a2f4a', border: '2px solid #C9A84C', borderRadius: '12px', padding: '1.5rem', marginBottom: '2.5rem' }}>
+          <p style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#C9A84C', marginBottom: '0.6rem' }}>
+            ⚠ Important — tax rules change
+          </p>
+          <p style={{ fontSize: '0.95rem', lineHeight: '1.75', color: '#E0E0E0', marginBottom: '1rem' }}>
+            UK tax law and HMRC guidance can change with each Budget or Finance Act.
+            The information below reflects the position as we understand it but should not be relied
+            upon as a substitute for professional advice tailored to your circumstances.
+            We strongly recommend speaking with a qualified UK expat tax specialist before you make any
+            decisions about your residency, HMRC filing, or UK financial affairs.
+          </p>
+          <p style={{ fontSize: '0.95rem', lineHeight: '1.75', color: '#E0E0E0' }}>
+            We work with a small number of trusted advisers who specialise exclusively in UK expats
+            moving to the UAE.{' '}
+            <a
+              href="https://your-affiliate-link.com"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{ color: '#C9A84C', fontWeight: '600', textDecoration: 'underline' }}
+            >
+              Book a free initial consultation here →
+            </a>
+            {' '}(affiliate link — we may earn a referral fee, at no cost to you).
+          </p>
+        </div>
+
         {/* Table of Contents */}
         <nav style={s.toc} aria-label="Contents">
           <p style={s.tocTitle}>In this guide</p>
