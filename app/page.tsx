@@ -460,110 +460,115 @@ export default function Home() {
               </p>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/sarah.jpg" alt="Sarah" className="h-full w-full object-cover" />
+
+              {/* Sarah */}
+              <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                      Digital Nomad
+                    </span>
+                    <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Sarah</h3>
+                    <p className="mt-1 text-sm text-slate-600">
+                      Moved from London on a freelance visa while working remotely for UK clients.
+                    </p>
+                    <p className="mt-3 text-xs font-medium text-[#0A1628]">
+                      Visa: Freelance (2 years)
+                    </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                    Digital Nomad
-                  </span>
+                  <Link
+                    href="/case-studies/sarah"
+                    className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
+                  >
+                    Read her story <span className="text-[#C9A84C]">→</span>
+                  </Link>
                 </div>
-                <h3 className="text-lg font-semibold text-[#0A1628]">
-                  Sarah
-                </h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  Moved from London on a freelance visa while working remotely for UK clients.
-                </p>
-                <p className="mt-3 text-xs font-medium text-[#0A1628]">
-                  Visa: Freelance (2 years)
-                </p>
-                <Link
-                  href="/case-studies/sarah"
-                  className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
-                >
-                  Read her story
-                  <span className="text-[#C9A84C]">→</span>
-                </Link>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/sarah.jpg" alt="Sarah" className="h-full w-full object-cover object-center" />
+                </div>
               </article>
-              <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/james-and-emma.jpg" alt="James and Emma" className="h-full w-full object-cover" style={{ objectPosition: "15% center" }} />
+
+              {/* James & Emma */}
+              <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                      Family Relocation
+                    </span>
+                    <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">James &amp; Emma</h3>
+                    <p className="mt-1 text-sm text-slate-600">
+                      Relocated with two kids; navigated schools, housing and employment sponsorship together.
+                    </p>
+                    <p className="mt-3 text-xs font-medium text-[#0A1628]">
+                      Visa: Employment (sponsored)
+                    </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                    Family Relocation
-                  </span>
+                  <Link
+                    href="/case-studies/james-and-emma"
+                    className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
+                  >
+                    Read their story <span className="text-[#C9A84C]">→</span>
+                  </Link>
                 </div>
-                <h3 className="text-lg font-semibold text-[#0A1628]">
-                  James &amp; Emma
-                </h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  Relocated with two kids; navigated schools, housing and employment sponsorship together.
-                </p>
-                <p className="mt-3 text-xs font-medium text-[#0A1628]">
-                  Visa: Employment (sponsored)
-                </p>
-                <Link
-                  href="/case-studies/james-and-emma"
-                  className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
-                >
-                  Read their story
-                  <span className="text-[#C9A84C]">→</span>
-                </Link>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/james-and-emma.jpg" alt="James, Emma and their children" className="h-full w-full object-cover object-center" />
+                </div>
               </article>
-              <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/marcus.jpg" alt="Marcus" className="h-full w-full object-cover" />
+
+              {/* Marcus */}
+              <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                      Entrepreneur
+                    </span>
+                    <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Marcus</h3>
+                    <p className="mt-1 text-sm text-slate-600">
+                      Set up a UAE company and secured a Green Visa after leaving his corporate job in London.
+                    </p>
+                    <p className="mt-3 text-xs font-medium text-[#0A1628]">
+                      Visa: Green (5 years)
+                    </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                    Entrepreneur
-                  </span>
+                  <Link
+                    href="/case-studies/marcus"
+                    className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
+                  >
+                    Read his story <span className="text-[#C9A84C]">→</span>
+                  </Link>
                 </div>
-                <h3 className="text-lg font-semibold text-[#0A1628]">
-                  Marcus
-                </h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  Set up a UAE company and secured a Green Visa after leaving his corporate job in London.
-                </p>
-                <p className="mt-3 text-xs font-medium text-[#0A1628]">
-                  Visa: Green (5 years)
-                </p>
-                <Link
-                  href="/case-studies/marcus"
-                  className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
-                >
-                  Read his story
-                  <span className="text-[#C9A84C]">→</span>
-                </Link>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/marcus.jpg" alt="Marcus" className="h-full w-full object-cover object-center" />
+                </div>
               </article>
-              <article className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#C9A84C]/30">
-                    <img src="/priya.jpg" alt="Priya" className="h-full w-full object-cover" />
+
+              {/* Priya */}
+              <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                      Career Mover
+                    </span>
+                    <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Priya</h3>
+                    <p className="mt-1 text-sm text-slate-600">
+                      Accepted a role with a Dubai employer; moved from Manchester with a job-offer visa.
+                    </p>
+                    <p className="mt-3 text-xs font-medium text-[#0A1628]">
+                      Visa: Employment (2–3 years)
+                    </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                    Career Mover
-                  </span>
+                  <Link
+                    href="/case-studies/priya"
+                    className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
+                  >
+                    Read her story <span className="text-[#C9A84C]">→</span>
+                  </Link>
                 </div>
-                <h3 className="text-lg font-semibold text-[#0A1628]">
-                  Priya
-                </h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  Accepted a role with a Dubai employer; moved from Manchester with a job-offer visa.
-                </p>
-                <p className="mt-3 text-xs font-medium text-[#0A1628]">
-                  Visa: Employment (2–3 years)
-                </p>
-                <Link
-                  href="/case-studies/priya"
-                  className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#0A1628] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0A1628]/90"
-                >
-                  Read her story
-                  <span className="text-[#C9A84C]">→</span>
-                </Link>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/priya.jpg" alt="Priya" className="h-full w-full object-cover object-center" />
+                </div>
               </article>
+
             </div>
           </section>
         </main>
