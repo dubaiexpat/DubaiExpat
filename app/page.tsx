@@ -468,7 +468,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#C9A84C]">
                       Digital Nomad
                     </span>
                     <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Sarah</h3>
@@ -495,7 +495,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#C9A84C]">
                       Family Relocation
                     </span>
                     <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">James &amp; Emma</h3>
@@ -522,7 +522,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#C9A84C]">
                       Entrepreneur
                     </span>
                     <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Marcus</h3>
@@ -549,7 +549,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#C9A84C]">
                       Career Mover
                     </span>
                     <h3 className="mt-2 text-lg font-semibold text-[#0A1628]">Priya</h3>
