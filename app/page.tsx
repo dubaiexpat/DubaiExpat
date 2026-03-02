@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import PatrickPhoto from "@/components/PatrickPhoto";
+import EmailCapture from "@/components/EmailCapture";
 
 export default function Home() {
   return (
@@ -101,6 +102,9 @@ export default function Home() {
               </Link>
             </div>
           </section>
+
+          {/* Email lead magnet */}
+          <EmailCapture />
 
           {/* Categories section */}
           <section id="categories" className="space-y-6">
