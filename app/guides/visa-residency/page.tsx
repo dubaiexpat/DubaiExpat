@@ -570,6 +570,32 @@ export default function VisaResidencyGuide() {
           </div>
         </section>
 
+        {/* Recommended visa specialists */}
+        <section className="px-4 py-12 md:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#C9A84C" }}>
+              Need help with your visa application?
+            </h2>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              UAE visa rules can be complex, especially if your situation doesn&apos;t fit neatly
+              into one category. We recommend speaking to a specialist before you apply — a
+              small upfront fee for advice can save weeks of delays and rejected applications.
+            </p>
+            <a
+              href="https://your-visa-specialist-affiliate-link.com"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-3 rounded-xl px-6 py-4 font-semibold transition-opacity hover:opacity-90"
+              style={{ backgroundColor: "#C9A84C", color: "#0A1628" }}
+            >
+              <span>Speak to a recommended visa specialist →</span>
+            </a>
+            <p className="mt-3 text-xs" style={{ color: "#64748b" }}>
+              Free initial consultation. Affiliate link — we may earn a referral fee at no cost to you.
+            </p>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
           <div className="max-w-4xl mx-auto">

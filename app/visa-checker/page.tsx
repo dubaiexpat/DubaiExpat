@@ -236,7 +236,7 @@ export default function VisaCheckerPage() {
                 Your visa recommendation and UK to Dubai Relocation Checklist are on their way.
               </p>
               <p className="mt-4 text-sm text-slate-500">
-                While you wait, explore the guides below.
+                We&apos;ve also included a link to our recommended visa specialist in your email — they offer a free initial consultation for UK expats.
               </p>
               <Link
                 href="/"
@@ -295,13 +295,7 @@ export default function VisaCheckerPage() {
                 No spam. Unsubscribe any time. We&apos;re GDPR compliant.
               </p>
 
-              <div className="mt-6 border-t border-slate-100 pt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-lg border border-[#0A1628] px-4 py-3 text-sm font-semibold text-[#0A1628] transition hover:bg-[#0A1628] hover:text-white"
-                >
-                  Speak to a visa specialist
-                </a>
+              <div className="mt-6 border-t border-slate-100 pt-5">
                 <button
                   type="button"
                   onClick={() => {
@@ -311,7 +305,7 @@ export default function VisaCheckerPage() {
                   }}
                   className="text-sm font-medium text-slate-400 hover:text-[#0A1628]"
                 >
-                  Start again
+                  ← Start again
                 </button>
               </div>
 
