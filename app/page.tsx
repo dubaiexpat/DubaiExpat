@@ -463,6 +463,9 @@ export default function Home() {
 
               {/* Sarah */}
               <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/sarah.jpg" alt="Sarah" className="h-full w-full object-cover object-center" />
+                </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -483,13 +486,13 @@ export default function Home() {
                     Read her story <span className="text-[#C9A84C]">→</span>
                   </Link>
                 </div>
-                <div className="w-2/5 flex-shrink-0">
-                  <img src="/sarah.jpg" alt="Sarah" className="h-full w-full object-cover object-center" />
-                </div>
               </article>
 
               {/* James & Emma */}
               <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/james-and-emma.jpg" alt="James, Emma and their children" className="h-full w-full object-cover object-center" />
+                </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -510,13 +513,13 @@ export default function Home() {
                     Read their story <span className="text-[#C9A84C]">→</span>
                   </Link>
                 </div>
-                <div className="w-2/5 flex-shrink-0">
-                  <img src="/james-and-emma.jpg" alt="James, Emma and their children" className="h-full w-full object-cover object-center" />
-                </div>
               </article>
 
               {/* Marcus */}
               <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/marcus.jpg" alt="Marcus" className="h-full w-full object-cover object-center" />
+                </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -537,13 +540,13 @@ export default function Home() {
                     Read his story <span className="text-[#C9A84C]">→</span>
                   </Link>
                 </div>
-                <div className="w-2/5 flex-shrink-0">
-                  <img src="/marcus.jpg" alt="Marcus" className="h-full w-full object-cover object-center" />
-                </div>
               </article>
 
               {/* Priya */}
               <article className="flex overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md" style={{ minHeight: "220px" }}>
+                <div className="w-2/5 flex-shrink-0">
+                  <img src="/priya.jpg" alt="Priya" className="h-full w-full object-cover object-center" />
+                </div>
                 <div className="flex flex-1 flex-col justify-between p-5">
                   <div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
@@ -563,9 +566,6 @@ export default function Home() {
                   >
                     Read her story <span className="text-[#C9A84C]">→</span>
                   </Link>
-                </div>
-                <div className="w-2/5 flex-shrink-0">
-                  <img src="/priya.jpg" alt="Priya" className="h-full w-full object-cover object-center" />
                 </div>
               </article>
 
