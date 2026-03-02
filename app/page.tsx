@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import PatrickPhoto from "@/components/PatrickPhoto";
-import EmailCapture from "@/components/EmailCapture";
 
 export default function Home() {
   return (
@@ -91,7 +90,7 @@ export default function Home() {
                   Not sure which visa you need?
                 </h2>
                 <p className="max-w-xl text-sm leading-relaxed text-slate-300">
-                  Answer 8 quick questions and we&apos;ll tell you exactly which UAE visa route fits your situation — Golden, Green, Employment, Freelance or Retirement.
+                  Answer 8 quick questions and we&apos;ll email you your personal visa recommendation — Golden, Green, Employment, Freelance or Retirement — plus the free UK to Dubai Relocation Checklist.
                 </p>
               </div>
               <Link
@@ -102,9 +101,6 @@ export default function Home() {
               </Link>
             </div>
           </section>
-
-          {/* Email lead magnet */}
-          <EmailCapture />
 
           {/* Categories section */}
           <section id="categories" className="space-y-6">

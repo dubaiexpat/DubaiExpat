@@ -115,77 +115,19 @@ function getVisaResult(answers: Answers): VisaType {
   return "explore";
 }
 
-const VISA_RESULTS: Record<
-  Exclude<VisaType, "explore">,
-  {
-    name: string;
-    years: string;
-    cost: string;
-    timeline: string;
-    benefits: [string, string, string];
-  }
-> = {
-  golden: {
-    name: "Golden Visa",
-    years: "10 years",
-    cost: "AED 3,800–7,500 (approx £800–£1,600) plus government fees",
-    timeline: "2–4 weeks",
-    benefits: [
-      "No employer sponsor needed",
-      "Sponsor family members",
-      "10 year stability",
-    ],
-  },
-  green: {
-    name: "Green Visa",
-    years: "5 years",
-    cost: "AED 3,500–5,000 (approx £750–£1,100)",
-    timeline: "2–4 weeks",
-    benefits: [
-      "Self-sponsored, no employer needed",
-      "Renewable",
-      "Flexibility to change jobs",
-    ],
-  },
-  freelance: {
-    name: "Freelance Visa",
-    years: "2 years",
-    cost: "AED 2,000–4,000 (approx £430–£870)",
-    timeline: "1–3 weeks",
-    benefits: [
-      "Work independently",
-      "Multiple clients allowed",
-      "No employer tie-in",
-    ],
-  },
-  employment: {
-    name: "Employment Visa",
-    years: "2–3 years",
-    cost: "Usually paid by employer",
-    timeline: "2–6 weeks",
-    benefits: [
-      "Employer handles most paperwork",
-      "Stable residency tied to job",
-      "Often includes health insurance",
-    ],
-  },
-  retirement: {
-    name: "Retirement Visa",
-    years: "5 years",
-    cost: "AED 3,500–5,000 (approx £750–£1,100)",
-    timeline: "2–4 weeks",
-    benefits: [
-      "No employment required",
-      "Requires pension income or savings of AED 1M+",
-      "Renewable",
-    ],
-  },
+const VISA_NAMES: Record<VisaType, string> = {
+  golden: "Golden Visa (10 years)",
+  green: "Green Visa (5 years)",
+  freelance: "Freelance Visa (2 years)",
+  employment: "Employment Visa (2–3 years)",
+  retirement: "Retirement Visa (5 years)",
+  explore: "Multiple visa routes",
 };
 
 export default function VisaCheckerPage() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
-  const [showResult, setShowResult] = useState(false);
+  const [showEmailGate, setShowEmailGate] = useState(false);
   const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -197,7 +139,7 @@ export default function VisaCheckerPage() {
     const next = { ...answers, [currentQuestion.id]: value };
     setAnswers(next);
     if (isLastStep) {
-      setShowResult(true);
+      setShowEmailGate(true);
     } else {
       setStep((s) => s + 1);
     }
@@ -207,11 +149,8 @@ export default function VisaCheckerPage() {
     if (step > 0) setStep((s) => s - 1);
   }
 
-  const resultType = showResult ? getVisaResult(answers) : null;
-  const resultInfo =
-    resultType && resultType !== "explore"
-      ? VISA_RESULTS[resultType]
-      : null;
+  const resultType = showEmailGate ? getVisaResult(answers) : null;
+  const visaName = resultType ? VISA_NAMES[resultType] : null;
 
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
@@ -229,7 +168,8 @@ export default function VisaCheckerPage() {
         </div>
 
         <main className="mt-6 flex flex-1 flex-col">
-          {!showResult ? (
+          {!showEmailGate ? (
+            /* ── Questionnaire ─────────────────────────────── */
             <>
               <div className="mb-6">
                 <div className="flex justify-between text-sm font-medium text-[#0A1628]">
@@ -283,167 +223,102 @@ export default function VisaCheckerPage() {
                 )}
               </section>
             </>
-          ) : resultInfo ? (
-            <section
-              key="result"
-              className="flex flex-1 flex-col transition duration-300"
-            >
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-semibold text-emerald-700">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                  You likely qualify
-                </div>
-                <h1 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
-                  {resultInfo.name} ({resultInfo.years})
-                </h1>
-
-                <div className="mt-6 space-y-4">
-                  <div>
-                    <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                      Cost
-                    </h3>
-                    <p className="mt-1 text-[#0A1628]">{resultInfo.cost}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                      Timeline
-                    </h3>
-                    <p className="mt-1 text-[#0A1628]">{resultInfo.timeline}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                      Key benefits
-                    </h3>
-                    <ul className="mt-2 space-y-2">
-                      {resultInfo.benefits.map((b, i) => (
-                        <li
-                          key={i}
-                          className="flex gap-2 text-[#0A1628]"
-                        >
-                          <span className="text-[#C9A84C]">•</span>
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-8 border-t border-slate-200 pt-6">
-                  <h3 className="text-sm font-semibold text-[#0A1628]">
-                    Next steps
-                  </h3>
-                  <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                    <div className="flex-1">
-                      {!emailSubmitted ? (
-                        <form
-                          onSubmit={(e) => {
-                            e.preventDefault();
-                            if (email.trim()) setEmailSubmitted(true);
-                          }}
-                          className="flex flex-col gap-2 sm:flex-row"
-                        >
-                          <input
-                            type="email"
-                            placeholder="Your email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="flex-1 rounded-lg border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
-                          />
-                          <button
-                            type="submit"
-                            className="rounded-lg bg-[#C9A84C] px-4 py-3 text-sm font-semibold text-[#0A1628] transition hover:bg-[#d5b760]"
-                          >
-                            Get my free personalised checklist
-                          </button>
-                        </form>
-                      ) : (
-                        <p className="rounded-lg bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-                          Thanks! Check your email for your checklist.
-                        </p>
-                      )}
-                    </div>
-                    <a
-                      href="#"
-                      className="inline-flex items-center justify-center rounded-lg border border-[#0A1628] px-4 py-3 text-sm font-semibold text-[#0A1628] transition hover:bg-[#0A1628] hover:text-white"
-                    >
-                      Speak to a visa specialist
-                    </a>
-                  </div>
-                </div>
-
-                <p className="mt-6 text-xs text-slate-500">
-                  This tool provides guidance only and is not legal advice.
-                  Always verify requirements with a qualified UAE immigration
-                  specialist.
-                </p>
+          ) : emailSubmitted ? (
+            /* ── Success state ─────────────────────────────── */
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 text-center">
+              <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-2xl">
+                ✓
               </div>
-
-              <button
-                type="button"
-                onClick={() => {
-                  setShowResult(false);
-                  setStep(0);
-                  setAnswers({});
-                }}
-                className="mt-6 text-sm font-medium text-slate-500 hover:text-[#0A1628]"
+              <h1 className="text-2xl font-bold text-[#0A1628]">
+                Check your inbox
+              </h1>
+              <p className="mt-3 text-slate-600">
+                Your visa recommendation and UK to Dubai Relocation Checklist are on their way.
+              </p>
+              <p className="mt-4 text-sm text-slate-500">
+                While you wait, explore the guides below.
+              </p>
+              <Link
+                href="/"
+                className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#0A1628] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1a2f4a]"
               >
-                Start again
-              </button>
+                Browse all guides →
+              </Link>
+              <p className="mt-6 text-xs text-slate-400">
+                This tool provides guidance only and is not legal advice.
+                Always verify requirements with a qualified UAE immigration specialist.
+              </p>
             </section>
           ) : (
+            /* ── Email gate ────────────────────────────────── */
             <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-              <h1 className="text-2xl font-bold text-[#0A1628]">
-                Explore your options
+              {/* Teaser badge */}
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-semibold text-emerald-700">
+                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                Your result is ready
+              </div>
+
+              <h1 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
+                Based on your answers, you likely qualify for the{" "}
+                <span className="text-[#C9A84C]">{visaName}</span>
               </h1>
+
               <p className="mt-4 text-slate-600">
-                Based on your answers, several visa routes could apply. We
-                recommend speaking to a specialist to find the best fit.
+                Enter your email and we&apos;ll send you the full details — costs, timeline, key benefits, and next steps — along with the free{" "}
+                <strong>UK to Dubai Relocation Checklist</strong>.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    if (email.trim()) setEmailSubmitted(true);
-                  }}
-                  className="flex flex-1 flex-col gap-2 sm:flex-row"
+
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  if (email.trim()) setEmailSubmitted(true);
+                }}
+                className="mt-6 flex flex-col gap-3 sm:flex-row"
+              >
+                <input
+                  type="email"
+                  required
+                  placeholder="Your email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
+                />
+                <button
+                  type="submit"
+                  className="flex-shrink-0 rounded-xl bg-[#C9A84C] px-6 py-3 text-sm font-bold text-[#0A1628] transition hover:bg-[#d5b760] active:scale-95"
                 >
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 rounded-lg border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
-                  />
-                  <button
-                    type="submit"
-                    className="rounded-lg bg-[#C9A84C] px-4 py-3 text-sm font-semibold text-[#0A1628] transition hover:bg-[#d5b760]"
-                  >
-                    Get my free personalised checklist
-                  </button>
-                </form>
+                  Send my results →
+                </button>
+              </form>
+
+              <p className="mt-3 text-xs text-slate-400">
+                No spam. Unsubscribe any time. We&apos;re GDPR compliant.
+              </p>
+
+              <div className="mt-6 border-t border-slate-100 pt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-lg border border-[#0A1628] px-4 py-3 text-sm font-semibold text-[#0A1628] transition hover:bg-[#0A1628] hover:text-white"
                 >
                   Speak to a visa specialist
                 </a>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowEmailGate(false);
+                    setStep(0);
+                    setAnswers({});
+                  }}
+                  className="text-sm font-medium text-slate-400 hover:text-[#0A1628]"
+                >
+                  Start again
+                </button>
               </div>
-              <p className="mt-6 text-xs text-slate-500">
+
+              <p className="mt-6 text-xs text-slate-400">
                 This tool provides guidance only and is not legal advice.
-                Always verify requirements with a qualified UAE immigration
-                specialist.
+                Always verify requirements with a qualified UAE immigration specialist.
               </p>
-              <button
-                type="button"
-                onClick={() => {
-                  setShowResult(false);
-                  setStep(0);
-                  setAnswers({});
-                }}
-                className="mt-4 text-sm font-medium text-slate-500 hover:text-[#0A1628]"
-              >
-                Start again
-              </button>
             </section>
           )}
         </main>
