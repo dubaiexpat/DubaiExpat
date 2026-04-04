@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import CookieConsent from "@/components/CookieConsent";
@@ -36,6 +37,18 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="msvalidate.01" content="440E4F10AB276DE366BC65DDF98B51EA" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q93X7TD1X2"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q93X7TD1X2');
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
