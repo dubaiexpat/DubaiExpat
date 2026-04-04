@@ -25,7 +25,7 @@ export default function DubaiSituationUpdate() {
           </div>
         </div>
       </div>
-      <main className="min-h-screen" style={{ backgroundColor: "#0A1628" }}>
+      <main className="min-h-screen bg-white">
         {/* Hero */}
         <section className="px-4 py-16 md:px-8 md:py-24">
           <div className="max-w-4xl mx-auto">
@@ -33,27 +33,27 @@ export default function DubaiSituationUpdate() {
               <span className="rounded-full bg-[#C9A84C] bg-opacity-20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
                 Expat Community
               </span>
-              <span className="text-sm text-gray-400">Updated 4 April 2026</span>
+              <span className="text-sm text-gray-500">Updated 4 April 2026</span>
             </div>
             <h1
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#C9A84C" }}
+              style={{ color: "#0A1628" }}
             >
               Dubai Situation Update: What British Expats Are Saying
             </h1>
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               The headlines tell one story. The people living it tell another. Here&rsquo;s what&rsquo;s actually happening in the British expat community in Dubai right now.
             </p>
           </div>
         </section>
 
         {/* A Community Divided */}
-        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#C9A84C" }}>
+        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#E5E7EB" }}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               A Community at a Crossroads
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The British expat community in Dubai &mdash; roughly 250,000 strong before the conflict &mdash; is having a conversation it never expected to have. Since Iranian strikes on the UAE began in late February 2026, the question isn&rsquo;t just &ldquo;is it safe?&rdquo; but something more personal: &ldquo;is this still where I want to be?&rdquo;
               </p>
@@ -65,12 +65,12 @@ export default function DubaiSituationUpdate() {
         </section>
 
         {/* Those Who Stayed */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Those Who Are Staying
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 For many long-term expats, leaving simply isn&rsquo;t straightforward. Their children are in school mid-term. Their mortgages or rental contracts are active. Their businesses employ local staff. Their spouse may hold a job that can&rsquo;t relocate. The social, financial, and professional ties that made Dubai home don&rsquo;t dissolve because the FCDO changes an advisory level.
               </p>
@@ -87,10 +87,10 @@ export default function DubaiSituationUpdate() {
         {/* Those Who Left */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Those Who Have Left
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The expats who&rsquo;ve returned to the UK have their own compelling logic. For families with young children, the risk calculation is fundamentally different. Even if the statistical likelihood of harm remains low, the psychological burden of air-raid sirens and news alerts takes a toll that spreadsheets can&rsquo;t capture.
               </p>
@@ -108,12 +108,12 @@ export default function DubaiSituationUpdate() {
         </section>
 
         {/* What Daily Life Looks Like */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               What Daily Life Actually Looks Like
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 If you&rsquo;re reading this from the UK trying to work out what it&rsquo;s like on the ground, here&rsquo;s the honest picture: Dubai in April 2026 is not a warzone. It&rsquo;s not a ghost town. It is a city that is functioning normally in most respects, but with an undercurrent of vigilance that wasn&rsquo;t there a year ago.
               </p>
@@ -133,10 +133,10 @@ export default function DubaiSituationUpdate() {
         {/* The Financial Picture */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Financial Picture
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 Money is a significant factor in the stay-or-go equation. Many British expats moved to Dubai for the tax advantages, and returning to the UK means stepping back into income tax, council tax, and a higher cost of living in many categories. For high earners and business owners, the financial cost of leaving can be substantial.
               </p>
@@ -151,12 +151,12 @@ export default function DubaiSituationUpdate() {
         </section>
 
         {/* Looking Ahead */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Looking Ahead
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The question on everyone&rsquo;s mind is: when will this end? Nobody has a reliable answer. The trajectory of the wider regional conflict will determine the security situation in the UAE, and that involves geopolitical forces far beyond anyone&rsquo;s control.
               </p>
@@ -173,44 +173,44 @@ export default function DubaiSituationUpdate() {
         {/* Related Content */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Related Reading
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
               <Link
                 href="/articles/is-dubai-safe-2026"
-                className="rounded-xl border border-gray-700 p-6 transition hover:border-[#C9A84C]"
+                className="rounded-xl border border-gray-200 p-6 transition hover:border-[#C9A84C]"
               >
-                <h3 className="text-lg font-semibold text-white mb-2">Is Dubai Safe in 2026?</h3>
-                <p className="text-sm text-gray-400">FCDO advice, defence systems, legal risks, and our honest assessment.</p>
+                <h3 className="text-lg font-semibold text-[#0A1628] mb-2">Is Dubai Safe in 2026?</h3>
+                <p className="text-sm text-gray-500">FCDO advice, defence systems, legal risks, and our honest assessment.</p>
               </Link>
               <Link
                 href="/articles/should-i-still-move-to-dubai"
-                className="rounded-xl border border-gray-700 p-6 transition hover:border-[#C9A84C]"
+                className="rounded-xl border border-gray-200 p-6 transition hover:border-[#C9A84C]"
               >
-                <h3 className="text-lg font-semibold text-white mb-2">Should I Still Move to Dubai?</h3>
-                <p className="text-sm text-gray-400">An honest assessment of whether 2026 is the right time to relocate.</p>
+                <h3 className="text-lg font-semibold text-[#0A1628] mb-2">Should I Still Move to Dubai?</h3>
+                <p className="text-sm text-gray-500">An honest assessment of whether 2026 is the right time to relocate.</p>
               </Link>
               <Link
                 href="/guides/visa-residency"
-                className="rounded-xl border border-gray-700 p-6 transition hover:border-[#C9A84C]"
+                className="rounded-xl border border-gray-200 p-6 transition hover:border-[#C9A84C]"
               >
-                <h3 className="text-lg font-semibold text-white mb-2">Visa &amp; Residency Guide</h3>
-                <p className="text-sm text-gray-400">Every UAE visa option explained for UK expats.</p>
+                <h3 className="text-lg font-semibold text-[#0A1628] mb-2">Visa &amp; Residency Guide</h3>
+                <p className="text-sm text-gray-500">Every UAE visa option explained for UK expats.</p>
               </Link>
               <Link
                 href="/guides/banking"
-                className="rounded-xl border border-gray-700 p-6 transition hover:border-[#C9A84C]"
+                className="rounded-xl border border-gray-200 p-6 transition hover:border-[#C9A84C]"
               >
-                <h3 className="text-lg font-semibold text-white mb-2">Banking &amp; Finance Guide</h3>
-                <p className="text-sm text-gray-400">Setting up banking in Dubai and managing money across borders.</p>
+                <h3 className="text-lg font-semibold text-[#0A1628] mb-2">Banking &amp; Finance Guide</h3>
+                <p className="text-sm text-gray-500">Setting up banking in Dubai and managing money across borders.</p>
               </Link>
             </div>
           </div>
         </section>
 
         {/* Disclaimer */}
-        <section className="px-4 py-8 md:px-8 border-t border-gray-800">
+        <section className="px-4 py-8 md:px-8 border-t border-gray-200">
           <div className="max-w-4xl mx-auto">
             <p className="text-xs text-gray-500 leading-relaxed">
               This article reflects the situation as of 4 April 2026 and is based on publicly available reporting and community observations. It is provided for informational purposes only and does not constitute travel advice. Always check the latest{" "}
@@ -218,12 +218,12 @@ export default function DubaiSituationUpdate() {
                 href="https://www.gov.uk/foreign-travel-advice/united-arab-emirates"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-gray-400"
+                className="underline hover:text-gray-500"
               >
                 FCDO travel advice
               </a>{" "}
               before making any decisions. See our{" "}
-              <Link href="/terms" className="underline hover:text-gray-400">Terms of Use</Link> for full disclaimers.
+              <Link href="/terms" className="underline hover:text-gray-500">Terms of Use</Link> for full disclaimers.
             </p>
           </div>
         </section>

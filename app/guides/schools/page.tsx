@@ -117,7 +117,7 @@ export default function SchoolsPage() {
           </section>
 
           <section className="mb-12">
-            <div className="p-6 rounded-lg" style={{ backgroundColor: "#0A1628", color: "#C9A84C" }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "#F9FAFB", color: "#0A1628", border: "1px solid #E5E7EB" }}>
               <h3 className="text-2xl font-bold mb-3">Patrick's Tip</h3>
               <p className="leading-relaxed">
                 "Apply for schools the moment you have a confirmed move date—even if that's a year away. I've spoken to families who lost their preferred school because they applied three months before moving. In Dubai, that's too late."
@@ -131,12 +131,12 @@ export default function SchoolsPage() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/guides/visa-residency" style={{ color: "#C9A84C" }} className="hover:underline font-semibold">
+                <Link href="/guides/visa-residency" style={{ color: "#0A1628" }} className="hover:underline font-semibold">
                   Visa & Residency
                 </Link>
               </li>
               <li>
-                <Link href="/guides/housing" style={{ color: "#C9A84C" }} className="hover:underline font-semibold">
+                <Link href="/guides/housing" style={{ color: "#0A1628" }} className="hover:underline font-semibold">
                   Housing & Accommodation
                 </Link>
               </li>

@@ -102,7 +102,7 @@ export default function RemovalsPage() {
           </section>
 
           <section className="mb-12">
-            <div className="p-6 rounded-lg" style={{ backgroundColor: "#0A1628", color: "#C9A84C" }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "#F9FAFB", color: "#0A1628", border: "1px solid #E5E7EB" }}>
               <h3 className="text-2xl font-bold mb-3">Patrick's Tip</h3>
               <p className="leading-relaxed">
                 "Don't underestimate the cost of setting up your new home. Even if you bring most of your furniture, there will be items you need to buy. Budget at least £3,000 to £5,000 for the set-up phase, more if renting unfurnished. This covers things like window treatments, household supplies, minor furniture pieces, and the inevitable overlooked items."
@@ -116,12 +116,12 @@ export default function RemovalsPage() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/guides/housing" style={{ color: "#C9A84C" }} className="hover:underline font-semibold">
+                <Link href="/guides/housing" style={{ color: "#0A1628" }} className="hover:underline font-semibold">
                   Housing & Accommodation
                 </Link>
               </li>
               <li>
-                <Link href="/guides/community" style={{ color: "#C9A84C" }} className="hover:underline font-semibold">
+                <Link href="/guides/community" style={{ color: "#0A1628" }} className="hover:underline font-semibold">
                   Community & Local Life
                 </Link>
               </li>

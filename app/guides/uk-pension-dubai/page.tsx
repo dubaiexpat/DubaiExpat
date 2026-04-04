@@ -10,29 +10,29 @@ export const metadata: Metadata = {
 };
 
 const s = {
-  page: { backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' } as React.CSSProperties,
+  page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
   main: { maxWidth: '900px', margin: '0 auto', padding: '2rem' } as React.CSSProperties,
   hero: { marginBottom: '3rem', paddingBottom: '2rem', borderBottom: '3px solid #C9A84C' } as React.CSSProperties,
-  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C', lineHeight: '1.2' } as React.CSSProperties,
-  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
-  toc: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
-  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#C9A84C', marginBottom: '1rem' },
+  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628', lineHeight: '1.2' } as React.CSSProperties,
+  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
+  toc: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
+  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#0A1628', marginBottom: '1rem' },
   tocList: { listStyle: 'none', padding: 0, margin: 0 } as React.CSSProperties,
   tocItem: { marginBottom: '0.5rem' } as React.CSSProperties,
   tocLink: { color: '#93c5fd', fontSize: '0.9rem', textDecoration: 'none' } as React.CSSProperties,
   section: { marginBottom: '3rem' } as React.CSSProperties,
-  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' } as React.CSSProperties,
-  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
-  body: { lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
+  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' } as React.CSSProperties,
+  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
+  body: { lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
   p: { marginBottom: '1rem' } as React.CSSProperties,
   ul: { marginBottom: '1rem', paddingLeft: '1.5rem' } as React.CSSProperties,
   li: { marginBottom: '0.5rem' } as React.CSSProperties,
-  callout: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
-  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#E0E0E0' } as React.CSSProperties,
-  warning: { backgroundColor: '#1a0f00', border: '2px solid #f97316', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
+  callout: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
+  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#374151' } as React.CSSProperties,
+  warning: { backgroundColor: '#FFF7ED', border: '2px solid #f97316', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
   warningTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#f97316', marginBottom: '0.5rem' },
   warningText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#fed7aa' } as React.CSSProperties,
-  disclaimer: { backgroundColor: '#1a0a0a', border: '2px solid #ef4444', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
+  disclaimer: { backgroundColor: '#FEF2F2', border: '2px solid #ef4444', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
   disclaimerTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#ef4444', marginBottom: '0.75rem' },
   disclaimerText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#fca5a5' } as React.CSSProperties,
 };
@@ -340,7 +340,7 @@ export default function UkPensionDubaiGuide() {
 
             <div style={s.callout}>
               <p style={s.calloutText}>
-                <strong style={{ color: '#C9A84C' }}>Check before you act:</strong> You can verify
+                <strong style={{ color: '#0A1628' }}>Check before you act:</strong> You can verify
                 whether any UK financial adviser or firm is FCA-regulated at{' '}
                 <a
                   href="https://register.fca.org.uk"

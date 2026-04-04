@@ -12,17 +12,17 @@ export default function HousingGuide() {
   return (
     <>
       <Header />
-      <main className="min-h-screen" style={{ backgroundColor: "#0A1628" }}>
+      <main className="min-h-screen" className="bg-white">
         {/* Hero Section */}
         <section className="px-4 py-16 md:px-8 md:py-24">
           <div className="max-w-4xl mx-auto">
             <h1
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#C9A84C" }}
+              style={{ color: "#0A1628" }}
             >
               Finding a Home in Dubai: A Complete Guide for UK Expats (2026)
             </h1>
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               Master the Dubai property market. From understanding the cheque system
               to choosing the perfect neighbourhood, we cover everything you need to
               rent or buy with confidence.
@@ -31,12 +31,12 @@ export default function HousingGuide() {
         </section>
 
         {/* Introduction */}
-        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#C9A84C" }}>
+        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#E5E7EB" }}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Dubai's Housing Market: A Different World
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 If you've rented in London or another UK city, Dubai's housing market is
                 going to feel like stepping into a different universe. The pace is faster,
@@ -68,21 +68,21 @@ export default function HousingGuide() {
         </section>
 
         {/* Neighbourhoods Section */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-8" style={{ color: "#0A1628" }}>
               Choosing Your Neighbourhood
             </h2>
             <div className="space-y-8">
               {/* JVC */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Jumeirah Village Circle (JVC)
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Budget-friendly, ideal for singles and young couples
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   JVC is where many expats begin their Dubai journey. This newer development
                   offers excellent value for money, with modern studios and one-bedroom
                   apartments at prices that won't break the bank. A typical one-bedroom
@@ -95,14 +95,14 @@ export default function HousingGuide() {
               </div>
 
               {/* Dubai Marina */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Dubai Marina
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Mid-range, vibrant, cosmopolitan, excellent nightlife
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   If you want to be in the heart of Dubai's expat action, Marina is where
                   you'll find it. This sprawling waterfront development is home to hundreds
                   of towers filled with apartments, restaurants, bars, cafés, and beaches.
@@ -117,14 +117,14 @@ export default function HousingGuide() {
               </div>
 
               {/* Downtown */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Downtown Dubai
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Premium location, near Burj Khalifa, upscale dining and shopping
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Downtown is Dubai's prestige address, dominated by the Burj Khalifa and
                   Burj Khalifa Lake. Living here puts you at the epicentre of Dubai's most
                   iconic development. The area offers high-end shopping, fine dining, and an
@@ -137,14 +137,14 @@ export default function HousingGuide() {
               </div>
 
               {/* DIFC */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   DIFC (Dubai International Financial Centre)
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Business district, premium pricing, professional atmosphere
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   DIFC is the financial heart of Dubai, hosting the UAE's largest
                   concentration of banks, law firms, and financial services companies. If you
                   work in finance, the convenience of living steps from the office is
@@ -156,14 +156,14 @@ export default function HousingGuide() {
               </div>
 
               {/* Arabian Ranches and Villas */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Arabian Ranches, The Springs, The Meadows
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Family villas, quiet green communities, excellent schools nearby
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   If you're relocating with a family and want more space, greenery, and a
                   suburban feel, these villa communities are ideal. Arabian Ranches is the
                   most established, with a strong sense of community and excellent schools
@@ -177,14 +177,14 @@ export default function HousingGuide() {
               </div>
 
               {/* Jumeirah and Umm Suqeim */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Jumeirah & Umm Suqeim
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Traditional beach areas, British community stronghold
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   These traditional beachfront neighbourhoods are iconic Dubai locations with
                   a more relaxed, established feel than newer developments. Jumeirah offers
                   villas and some mid-rise apartments, with direct beach access and a strong
@@ -196,14 +196,14 @@ export default function HousingGuide() {
               </div>
 
               {/* Business Bay */}
-              <div className="border-l-4 pl-6" style={{ borderColor: "#C9A84C" }}>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: "#C9A84C" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#E5E7EB" }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: "#0A1628" }}>
                   Business Bay
                 </h3>
-                <p className="text-gray-300 font-semibold mb-2">
+                <p className="text-gray-600 font-semibold mb-2">
                   Up and coming, good value, close to Downtown and DIFC
                 </p>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Business Bay is experiencing rapid development and offers surprisingly good
                   value for its location. It's close to Downtown and DIFC, making it
                   convenient for professionals working in those areas, yet it's less saturated
@@ -219,10 +219,10 @@ export default function HousingGuide() {
         {/* Renting in Dubai */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Rental System: Understanding the Cheque System
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The most distinctive feature of renting in Dubai is the cheque payment
                 system. Unlike the UK, where you pay rent monthly by standing order, Dubai
@@ -267,12 +267,12 @@ export default function HousingGuide() {
         </section>
 
         {/* What to Expect */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               What to Expect: Setting Up a Dubai Home
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 Most rental apartments in Dubai are offered unfurnished. This is a crucial
                 point for UK expats to understand. Unfurnished does not simply mean "no
@@ -308,10 +308,10 @@ export default function HousingGuide() {
         {/* Short-Term Strategy */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Start Short-Term: The Smart First Move
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 One of the best pieces of advice for newly arriving UK expats is to avoid
                 committing to a long lease on your first day in Dubai. Instead, book a
@@ -340,12 +340,12 @@ export default function HousingGuide() {
         </section>
 
         {/* Buying Property */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Buying Property in Dubai
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 While most newly arriving expats rent, many eventually decide to buy. The UAE
                 has opened freehold areas where foreign investors can purchase property with
@@ -384,12 +384,12 @@ export default function HousingGuide() {
         {/* Practical Tips */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Practical Tips for Finding Your Home
             </h2>
-            <div className="space-y-6 text-gray-200 leading-relaxed">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   Use the Major Portals
                 </h3>
                 <p>
@@ -401,7 +401,7 @@ export default function HousingGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   Work with RERA-Registered Agents
                 </h3>
                 <p>
@@ -413,7 +413,7 @@ export default function HousingGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   Spot Red Flags
                 </h3>
                 <p>
@@ -425,7 +425,7 @@ export default function HousingGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   Move Fast When You Find the Right Place
                 </h3>
                 <p>
@@ -441,16 +441,16 @@ export default function HousingGuide() {
         </section>
 
         {/* Patrick's Tip */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <div
               className="p-6 md:p-8 rounded-lg border-l-4"
-              style={{ backgroundColor: "#0A1628", borderColor: "#C9A84C" }}
+              style={{ backgroundColor: "#F9FAFB", borderColor: "#E5E7EB" }}
             >
-              <h3 className="text-xl font-bold mb-4" style={{ color: "#C9A84C" }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: "#0A1628" }}>
                 Patrick's Tip
               </h3>
-              <p className="text-gray-200 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 The biggest shock for UK arrivals is paying a year's rent upfront. Budget for
                 this before you leave the UK. You'll need accessible savings of at least three
                 months' rent plus the deposit plus agent fees on arrival. If you're targeting
@@ -459,7 +459,7 @@ export default function HousingGuide() {
                 security deposit, and £21,000 for the first year's rent. That's nearly £24,000
                 in liquid savings required just to secure accommodation.
               </p>
-              <p className="text-gray-200 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Many companies provide housing allowances or provide accommodation directly,
                 which significantly eases this burden. Always negotiate your employment contract
                 before arriving to clarify whether housing allowance is included. If you're
@@ -473,7 +473,7 @@ export default function HousingGuide() {
         {/* Call to Action */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center text-gray-200">
+            <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
               Next Steps
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -487,7 +487,7 @@ export default function HousingGuide() {
               <Link
                 href="/guides/community"
                 className="block p-6 rounded-lg text-center font-semibold transition-transform hover:scale-105"
-                style={{ backgroundColor: "rgba(201, 168, 76, 0.1)", color: "#C9A84C", border: "2px solid #C9A84C" }}
+                style={{ backgroundColor: "#FDF8ED", color: "#C9A84C", border: "2px solid #C9A84C" }}
               >
                 Connect With the Community
               </Link>
@@ -496,9 +496,9 @@ export default function HousingGuide() {
         </section>
 
         {/* Related Guides */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8" style={{ color: "#C9A84C" }}>
+            <h3 className="text-2xl font-bold mb-8" style={{ color: "#0A1628" }}>
               Related Guides
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -507,10 +507,10 @@ export default function HousingGuide() {
                 className="p-6 rounded-lg hover:bg-gray-800 transition"
                 style={{ backgroundColor: "rgba(201, 168, 76, 0.05)", borderLeft: "4px solid #C9A84C" }}
               >
-                <h4 className="font-bold mb-2" style={{ color: "#C9A84C" }}>
+                <h4 className="font-bold mb-2" style={{ color: "#0A1628" }}>
                   Visa & Residency
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-500 text-sm">
                   Complete guide to UAE visas and residency options
                 </p>
               </Link>
@@ -519,10 +519,10 @@ export default function HousingGuide() {
                 className="p-6 rounded-lg hover:bg-gray-800 transition"
                 style={{ backgroundColor: "rgba(201, 168, 76, 0.05)", borderLeft: "4px solid #C9A84C" }}
               >
-                <h4 className="font-bold mb-2" style={{ color: "#C9A84C" }}>
+                <h4 className="font-bold mb-2" style={{ color: "#0A1628" }}>
                   Banking & Finance
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-500 text-sm">
                   Open accounts and manage your money in the UAE
                 </p>
               </Link>

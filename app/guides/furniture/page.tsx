@@ -14,23 +14,23 @@ export const metadata = {
 
 export default function FurnitureGuide() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#0A1628' }}>
+    <div className="min-h-screen" className="bg-white">
       <Header />
       
       {/* Hero Section */}
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#0A1628' }}>
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8" className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6" style={{ color: '#C9A84C' }}>
             Furniture & Interiors in Dubai
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Your complete guide to furnishing an apartment in Dubai — from budget-friendly options to luxury designer pieces and bespoke custom carpentry.
           </p>
         </div>
       </div>
 
       {/* Breadcrumb */}
-      <div className="px-4 sm:px-6 lg:px-8 py-4" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-4" className="bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-sm" style={{ color: '#C9A84C' }}>
             ← Home
@@ -40,12 +40,12 @@ export default function FurnitureGuide() {
             Guides
           </Link>
           <span className="text-gray-500 mx-2">/</span>
-          <span className="text-sm text-gray-400">Furniture & Interiors</span>
+          <span className="text-sm text-gray-500">Furniture & Interiors</span>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="px-4 sm:px-6 lg:px-8 py-16" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-16" className="bg-white">
         <div className="max-w-4xl mx-auto space-y-16">
 
           {/* Budget & Affordable */}
@@ -53,7 +53,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Budget & Affordable Options
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 When furnishing on a budget, Dubai has excellent options that offer good value without compromising on quality:
               </p>
@@ -79,7 +79,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Mid-Range & Contemporary
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 For stylish, quality furniture at fair prices, these retailers offer excellent value:
               </p>
@@ -108,7 +108,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               High-End & Designer Furniture
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 For luxury and designer pieces, Dubai's premium design district and high-end retailers offer exceptional selections:
               </p>
@@ -137,7 +137,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Bespoke & Custom Carpentry
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 One of Dubai's best-kept secrets is the availability of high-quality custom furniture at remarkably reasonable prices:
               </p>
@@ -162,7 +162,7 @@ export default function FurnitureGuide() {
                 </p>
               </div>
 
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-gray-500 mt-4">
                 Tip: Get recommendations from expat Facebook groups for trusted makers. Quality varies, so check portfolios and ask for references before committing.
               </p>
             </div>
@@ -173,7 +173,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Buying Second-Hand Furniture
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Many expats furnish entire apartments using second-hand pieces. Dubai's transient population constantly creates excellent buying opportunities:
               </p>
@@ -203,7 +203,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Outdoor & Garden Furniture
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Dubai's climate requires specific considerations for outdoor furniture:
               </p>
@@ -233,7 +233,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Key Tips for Buying Furniture in Dubai
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <div className="space-y-2">
                 <p className="font-bold" style={{ color: '#C9A84C' }}>1. Measure Doorways & Lifts</p>
                 <p>
@@ -266,7 +266,7 @@ export default function FurnitureGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Moving In Checklist: What to Buy First
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <div className="bg-gray-900 p-4 rounded">
                 <p className="font-bold mb-3" style={{ color: '#C9A84C' }}>Priority 1: Essential Items (Buy Immediately)</p>
                 <ul className="space-y-2 ml-4 text-sm">
@@ -304,7 +304,7 @@ export default function FurnitureGuide() {
                 </ul>
               </div>
 
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-gray-500 mt-4">
                 Strategy: Buy essentials first from budget-friendly stores (IKEA, Home Box) to get comfortable quickly. Then gradually upgrade and refine with mid-range pieces. Hunt second-hand for designer items and custom pieces through Al Quoz carpenters.
               </p>
             </div>
@@ -316,7 +316,7 @@ export default function FurnitureGuide() {
               <div className="text-2xl" style={{ color: '#C9A84C' }}>→</div>
               <div>
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#C9A84C' }}>Patrick's Note on Furnishing a Dubai Apartment</h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Furnishing an apartment in Dubai is quite different from the UK. First, don't rush — buy essentials immediately, then gradually add pieces. Second, seriously consider second-hand buying and custom carpentry in Al Quoz — you'll furnish beautifully for a fraction of retail price. Third, remember the practical challenges: narrow lifts, humidity, and intense sun. Buy appropriate materials. Finally, leverage Dubai's incredible furniture variety. You can source everything from budget IKEA basics to bespoke custom pieces and high-end designer furniture all within one city. Many expats find their Dubai apartments better furnished than their UK homes at lower cost. It's one of Dubai's genuine advantages.
                 </p>
               </div>
@@ -329,13 +329,13 @@ export default function FurnitureGuide() {
               Related Guides
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link href="/guides/housing" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/housing" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Housing & Rental</p>
               </Link>
-              <Link href="/guides/community" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/community" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Community & Social</p>
               </Link>
-              <Link href="/guides/concierge" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/concierge" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Concierge Services</p>
               </Link>
             </div>
@@ -345,7 +345,7 @@ export default function FurnitureGuide() {
       </div>
 
       {/* Footer */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-800" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200" className="bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="inline-block" style={{ color: '#C9A84C' }}>
             ← Back to home

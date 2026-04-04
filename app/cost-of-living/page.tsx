@@ -10,33 +10,33 @@ export const metadata: Metadata = {
 };
 
 const s = {
-  page: { backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' } as React.CSSProperties,
+  page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
   main: { maxWidth: '900px', margin: '0 auto', padding: '2rem' } as React.CSSProperties,
   hero: { marginBottom: '3rem', paddingBottom: '2rem', borderBottom: '3px solid #C9A84C' } as React.CSSProperties,
-  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C', lineHeight: '1.2' } as React.CSSProperties,
-  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
-  toc: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
-  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#C9A84C', marginBottom: '1rem' },
+  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628', lineHeight: '1.2' } as React.CSSProperties,
+  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
+  toc: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
+  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#0A1628', marginBottom: '1rem' },
   tocList: { listStyle: 'none', padding: 0, margin: 0 } as React.CSSProperties,
   tocItem: { marginBottom: '0.5rem' } as React.CSSProperties,
   tocLink: { color: '#93c5fd', fontSize: '0.9rem', textDecoration: 'none' } as React.CSSProperties,
   section: { marginBottom: '3rem' } as React.CSSProperties,
-  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' } as React.CSSProperties,
-  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
-  body: { lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
+  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' } as React.CSSProperties,
+  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
+  body: { lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
   p: { marginBottom: '1rem' } as React.CSSProperties,
   ul: { marginBottom: '1rem', paddingLeft: '1.5rem' } as React.CSSProperties,
   li: { marginBottom: '0.5rem' } as React.CSSProperties,
-  callout: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
-  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#E0E0E0' } as React.CSSProperties,
+  callout: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
+  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#374151' } as React.CSSProperties,
   tableWrap: { overflowX: 'auto' as const, marginBottom: '2rem' } as React.CSSProperties,
   table: { width: '100%', borderCollapse: 'collapse' as const, fontSize: '0.875rem' } as React.CSSProperties,
-  th: { backgroundColor: '#111f38', color: '#C9A84C', padding: '0.75rem 1rem', textAlign: 'left' as const, fontWeight: '600', borderBottom: '2px solid #C9A84C33' } as React.CSSProperties,
-  td: { padding: '0.65rem 1rem', borderBottom: '1px solid #ffffff10', color: '#E0E0E0', verticalAlign: 'top' as const } as React.CSSProperties,
+  th: { backgroundColor: '#F9FAFB', color: '#0A1628', padding: '0.75rem 1rem', textAlign: 'left' as const, fontWeight: '600', borderBottom: '2px solid #E5E7EB' } as React.CSSProperties,
+  td: { padding: '0.65rem 1rem', borderBottom: '1px solid #ffffff10', color: '#374151', verticalAlign: 'top' as const } as React.CSSProperties,
   tdMuted: { padding: '0.65rem 1rem', borderBottom: '1px solid #ffffff10', color: '#94a3b8', verticalAlign: 'top' as const } as React.CSSProperties,
-  tierCard: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '12px', padding: '1.5rem', marginBottom: '1.5rem' } as React.CSSProperties,
-  tierTitle: { fontSize: '1.1rem', fontWeight: '700', color: '#C9A84C', marginBottom: '0.75rem' } as React.CSSProperties,
-  tierTotal: { fontSize: '1.3rem', fontWeight: '700', color: '#ffffff', marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid #C9A84C33' } as React.CSSProperties,
+  tierCard: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem', marginBottom: '1.5rem' } as React.CSSProperties,
+  tierTitle: { fontSize: '1.1rem', fontWeight: '700', color: '#0A1628', marginBottom: '0.75rem' } as React.CSSProperties,
+  tierTotal: { fontSize: '1.3rem', fontWeight: '700', color: '#1a1a1a', marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid #C9A84C33' } as React.CSSProperties,
 };
 
 export default function CostOfLivingPage() {
@@ -170,7 +170,7 @@ export default function CostOfLivingPage() {
 
           <div style={s.callout}>
             <p style={s.calloutText}>
-              <strong style={{ color: '#C9A84C' }}>Key takeaway:</strong> For a family with two
+              <strong style={{ color: '#0A1628' }}>Key takeaway:</strong> For a family with two
               school-age children, Dubai school fees alone typically add £3,500–5,500 per month
               to outgoings compared to using the UK state school system. This single line item
               is why some families find Dubai no cheaper overall — even accounting for the tax
@@ -217,7 +217,7 @@ export default function CostOfLivingPage() {
 
             <h3 style={s.h3}>No income tax: a worked example</h3>
             <div style={s.callout}>
-              <p style={{ ...s.calloutText, fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <p style={{ ...s.calloutText, fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 UK salary of £100,000 — take-home comparison
               </p>
               <p style={s.calloutText}>
@@ -228,7 +228,7 @@ export default function CostOfLivingPage() {
                 <strong>In Dubai (equivalent package):</strong> Gross salary AED 550,000
                 (~£118,000) → Tax: £0 → Net take-home £118,000/year (£9,830/month)
               </p>
-              <p style={{ ...s.calloutText, marginTop: '0.5rem', color: '#C9A84C' }}>
+              <p style={{ ...s.calloutText, marginTop: '0.5rem', color: '#0A1628' }}>
                 Difference: ~£4,250 more per month in take-home pay, before any spending
                 pattern changes. This is why the tax saving is transformative for individuals
                 and couples — though for families it is often largely absorbed by school fees.
@@ -327,7 +327,7 @@ export default function CostOfLivingPage() {
 
             <h3 style={s.h3}>Worked example: cash flow planning</h3>
             <div style={s.callout}>
-              <p style={{ ...s.calloutText, fontWeight: '600', color: '#C9A84C', marginBottom: '0.75rem' }}>
+              <p style={{ ...s.calloutText, fontWeight: '600', color: '#0A1628', marginBottom: '0.75rem' }}>
                 Scenario: Family moving to Dubai, annual rent AED 150,000, agreeing two cheques
               </p>
               <p style={s.calloutText}>Cheque 1 (on signing): AED 75,000 = ~£16,130</p>
@@ -339,7 +339,7 @@ export default function CostOfLivingPage() {
                 a term&apos;s fees paid upfront), and living costs for the first few months
                 before your first Dubai salary arrives.
               </p>
-              <p style={{ ...s.calloutText, marginTop: '0.75rem', color: '#C9A84C' }}>
+              <p style={{ ...s.calloutText, marginTop: '0.75rem', color: '#0A1628' }}>
                 <strong>Practical advice:</strong> Build up a Dubai relocation fund of at
                 least £25,000–40,000 before you leave the UK, over and above your normal
                 savings. This is not a nice-to-have; it is a practical necessity.

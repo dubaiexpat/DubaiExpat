@@ -67,7 +67,7 @@ export default function NightlifeGuidePage() {
         <main className="mt-8 space-y-12">
 
           {/* Hero */}
-          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-white sm:px-10">
+          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-[#0A1628] sm:px-10">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4">
               <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
               Nightlife &amp; Social Scene

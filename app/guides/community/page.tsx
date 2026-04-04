@@ -10,26 +10,26 @@ export const metadata: Metadata = {
 
 export default function CommunityGuide() {
   return (
-    <div style={{ backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' }}>
       <Header />
 
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
         {/* Hero Section */}
         <section style={{ marginBottom: '3rem', paddingBottom: '2rem', borderBottom: `3px solid #C9A84C` }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Community & Life in Dubai: A Guide for UK Expats (2026)
           </h1>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' }}>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' }}>
             Beyond the logistics of visas and housing, what is it actually like to live in Dubai as a British expat? The honest answer is: very good, with some genuine adjustments to make. Dubai is a safe, modern, well-organised city that looks after its residents well. But it is culturally different from the UK in ways that matter.
           </p>
         </section>
 
         {/* Healthcare */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Healthcare
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai has excellent private healthcare. All residents are required to have health insurance (usually provided by employer). Key hospitals include:
             </p>
@@ -47,10 +47,10 @@ export default function CommunityGuide() {
 
         {/* Driving in Dubai */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Driving in Dubai
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai is a car-centric city. UK driving licence holders can exchange for a UAE licence without a test (straightforward process, takes 1–2 days, cost approx AED 500). You must do this within the first year. RTA (Roads and Transport Authority) handles licences.
             </p>
@@ -62,10 +62,10 @@ export default function CommunityGuide() {
 
         {/* Culture and Etiquette */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Culture and Etiquette
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai is a Muslim city in a Muslim country. Important cultural norms to be aware of:
             </p>
@@ -83,10 +83,10 @@ export default function CommunityGuide() {
 
         {/* Finding Your Community */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Finding Your Community
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai has a huge and welcoming British expat community. Best ways to find it:
             </p>
@@ -101,10 +101,10 @@ export default function CommunityGuide() {
 
         {/* Things to Do */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Things to Do
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai offers an extraordinary range of activities:
             </p>
@@ -121,10 +121,10 @@ export default function CommunityGuide() {
 
         {/* The Heat */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             The Heat
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Summer (June to September) is extreme: 40–48°C with high humidity. Most expat families leave for 4–6 weeks in summer. Air conditioning is universal and powerful — factor in higher utility bills (DEWA — Dubai Electricity and Water Authority).
             </p>
@@ -136,10 +136,10 @@ export default function CommunityGuide() {
 
         {/* Schooling, Religion and Daily Life */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Schooling, Religion and Daily Life
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Some key aspects of daily life in Dubai:
             </p>
@@ -154,10 +154,10 @@ export default function CommunityGuide() {
 
         {/* Domestic Help */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Domestic Help
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Many expat families employ domestic helpers (housekeepers, nannies, drivers). This is culturally normal and more affordable than in the UK. Standard live-in housekeeper salary is AED 1,500–2,500/month plus accommodation and flights home.
             </p>
@@ -172,14 +172,14 @@ export default function CommunityGuide() {
           style={{
             marginBottom: '2.5rem',
             padding: '1.5rem',
-            backgroundColor: '#1A2942',
+            backgroundColor: '#F3F4F6',
             borderLeft: `5px solid #C9A84C`,
           }}
         >
-          <h2 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem', color: '#0A1628' }}>
             Patrick's Tip
           </h2>
-          <p style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <p style={{ lineHeight: '1.8', color: '#374151' }}>
             "Give yourself six months before you judge whether Dubai is right for you. The first three months are disorienting — you're dealing with admin, adjusting to heat, missing home. By month six, most people are genuinely thriving. The ones who leave early almost always say they wish they'd given it longer."
           </p>
         </section>
@@ -192,17 +192,17 @@ export default function CommunityGuide() {
             borderTop: `2px solid #C9A84C`,
           }}
         >
-          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Related Guides
           </h2>
-          <ul style={{ lineHeight: '2', paddingLeft: '2rem', color: '#E0E0E0' }}>
+          <ul style={{ lineHeight: '2', paddingLeft: '2rem', color: '#374151' }}>
             <li>
-              <Link href="/guides/housing" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+              <Link href="/guides/housing" style={{ color: '#0A1628', textDecoration: 'none', fontWeight: '500' }}>
                 Housing & Accommodation Guide
               </Link>
             </li>
             <li>
-              <Link href="/guides/banking" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+              <Link href="/guides/banking" style={{ color: '#0A1628', textDecoration: 'none', fontWeight: '500' }}>
                 Banking & Finance in Dubai
               </Link>
             </li>

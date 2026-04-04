@@ -60,7 +60,7 @@ export default function PetsGuidePage() {
         <main className="mt-8 space-y-12">
 
           {/* Hero */}
-          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-white sm:px-10">
+          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-[#0A1628] sm:px-10">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4">
               <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
               Pets &amp; Animal Relocation
@@ -173,7 +173,7 @@ export default function PetsGuidePage() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-[#0A1628] text-white">
+                  <tr className="bg-[#0A1628] text-[#0A1628]">
                     <th className="rounded-tl-lg px-4 py-3 text-left font-semibold">Item</th>
                     <th className="rounded-tr-lg px-4 py-3 text-left font-semibold">Approx. Cost</th>
                   </tr>
@@ -252,7 +252,7 @@ export default function PetsGuidePage() {
 
           {/* ── AFFILIATE PARTNER SECTION ──────────────────────────────── */}
           <section className="space-y-6">
-            <div className="rounded-2xl bg-[#0A1628] px-6 py-8 text-white">
+            <div className="rounded-2xl bg-[#0A1628] px-6 py-8 text-[#0A1628]">
               <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
                 Trusted Partners

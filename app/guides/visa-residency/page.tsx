@@ -25,17 +25,17 @@ export default function VisaResidencyGuide() {
           </div>
         </div>
       </div>
-      <main className="min-h-screen" style={{ backgroundColor: "#0A1628" }}>
+      <main className="min-h-screen" className="bg-white">
         {/* Hero Section */}
         <section className="px-4 py-16 md:px-8 md:py-24">
           <div className="max-w-4xl mx-auto">
             <h1
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#C9A84C" }}
+              style={{ color: "#0A1628" }}
             >
               Visa & Residency in Dubai: A Complete Guide for UK Expats (2026)
             </h1>
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               Navigate the UAE's modern visa system with confidence. Whether
               you're coming for work, investment, or retirement, we break down
               every option available to you.
@@ -44,12 +44,12 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Introduction */}
-        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#C9A84C" }}>
+        <section className="px-4 py-12 md:px-8 border-t" style={{ borderColor: "#E5E7EB" }}>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Why Your Visa Choice Matters
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 Choosing the right visa is one of the most important decisions
                 you'll make as an expat coming to Dubai. Your visa type determines
@@ -80,18 +80,18 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Employment Visa */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Employment Visa
             </h2>
-            <p className="text-gray-300 mb-4">
-              <span className="font-semibold" style={{ color: "#C9A84C" }}>
+            <p className="text-gray-600 mb-4">
+              <span className="font-semibold" style={{ color: "#0A1628" }}>
                 Best for:
               </span>{" "}
               UK expats with a confirmed job offer in Dubai
             </p>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The employment visa remains the most common pathway for UK expats
                 relocating to Dubai. This is a sponsored visa, meaning your employer
@@ -125,16 +125,16 @@ export default function VisaResidencyGuide() {
         {/* Green Visa */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Green Visa (Self-Sponsored)
             </h2>
-            <p className="text-gray-300 mb-4">
-              <span className="font-semibold" style={{ color: "#C9A84C" }}>
+            <p className="text-gray-600 mb-4">
+              <span className="font-semibold" style={{ color: "#0A1628" }}>
                 Best for:
               </span>{" "}
               Skilled professionals, freelancers, and entrepreneurs
             </p>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 Introduced in 2021, the Green Visa is a game-changer for many expats.
                 Unlike the employment visa, the Green Visa is self-sponsored, meaning
@@ -164,18 +164,18 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Golden Visa */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Golden Visa (Long-Term Residency)
             </h2>
-            <p className="text-gray-300 mb-4">
-              <span className="font-semibold" style={{ color: "#C9A84C" }}>
+            <p className="text-gray-600 mb-4">
+              <span className="font-semibold" style={{ color: "#0A1628" }}>
                 Best for:
               </span>{" "}
               Investors, senior professionals, and highly qualified individuals
             </p>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The Golden Visa represents the UAE's flagship long-term residency
                 offering. Valid for 10 years and renewable indefinitely, it's designed
@@ -210,16 +210,16 @@ export default function VisaResidencyGuide() {
         {/* Freelancer/Creative Visa */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Freelancer & Creative Visa
             </h2>
-            <p className="text-gray-300 mb-4">
-              <span className="font-semibold" style={{ color: "#C9A84C" }}>
+            <p className="text-gray-600 mb-4">
+              <span className="font-semibold" style={{ color: "#0A1628" }}>
                 Best for:
               </span>{" "}
               Remote workers, content creators, and self-employed professionals
             </p>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 If you work for yourself or operate as a remote worker for international
                 clients, the Freelancer Visa is specifically designed for you. This visa
@@ -251,18 +251,18 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Retirement Visa */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Retirement Visa
             </h2>
-            <p className="text-gray-300 mb-4">
-              <span className="font-semibold" style={{ color: "#C9A84C" }}>
+            <p className="text-gray-600 mb-4">
+              <span className="font-semibold" style={{ color: "#0A1628" }}>
                 Best for:
               </span>{" "}
               UK expats aged 55 and above
             </p>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 The UAE's Retirement Visa is an attractive option for UK expats who have
                 decided to retire in Dubai or the wider UAE. Available to individuals aged
@@ -293,10 +293,10 @@ export default function VisaResidencyGuide() {
         {/* Family Sponsorship */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Family Sponsorship
             </h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
                 Once you've secured your own residency in Dubai, you may want to bring
                 your family with you. The UAE allows primary visa sponsors to bring their
@@ -331,14 +331,14 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* The Process */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               The Visa Process: Step by Step
             </h2>
-            <div className="space-y-6 text-gray-200 leading-relaxed">
+            <div className="space-y-6 text-gray-700 leading-relaxed">
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   1. Entry Permit Application
                 </h3>
                 <p>
@@ -348,7 +348,7 @@ export default function VisaResidencyGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   2. Entry Permit Approval
                 </h3>
                 <p>
@@ -357,7 +357,7 @@ export default function VisaResidencyGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   3. Medical Examination
                 </h3>
                 <p>
@@ -367,7 +367,7 @@ export default function VisaResidencyGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   4. Emirates ID Application
                 </h3>
                 <p>
@@ -377,7 +377,7 @@ export default function VisaResidencyGuide() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#C9A84C" }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#0A1628" }}>
                   5. Residence Visa Stamping
                 </h3>
                 <p>
@@ -385,7 +385,7 @@ export default function VisaResidencyGuide() {
                   passport. You're now officially a UAE resident.
                 </p>
               </div>
-              <p className="mt-6 pt-6 border-t" style={{ borderColor: "#C9A84C" }}>
+              <p className="mt-6 pt-6 border-t" style={{ borderColor: "#E5E7EB" }}>
                 The entire process from entry permit approval to residence visa stamping
                 typically takes four to eight weeks, depending on how quickly documents are
                 processed and medical examinations are scheduled. In practice, the most
@@ -399,14 +399,14 @@ export default function VisaResidencyGuide() {
         {/* Documents Checklist */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Essential Documents Checklist
             </h2>
-            <div className="space-y-3 text-gray-200">
+            <div className="space-y-3 text-gray-700">
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -418,7 +418,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -430,7 +430,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -442,7 +442,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -454,7 +454,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -466,7 +466,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -478,7 +478,7 @@ export default function VisaResidencyGuide() {
               <div className="flex items-start">
                 <span
                   className="mr-3 mt-1 font-bold"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#0A1628" }}
                 >
                   ✓
                 </span>
@@ -492,43 +492,43 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Costs Overview */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{ color: "#C9A84C" }}>
+            <h2 className="text-3xl font-bold mb-6" style={{ color: "#0A1628" }}>
               Visa Costs at a Glance
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-gray-200 text-sm md:text-base">
+              <table className="w-full text-gray-700 text-sm md:text-base">
                 <thead>
-                  <tr style={{ borderColor: "#C9A84C" }} className="border-b-2">
-                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#C9A84C" }}>
+                  <tr style={{ borderColor: "#E5E7EB" }} className="border-b-2">
+                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#0A1628" }}>
                       Visa Type
                     </th>
-                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#C9A84C" }}>
+                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#0A1628" }}>
                       Duration
                     </th>
-                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#C9A84C" }}>
+                    <th className="text-left py-3 px-4 font-semibold" style={{ color: "#0A1628" }}>
                       Cost (GBP)
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b" style={{ borderColor: "#C9A84C" }}>
+                  <tr className="border-b" style={{ borderColor: "#E5E7EB" }}>
                     <td className="py-3 px-4">Employment Visa</td>
                     <td className="py-3 px-4">2–3 years</td>
                     <td className="py-3 px-4">Usually free to employee</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "#C9A84C" }}>
+                  <tr className="border-b" style={{ borderColor: "#E5E7EB" }}>
                     <td className="py-3 px-4">Green Visa</td>
                     <td className="py-3 px-4">5 years</td>
                     <td className="py-3 px-4">£750–£1,100</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "#C9A84C" }}>
+                  <tr className="border-b" style={{ borderColor: "#E5E7EB" }}>
                     <td className="py-3 px-4">Golden Visa</td>
                     <td className="py-3 px-4">10 years (renewable)</td>
                     <td className="py-3 px-4">£800–£1,600</td>
                   </tr>
-                  <tr className="border-b" style={{ borderColor: "#C9A84C" }}>
+                  <tr className="border-b" style={{ borderColor: "#E5E7EB" }}>
                     <td className="py-3 px-4">Freelancer Visa</td>
                     <td className="py-3 px-4">1 year</td>
                     <td className="py-3 px-4">£1,500–£3,200</td>
@@ -541,7 +541,7 @@ export default function VisaResidencyGuide() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-400 text-sm mt-4">
+            <p className="text-gray-500 text-sm mt-4">
               * Costs are approximate and based on exchange rates at the time of publication.
               Actual fees in AED may vary by sponsor authority and include service charges.
             </p>
@@ -553,12 +553,12 @@ export default function VisaResidencyGuide() {
           <div className="max-w-4xl mx-auto">
             <div
               className="p-6 md:p-8 rounded-lg border-l-4"
-              style={{ backgroundColor: "#0A1628", borderColor: "#C9A84C" }}
+              style={{ backgroundColor: "#F9FAFB", borderColor: "#E5E7EB" }}
             >
-              <h3 className="text-xl font-bold mb-4" style={{ color: "#C9A84C" }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: "#0A1628" }}>
                 Patrick's Tip
               </h3>
-              <p className="text-gray-200 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 The most common mistake UK expats make is waiting until they arrive to sort
                 their visa documents. Get your degree attested and your medical paperwork in
                 order before you board the plane. This can save you weeks of delays and
@@ -573,10 +573,10 @@ export default function VisaResidencyGuide() {
         {/* Recommended visa specialists */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-3" style={{ color: "#C9A84C" }}>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#0A1628" }}>
               Need help with your visa application?
             </h2>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed">
               UAE visa rules can be complex, especially if your situation doesn&apos;t fit neatly
               into one category. We recommend speaking to a specialist before you apply — a
               small upfront fee for advice can save weeks of delays and rejected applications.
@@ -597,9 +597,9 @@ export default function VisaResidencyGuide() {
         </section>
 
         {/* Call to Action */}
-        <section className="px-4 py-12 md:px-8 bg-gray-900 bg-opacity-50">
+        <section className="px-4 py-12 md:px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center text-gray-200">
+            <h2 className="text-2xl font-bold mb-6 text-center text-gray-700">
               Next Steps
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -613,7 +613,7 @@ export default function VisaResidencyGuide() {
               <Link
                 href="/guides/housing"
                 className="block p-6 rounded-lg text-center font-semibold transition-transform hover:scale-105"
-                style={{ backgroundColor: "rgba(201, 168, 76, 0.1)", color: "#C9A84C", border: "2px solid #C9A84C" }}
+                style={{ backgroundColor: "#FDF8ED", color: "#C9A84C", border: "2px solid #C9A84C" }}
               >
                 Read Our Housing Guide
               </Link>
@@ -624,7 +624,7 @@ export default function VisaResidencyGuide() {
         {/* Related Guides */}
         <section className="px-4 py-12 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8" style={{ color: "#C9A84C" }}>
+            <h3 className="text-2xl font-bold mb-8" style={{ color: "#0A1628" }}>
               Related Guides
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -633,10 +633,10 @@ export default function VisaResidencyGuide() {
                 className="p-6 rounded-lg hover:bg-gray-800 transition"
                 style={{ backgroundColor: "rgba(201, 168, 76, 0.05)", borderLeft: "4px solid #C9A84C" }}
               >
-                <h4 className="font-bold mb-2" style={{ color: "#C9A84C" }}>
+                <h4 className="font-bold mb-2" style={{ color: "#0A1628" }}>
                   Finding a Home in Dubai
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-500 text-sm">
                   Navigate the rental and property market as a UK expat
                 </p>
               </Link>
@@ -645,10 +645,10 @@ export default function VisaResidencyGuide() {
                 className="p-6 rounded-lg hover:bg-gray-800 transition"
                 style={{ backgroundColor: "rgba(201, 168, 76, 0.05)", borderLeft: "4px solid #C9A84C" }}
               >
-                <h4 className="font-bold mb-2" style={{ color: "#C9A84C" }}>
+                <h4 className="font-bold mb-2" style={{ color: "#0A1628" }}>
                   Banking & Finance
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-500 text-sm">
                   Open a bank account and manage your money in the UAE
                 </p>
               </Link>
@@ -656,7 +656,7 @@ export default function VisaResidencyGuide() {
           </div>
         </section>
       </main>
-      <footer style={{ backgroundColor: "#0A1628", borderTop: "1px solid rgba(201,168,76,0.3)" }}>
+      <footer style={{ backgroundColor: "#F9FAFB", borderTop: "1px solid #E5E7EB" }}>
         <div className="mx-auto max-w-4xl px-4 py-4 sm:px-8 flex flex-col items-center justify-between gap-2 text-xs text-slate-400 sm:flex-row">
           <p>© 2026 Dubai Expat. All rights reserved.</p>
           <Link href="/" className="font-medium text-[#C9A84C] hover:underline">

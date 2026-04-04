@@ -14,23 +14,23 @@ export const metadata = {
 
 export default function FoodDrinkGuide() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#0A1628' }}>
+    <div className="min-h-screen" className="bg-white">
       <Header />
       
       {/* Hero Section */}
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#0A1628' }}>
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8" className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6" style={{ color: '#C9A84C' }}>
             Food & Drink in Dubai
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             From UK supermarkets to fine dining, Friday brunches to wine shopping — everything you need to know about eating and drinking in Dubai.
           </p>
         </div>
       </div>
 
       {/* Breadcrumb */}
-      <div className="px-4 sm:px-6 lg:px-8 py-4" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-4" className="bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-sm" style={{ color: '#C9A84C' }}>
             ← Home
@@ -40,12 +40,12 @@ export default function FoodDrinkGuide() {
             Guides
           </Link>
           <span className="text-gray-500 mx-2">/</span>
-          <span className="text-sm text-gray-400">Food & Drink</span>
+          <span className="text-sm text-gray-500">Food & Drink</span>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="px-4 sm:px-6 lg:px-8 py-16" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-16" className="bg-white">
         <div className="max-w-4xl mx-auto space-y-16">
 
           {/* Where to Shop for Groceries */}
@@ -53,11 +53,11 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Where to Shop for Groceries
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Dubai has excellent options for grocery shopping, with several chains catering specifically to expats:
               </p>
-              <ul className="space-y-3 ml-4 text-gray-300">
+              <ul className="space-y-3 ml-4 text-gray-600">
                 <li>
                   <strong style={{ color: '#C9A84C' }}>Spinneys & Waitrose</strong> — The two most popular supermarkets with UK expats, offering a very similar UK range. Both have multiple locations across Dubai and are your best bet for familiar brands and products.
                 </li>
@@ -82,7 +82,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Best Restaurants by Area
             </h2>
-            <div className="space-y-6 text-gray-300">
+            <div className="space-y-6 text-gray-600">
               <div>
                 <h3 className="text-xl font-bold mb-2" style={{ color: '#C9A84C' }}>Marina & JBR</h3>
                 <p>Home to some of Dubai's most vibrant dining. Try Zuma for Japanese fine dining, Nobu for contemporary Japanese, or STK for premium steaks.</p>
@@ -115,7 +115,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Friday Brunch Culture
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Friday brunch is a Dubai institution and not to be missed. It's a set menu experience available from midday onwards, typically running until late afternoon, and nearly always includes unlimited drinks (alcoholic and soft).
               </p>
@@ -132,7 +132,7 @@ export default function FoodDrinkGuide() {
                   <li><strong>Rockfish</strong> — Excellent seafood brunch with premium service.</li>
                 </ul>
               </div>
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-gray-500 mt-4">
                 Tip: Book in advance, especially during peak season. Friday brunch is a social highlight of Dubai expat life and a great way to meet other expats and locals.
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Where to Buy Wine & Spirits
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Dubai has two main licensed retailers for alcohol, both with multiple locations across the emirate:
               </p>
@@ -177,7 +177,7 @@ export default function FoodDrinkGuide() {
                 </ul>
               </div>
 
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-gray-500 mt-4">
                 Both retailers offer home delivery, making it convenient to stock your home. Delivery times are typically 24–48 hours.
               </p>
             </div>
@@ -188,7 +188,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Cigars & Premium Tobacco
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Dubai has a thriving cigar culture with excellent retailers and dedicated smoking venues:
               </p>
@@ -218,7 +218,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Organic Meat Deliveries
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 High-quality organic meat is readily available in Dubai, with several reputable suppliers:
               </p>
@@ -255,7 +255,7 @@ export default function FoodDrinkGuide() {
             <h2 className="text-3xl font-bold mb-6" style={{ color: '#C9A84C' }}>
               Organic Fruit & Vegetable Deliveries
             </h2>
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-gray-600">
               <p>
                 Fresh organic produce is widely available through multiple channels:
               </p>
@@ -277,7 +277,7 @@ export default function FoodDrinkGuide() {
                 </li>
               </ul>
 
-              <p className="text-sm text-gray-400 mt-6">
+              <p className="text-sm text-gray-500 mt-6">
                 Tip: Sign up for weekly deliveries to save money and ensure consistent supply. Most services offer flexible subscription options, and you can easily pause or skip weeks.
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function FoodDrinkGuide() {
               <div className="text-2xl" style={{ color: '#C9A84C' }}>→</div>
               <div>
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#C9A84C' }}>Patrick's Note on Food Culture in Dubai</h3>
-                <p className="text-gray-300">
+                <p className="text-gray-600">
                   Food in Dubai is exceptional — you'll enjoy world-class restaurants from around the globe, access to high-quality organic products, and the Friday brunch tradition is genuinely fun. The shopping is excellent for expats; you'll find everything familiar from home alongside incredible Middle Eastern and international cuisine. Dubai's multicultural food scene reflects its diverse population, so you can eat authentically from dozens of countries while also finding your UK comfort foods. Don't miss the local Arabic food and Emirati cuisine — it's delicious and offers authentic insight into Emirati culture. Friday brunch with friends becomes a cherished social ritual for most expats in Dubai.
                 </p>
               </div>
@@ -302,13 +302,13 @@ export default function FoodDrinkGuide() {
               Related Guides
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link href="/guides/nightlife" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/nightlife" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Nightlife & Entertainment</p>
               </Link>
-              <Link href="/guides/concierge" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/concierge" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Concierge Services</p>
               </Link>
-              <Link href="/guides/community" className="p-4 rounded hover:bg-gray-800 transition border border-gray-700" style={{ borderColor: '#C9A84C' }}>
+              <Link href="/guides/community" className="p-4 rounded hover:bg-gray-800 transition border border-gray-200" style={{ borderColor: '#C9A84C' }}>
                 <p className="font-bold" style={{ color: '#C9A84C' }}>Community & Social</p>
               </Link>
             </div>
@@ -318,7 +318,7 @@ export default function FoodDrinkGuide() {
       </div>
 
       {/* Footer */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-800" style={{ backgroundColor: '#0A1628' }}>
+      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200" className="bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="inline-block" style={{ color: '#C9A84C' }}>
             ← Back to home

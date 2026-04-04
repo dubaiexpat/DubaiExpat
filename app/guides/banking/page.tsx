@@ -10,26 +10,26 @@ export const metadata: Metadata = {
 
 export default function BankingGuide() {
   return (
-    <div style={{ backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' }}>
       <Header />
 
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
         {/* Hero Section */}
         <section style={{ marginBottom: '3rem', paddingBottom: '2rem', borderBottom: `3px solid #C9A84C` }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Banking & Finance in Dubai: A Guide for UK Expats (2026)
           </h1>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' }}>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' }}>
             Dubai operates a zero personal income tax environment, which is one of its biggest attractions for UK professionals. But managing the financial transition from the UK involves more than just opening a new bank account. You need to think carefully about your UK obligations, your pension, and how you'll move money efficiently.
           </p>
         </section>
 
         {/* Opening a UAE Bank Account */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Opening a UAE Bank Account
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               You cannot open a bank account until you have your Emirates ID (typically 4-6 weeks after arriving). The required documents include:
             </p>
@@ -48,12 +48,12 @@ export default function BankingGuide() {
 
         {/* Best Banks for UK Expats */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Best Banks for UK Expats
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 Emirates NBD
               </h3>
               <p>
@@ -62,7 +62,7 @@ export default function BankingGuide() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 HSBC UAE
               </h3>
               <p>
@@ -71,7 +71,7 @@ export default function BankingGuide() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 Mashreq
               </h3>
               <p>
@@ -80,7 +80,7 @@ export default function BankingGuide() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 ADCB (Abu Dhabi Commercial Bank)
               </h3>
               <p>
@@ -89,7 +89,7 @@ export default function BankingGuide() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem' }}>
                 Liv. (Digital Bank by Emirates NBD)
               </h3>
               <p>
@@ -101,10 +101,10 @@ export default function BankingGuide() {
 
         {/* Sending Money to the UK */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Sending Money to the UK
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Never use your bank's default international transfer rate — the fees and exchange rates are poor. Instead, consider these options:
             </p>
@@ -121,10 +121,10 @@ export default function BankingGuide() {
 
         {/* UK Tax and HMRC */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             UK Tax and HMRC
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Leaving the UK has tax implications. You need to notify HMRC you are leaving (form P85). You may still have UK tax obligations if you:
             </p>
@@ -141,10 +141,10 @@ export default function BankingGuide() {
 
         {/* UK Pension */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             UK Pension
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Do not ignore your UK pension when moving abroad. You can:
             </p>
@@ -161,10 +161,10 @@ export default function BankingGuide() {
 
         {/* UAE Taxation */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             UAE Taxation
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               The UAE has no personal income tax, but it does have other taxes you should know about:
             </p>
@@ -180,10 +180,10 @@ export default function BankingGuide() {
 
         {/* End of Service Gratuity */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             End of Service Gratuity
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               UAE employment law entitles employees to an end-of-service gratuity payment (similar to a UK redundancy payment) when leaving a job or the country. It is calculated at:
             </p>
@@ -199,10 +199,10 @@ export default function BankingGuide() {
 
         {/* Cost of Living Overview */}
         <section style={{ marginBottom: '2.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Cost of Living Overview
           </h2>
-          <div style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '1rem' }}>
               Dubai is not cheap but offers excellent value for high earners. Here are rough monthly budgets:
             </p>
@@ -219,14 +219,14 @@ export default function BankingGuide() {
           style={{
             marginBottom: '2.5rem',
             padding: '1.5rem',
-            backgroundColor: '#1A2942',
+            backgroundColor: '#F3F4F6',
             borderLeft: `5px solid #C9A84C`,
           }}
         >
-          <h2 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem', color: '#0A1628' }}>
             Patrick's Tip
           </h2>
-          <p style={{ lineHeight: '1.8', color: '#E0E0E0' }}>
+          <p style={{ lineHeight: '1.8', color: '#374151' }}>
             "The end of service gratuity surprises most UK expats — they don't realise they're entitled to it. Keep records of your employment dates and salary carefully. I've seen people leave thousands of pounds on the table by not claiming correctly."
           </p>
         </section>
@@ -239,17 +239,17 @@ export default function BankingGuide() {
             borderTop: `2px solid #C9A84C`,
           }}
         >
-          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
             Related Guides
           </h2>
-          <ul style={{ lineHeight: '2', paddingLeft: '2rem', color: '#E0E0E0' }}>
+          <ul style={{ lineHeight: '2', paddingLeft: '2rem', color: '#374151' }}>
             <li>
-              <Link href="/guides/visa-residency" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+              <Link href="/guides/visa-residency" style={{ color: '#0A1628', textDecoration: 'none', fontWeight: '500' }}>
                 Visa & Residency Guide
               </Link>
             </li>
             <li>
-              <Link href="/guides/community" style={{ color: '#C9A84C', textDecoration: 'none', fontWeight: '500' }}>
+              <Link href="/guides/community" style={{ color: '#0A1628', textDecoration: 'none', fontWeight: '500' }}>
                 Community & Life in Dubai
               </Link>
             </li>

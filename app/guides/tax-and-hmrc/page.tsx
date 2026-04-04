@@ -10,28 +10,28 @@ export const metadata: Metadata = {
 };
 
 const s = {
-  page: { backgroundColor: '#0A1628', color: '#FFFFFF', minHeight: '100vh' } as React.CSSProperties,
+  page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
   main: { maxWidth: '900px', margin: '0 auto', padding: '2rem' } as React.CSSProperties,
   hero: { marginBottom: '3rem', paddingBottom: '2rem', borderBottom: '3px solid #C9A84C' } as React.CSSProperties,
-  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C', lineHeight: '1.2' } as React.CSSProperties,
-  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
-  toc: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
-  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#C9A84C', marginBottom: '1rem' },
+  h1: { fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628', lineHeight: '1.2' } as React.CSSProperties,
+  intro: { fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
+  toc: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
+  tocTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#0A1628', marginBottom: '1rem' },
   tocList: { listStyle: 'none', padding: 0, margin: 0 } as React.CSSProperties,
   tocItem: { marginBottom: '0.5rem' } as React.CSSProperties,
   tocLink: { color: '#93c5fd', fontSize: '0.9rem', textDecoration: 'none' } as React.CSSProperties,
   section: { marginBottom: '3rem' } as React.CSSProperties,
-  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#C9A84C' } as React.CSSProperties,
-  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#C9A84C', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
-  body: { lineHeight: '1.8', color: '#E0E0E0' } as React.CSSProperties,
+  h2: { fontSize: '1.8rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' } as React.CSSProperties,
+  h3: { fontSize: '1.2rem', fontWeight: '600', color: '#0A1628', marginBottom: '0.5rem', marginTop: '1.5rem' } as React.CSSProperties,
+  body: { lineHeight: '1.8', color: '#374151' } as React.CSSProperties,
   p: { marginBottom: '1rem' } as React.CSSProperties,
   ul: { marginBottom: '1rem', paddingLeft: '1.5rem' } as React.CSSProperties,
   li: { marginBottom: '0.5rem' } as React.CSSProperties,
-  disclaimer: { backgroundColor: '#1a0a0a', border: '2px solid #ef4444', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
+  disclaimer: { backgroundColor: '#FEF2F2', border: '2px solid #ef4444', borderRadius: '12px', padding: '1.5rem', marginBottom: '3rem' } as React.CSSProperties,
   disclaimerTitle: { fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase' as const, letterSpacing: '0.1em', color: '#ef4444', marginBottom: '0.75rem' },
   disclaimerText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#fca5a5' } as React.CSSProperties,
-  callout: { backgroundColor: '#111f38', border: '1px solid #C9A84C33', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
-  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#E0E0E0' } as React.CSSProperties,
+  callout: { backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: '10px', padding: '1.25rem', marginBottom: '1.5rem' } as React.CSSProperties,
+  calloutText: { fontSize: '0.9rem', lineHeight: '1.7', color: '#374151' } as React.CSSProperties,
 };
 
 export default function TaxAndHmrcGuide() {
@@ -72,7 +72,7 @@ export default function TaxAndHmrcGuide() {
             href="https://your-affiliate-link.com"
             target="_blank"
             rel="noopener noreferrer sponsored"
-            style={{ color: '#C9A84C', textDecoration: 'underline' }}
+            style={{ color: '#0A1628', textDecoration: 'underline' }}
           >
             book a free initial consultation here
           </a>
@@ -176,7 +176,7 @@ export default function TaxAndHmrcGuide() {
 
             <div style={s.callout}>
               <p style={s.calloutText}>
-                <strong style={{ color: '#C9A84C' }}>Practical implication:</strong> If you have
+                <strong style={{ color: '#0A1628' }}>Practical implication:</strong> If you have
                 a family home in the UK, a UK-resident spouse, or you plan to visit regularly, you
                 need to count your UK days carefully every tax year. Many Dubai expats are surprised
                 to discover that their Christmas visits, UK client meetings, and school holiday trips
@@ -394,7 +394,7 @@ export default function TaxAndHmrcGuide() {
             </p>
             <div style={s.callout}>
               <p style={s.calloutText}>
-                <strong style={{ color: '#C9A84C' }}>Note:</strong> The full text of the UK-UAE
+                <strong style={{ color: '#0A1628' }}>Note:</strong> The full text of the UK-UAE
                 Double Taxation Agreement is available on GOV.UK. Its interpretation in specific
                 circumstances requires professional advice.
               </p>
