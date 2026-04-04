@@ -22,6 +22,12 @@ const SECONDARY_NAV = [
   { href: "/guides/domestic-help", label: "Domestic Help & Drivers" },
 ];
 
+const ARTICLES_NAV = [
+  { href: "/articles/is-dubai-safe-2026", label: "Is Dubai Safe in 2026?" },
+  { href: "/articles/dubai-situation-update", label: "Dubai Situation Update" },
+  { href: "/articles/should-i-still-move-to-dubai", label: "Should I Still Move?" },
+];
+
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -87,6 +93,27 @@ export default function Sidebar() {
             </Link>
           ))}
 
+          {/* Articles on mobile */}
+          <div className="mt-4 border-t border-white/10 pt-4">
+            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
+              Latest articles
+            </p>
+            {ARTICLES_NAV.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={`block rounded-lg px-4 py-2.5 text-sm font-medium transition ${
+                  pathname === link.href
+                    ? "bg-white/10 text-white"
+                    : "text-slate-400 hover:bg-white/5 hover:text-slate-200"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
           {/* Secondary links on mobile */}
           <div className="mt-4 border-t border-white/10 pt-4">
             <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
@@ -147,6 +174,26 @@ export default function Sidebar() {
             </Link>
           ))}
         </nav>
+
+        {/* Articles nav */}
+        <div className="border-t border-white/10 px-3 py-3 flex-shrink-0">
+          <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
+            Latest articles
+          </p>
+          {ARTICLES_NAV.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`flex items-center rounded-lg px-3 py-2 text-xs transition ${
+                pathname === link.href
+                  ? "bg-white/10 text-white font-semibold"
+                  : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
         {/* Secondary nav + footer */}
         <div className="border-t border-white/10 px-3 py-4 flex-shrink-0">
