@@ -32,7 +32,6 @@ export default function CookiePolicy() {
           <p>
             Dubai Expat (<Link href="https://www.dubaiexpat.co.uk" className="text-[#C9A84C] underline">www.dubaiexpat.co.uk</Link>) is operated by NewDigitalWorld Pte. Ltd., a company incorporated in Singapore.
           </p>
-          <p>Registered address: 7a Chancery Hill Walk, Singapore.</p>
 
           <h2>3. How We Use Cookies</h2>
           <p>We use cookies for the following purposes:</p>
@@ -187,7 +186,6 @@ export default function CookiePolicy() {
           </p>
           <p>
             NewDigitalWorld Pte. Ltd.<br />
-            7a Chancery Hill Walk, Singapore<br />
             Email: <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>
           <p>

@@ -187,7 +187,6 @@ export default function TermsOfUse() {
           <p>If you have any questions about these Terms of Use, please contact us at:</p>
           <p>
             NewDigitalWorld Pte. Ltd.<br />
-            7a Chancery Hill Walk, Singapore<br />
             Email:{" "}
             <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>

@@ -33,10 +33,6 @@ export default function PrivacyPolicy() {
           <table className="w-full text-sm">
             <tbody>
               <tr>
-                <td className="font-semibold border-b border-slate-100 py-2 pr-4">Registered address</td>
-                <td className="border-b border-slate-100 py-2">7a Chancery Hill Walk, Singapore</td>
-              </tr>
-              <tr>
                 <td className="font-semibold border-b border-slate-100 py-2 pr-4">Privacy contact</td>
                 <td className="border-b border-slate-100 py-2">partnerships@dubaiexpat.co.uk</td>
               </tr>

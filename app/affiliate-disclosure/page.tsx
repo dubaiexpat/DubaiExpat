@@ -68,7 +68,6 @@ export default function AffiliateDisclosure() {
           </p>
           <p>
             NewDigitalWorld Pte. Ltd.<br />
-            7a Chancery Hill Walk, Singapore<br />
             Email:{" "}
             <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>
