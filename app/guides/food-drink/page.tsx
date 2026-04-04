@@ -14,11 +14,11 @@ export const metadata = {
 
 export default function FoodDrinkGuide() {
   return (
-    <div className="min-h-screen" className="bg-white">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8" className="bg-white">
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold mb-6" style={{ color: '#C9A84C' }}>
             Food & Drink in Dubai
@@ -30,7 +30,7 @@ export default function FoodDrinkGuide() {
       </div>
 
       {/* Breadcrumb */}
-      <div className="px-4 sm:px-6 lg:px-8 py-4" className="bg-white">
+      <div className="px-4 sm:px-6 lg:px-8 py-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-sm" style={{ color: '#C9A84C' }}>
             ← Home
@@ -45,7 +45,7 @@ export default function FoodDrinkGuide() {
       </div>
 
       {/* Main Content */}
-      <div className="px-4 sm:px-6 lg:px-8 py-16" className="bg-white">
+      <div className="px-4 sm:px-6 lg:px-8 py-16 bg-white">
         <div className="max-w-4xl mx-auto space-y-16">
 
           {/* Where to Shop for Groceries */}
@@ -318,7 +318,7 @@ export default function FoodDrinkGuide() {
       </div>
 
       {/* Footer */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200" className="bg-white">
+      <div className="px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="inline-block" style={{ color: '#C9A84C' }}>
             ← Back to home

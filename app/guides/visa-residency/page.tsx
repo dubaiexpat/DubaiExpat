@@ -25,7 +25,7 @@ export default function VisaResidencyGuide() {
           </div>
         </div>
       </div>
-      <main className="min-h-screen" className="bg-white">
+      <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="px-4 py-16 md:px-8 md:py-24">
           <div className="max-w-4xl mx-auto">
