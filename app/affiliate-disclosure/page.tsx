@@ -24,37 +24,53 @@ export default function AffiliateDisclosure() {
 
           <h2>How We Earn Revenue</h2>
           <p>
-            Dubai Expat is a free resource for UK professionals and families relocating to Dubai and the UAE. To keep the site running and continue producing free guides, we participate in affiliate programmes with companies we believe are genuinely useful for expats.
+            Dubai Expat is a free resource for people relocating to Dubai and the UAE. To help support the cost of running the site and producing free guides, we may participate in affiliate programmes with companies and services that we believe may be useful to our readers.
           </p>
 
-          <h2>What This Means for You</h2>
+          <h2>Affiliate Links</h2>
           <p>
-            Some links on this site are affiliate links. When you click through and make a purchase, sign up for a service, or complete a qualifying action, we may earn a commission at no extra cost to you. The price you pay is the same whether you use our link or go directly.
+            Some links on this site are affiliate links. This means that if you click a link and make a purchase, sign up for a service, or complete another qualifying action, we may earn a commission at no extra cost to you.
+          </p>
+          <p>
+            The price you pay is the same whether you use our affiliate link or visit the provider directly.
+          </p>
+          <p>
+            Affiliate links may appear in articles, comparison tables, banners, buttons, or other content formats across the site. Not every affiliate link is individually labelled in every case.
           </p>
 
-          <h2>Our Editorial Independence</h2>
+          <h2>Editorial Independence</h2>
           <p>
-            Affiliate partnerships do not influence our editorial recommendations. We recommend products and services based on our own research and assessment of what is most useful for UK expats moving to Dubai. We will never recommend a product solely because it offers a higher commission.
+            Our affiliate relationships do not influence our editorial opinions, rankings, or recommendations. We aim to recommend products and services based on our own research and assessment of what may be most useful to our audience.
           </p>
           <p>
-            Where we feature partner services alongside editorial content, these are clearly identified. Our guide content is written independently of any commercial relationship.
+            We do not recommend a product or service solely because it pays a commission.
           </p>
 
-          <h2>Current Affiliate Partners</h2>
-          <p>We currently work with or intend to work with affiliate programmes from companies including:</p>
+          <h2>Current or Potential Affiliate Partners</h2>
+          <p>We may work with affiliate programmes and partners including:</p>
           <ul>
             <li><strong>Wise</strong> — international money transfers</li>
             <li><strong>SafetyWing</strong> — expat health insurance</li>
-            <li><strong>NordVPN / ExpressVPN</strong> — VPN services for accessing UK content abroad</li>
+            <li><strong>NordVPN</strong> — VPN services</li>
+            <li><strong>ExpressVPN</strong> — VPN services</li>
             <li><strong>Booking.com</strong> — temporary accommodation</li>
-            <li><strong>Removal companies</strong> — international relocation services</li>
-            <li><strong>Insurance providers</strong> — expat insurance</li>
+            <li>Relocation service providers</li>
+            <li>Insurance providers</li>
+            <li>Other travel, finance, accommodation, or expat-related services</li>
           </ul>
-          <p>This list is updated as partnerships change.</p>
-
-          <h2>Questions</h2>
           <p>
-            If you have any questions about our affiliate relationships, contact us at partnerships@dubaiexpat.co.uk.
+            This list may change from time to time as partnerships are added, removed, or updated. Not every affiliate relationship may be listed individually.
+          </p>
+
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this disclosure or our affiliate relationships, please contact us at:
+          </p>
+          <p>
+            NewDigitalWorld Pte. Ltd.<br />
+            7a Chancery Hill Walk, Singapore<br />
+            Email:{" "}
+            <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>
         </main>
 
