@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Dubai Expat | Your Complete Guide to Moving to Dubai",
   description:
     "Dubai Expat is a relocation guide for UK expats moving to Dubai and the UAE — covering visas, housing, schools, removals, banking, and community life.",
+  verification: {
+    google: "_GzRZEQg7lLjGNegr_mfBtbKyG3nLfaHNed1_9TsJwg",
+  },
 };
 
 export default function RootLayout({
