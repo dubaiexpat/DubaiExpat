@@ -21,4 +21,8 @@
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/james-and-emma</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/marcus</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/priya</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/affiliate-disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

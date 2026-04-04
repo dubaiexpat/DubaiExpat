@@ -575,12 +575,18 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-10 border-t border-slate-200 pt-4">
-          <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">
+          <div className="flex flex-col items-center justify-between gap-3 text-xs text-slate-500 sm:flex-row">
             <p>© 2026 Dubai Expat. All rights reserved.</p>
-            <p className="text-[11px]">
-              Information only, not financial, tax or legal advice.
-            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/privacy" className="hover:text-slate-700">Privacy</Link>
+              <Link href="/terms" className="hover:text-slate-700">Terms</Link>
+              <Link href="/cookies" className="hover:text-slate-700">Cookies</Link>
+              <Link href="/affiliate-disclosure" className="hover:text-slate-700">Disclosure</Link>
+            </div>
           </div>
+          <p className="mt-2 text-center text-[11px] text-slate-400">
+            Information only, not financial, tax or legal advice.
+          </p>
         </footer>
       </div>
     </div>
