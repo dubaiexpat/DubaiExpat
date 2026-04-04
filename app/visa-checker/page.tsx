@@ -130,6 +130,7 @@ export default function VisaCheckerPage() {
   const [showEmailGate, setShowEmailGate] = useState(false);
   const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [consent, setConsent] = useState(false);
 
   const currentQuestion = QUESTIONS[step];
   const isLastStep = step === QUESTIONS.length - 1;
@@ -269,26 +270,54 @@ export default function VisaCheckerPage() {
               </p>
 
               <form
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
-                  if (email.trim()) setEmailSubmitted(true);
+                  if (email.trim() && consent) {
+                    try {
+                      await fetch("/api/subscribe", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ email, source: "visa_checker" }),
+                      });
+                    } catch {}
+                    setEmailSubmitted(true);
+                  }
                 }}
-                className="mt-6 flex flex-col gap-3 sm:flex-row"
+                className="mt-6 flex flex-col gap-3"
               >
-                <input
-                  type="email"
-                  required
-                  placeholder="Your email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
-                />
-                <button
-                  type="submit"
-                  className="flex-shrink-0 rounded-xl bg-[#C9A84C] px-6 py-3 text-sm font-bold text-[#0A1628] transition hover:bg-[#d5b760] active:scale-95"
-                >
-                  Send my results →
-                </button>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
+                  />
+                  <button
+                    type="submit"
+                    disabled={!consent}
+                    className={`flex-shrink-0 rounded-xl bg-[#C9A84C] px-6 py-3 text-sm font-bold text-[#0A1628] transition hover:bg-[#d5b760] active:scale-95 ${!consent ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  >
+                    Send my results →
+                  </button>
+                </div>
+
+                <label className="flex items-center gap-2 text-xs text-slate-500">
+                  <input
+                    type="checkbox"
+                    checked={consent}
+                    onChange={(e) => setConsent(e.target.checked)}
+                    className="accent-[#C9A84C]"
+                  />
+                  <span>
+                    I agree to receive my visa results and the relocation checklist by email. View our{" "}
+                    <Link href="/privacy" className="text-[#C9A84C]">
+                      privacy policy
+                    </Link>
+                    .
+                  </span>
+                </label>
               </form>
 
               <p className="mt-3 text-xs text-slate-400">
