@@ -12,6 +12,8 @@ export default function ContactPage() {
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -23,20 +25,32 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form submission logic (client-side only)
-    setIsSubmitted(true);
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setFormState({
-        name: '',
-        email: '',
-        subject: 'General Enquiry',
-        message: '',
+    setIsSubmitting(true);
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState),
       });
-      setIsSubmitted(false);
-    }, 3000);
+      if (!res.ok) throw new Error('Failed to send');
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setFormState({
+          name: '',
+          email: '',
+          subject: 'General Enquiry',
+          message: '',
+        });
+        setIsSubmitted(false);
+      }, 5000);
+    } catch {
+      setError('Something went wrong. Please try emailing us directly at partnerships@dubaiexpat.co.uk');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -143,11 +157,18 @@ export default function ContactPage() {
                 />
               </div>
 
+              {error && (
+                <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+                  {error}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="rounded-xl bg-[#C9A84C] px-6 py-3 text-sm font-bold text-[#0A1628] transition hover:bg-[#d5b760]"
+                disabled={isSubmitting}
+                className="rounded-xl bg-[#C9A84C] px-6 py-3 text-sm font-bold text-[#0A1628] transition hover:bg-[#d5b760] disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           )}
