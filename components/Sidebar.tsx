@@ -14,12 +14,16 @@ const PRIMARY_NAV = [
   { href: "/guides/removals", label: "Removals & Shipping" },
 ];
 
-const SECONDARY_NAV = [
+const MORE_GUIDES_NAV = [
   { href: "/cost-of-living", label: "Cost of Living" },
   { href: "/guides/community", label: "Community & Life" },
   { href: "/guides/nightlife", label: "Nightlife" },
   { href: "/guides/concierge", label: "Concierge" },
   { href: "/guides/domestic-help", label: "Domestic Help & Drivers" },
+  { href: "/guides/food-drink", label: "Food & Drink" },
+  { href: "/guides/furniture", label: "Furniture & Home Setup" },
+  { href: "/guides/pets", label: "Pet Relocation" },
+  { href: "/guides/uk-pension-dubai", label: "UK Pensions in Dubai" },
 ];
 
 const ARTICLES_NAV = [
@@ -93,12 +97,12 @@ export default function Sidebar() {
             </Link>
           ))}
 
-          {/* Articles on mobile */}
-          <div className="mt-4 border-t border-white/10 pt-4">
-            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
-              Latest articles
+          {/* More guides on mobile */}
+          <div className="mt-3 border-t border-white/10 pt-3">
+            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+              More guides
             </p>
-            {ARTICLES_NAV.map((link) => (
+            {MORE_GUIDES_NAV.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -114,12 +118,12 @@ export default function Sidebar() {
             ))}
           </div>
 
-          {/* Secondary links on mobile */}
-          <div className="mt-4 border-t border-white/10 pt-4">
-            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
-              More guides
+          {/* Articles on mobile */}
+          <div className="mt-3 border-t border-white/10 pt-3">
+            <p className="mb-2 px-4 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
+              Latest articles
             </p>
-            {SECONDARY_NAV.map((link) => (
+            {ARTICLES_NAV.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -152,19 +156,21 @@ export default function Sidebar() {
           </p>
         </div>
 
-        {/* Primary nav links */}
-        <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-0.5">
+        {/* Scrollable nav area — everything in one scroll container */}
+        <nav className="flex-1 overflow-y-auto px-3 py-3 space-y-0.5">
           <Link
             href="/visa-checker"
-            className="mb-3 flex items-center justify-center rounded-xl bg-[#C9A84C] px-4 py-2.5 text-xs font-bold text-[#0A1628] hover:bg-[#d5b760] transition"
+            className="mb-2 flex items-center justify-center rounded-xl bg-[#C9A84C] px-4 py-2.5 text-xs font-bold text-[#0A1628] hover:bg-[#d5b760] transition"
           >
             Visa Checker →
           </Link>
+
+          {/* Primary guides */}
           {PRIMARY_NAV.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`flex items-center rounded-lg px-3 py-2.5 text-sm transition ${
+              className={`flex items-center rounded-lg px-3 py-2 text-sm transition ${
                 pathname === link.href
                   ? "bg-white/10 text-white font-semibold"
                   : "text-slate-400 hover:bg-white/5 hover:text-white font-medium"
@@ -173,47 +179,51 @@ export default function Sidebar() {
               {link.label}
             </Link>
           ))}
+
+          {/* More guides */}
+          <div className="pt-3 mt-2 border-t border-white/10">
+            <p className="mb-1.5 px-3 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+              More guides
+            </p>
+            {MORE_GUIDES_NAV.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`flex items-center rounded-lg px-3 py-1.5 text-xs transition ${
+                  pathname === link.href
+                    ? "bg-white/10 text-white font-semibold"
+                    : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Articles */}
+          <div className="pt-3 mt-2 border-t border-white/10">
+            <p className="mb-1.5 px-3 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
+              Latest articles
+            </p>
+            {ARTICLES_NAV.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`flex items-center rounded-lg px-3 py-1.5 text-xs transition ${
+                  pathname === link.href
+                    ? "bg-white/10 text-white font-semibold"
+                    : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </nav>
 
-        {/* Articles nav */}
-        <div className="border-t border-white/10 px-3 py-3 flex-shrink-0">
-          <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-[#C9A84C]">
-            Latest articles
-          </p>
-          {ARTICLES_NAV.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`flex items-center rounded-lg px-3 py-2 text-xs transition ${
-                pathname === link.href
-                  ? "bg-white/10 text-white font-semibold"
-                  : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
-        {/* Secondary nav + footer */}
-        <div className="border-t border-white/10 px-3 py-4 flex-shrink-0">
-          <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
-            More guides
-          </p>
-          {SECONDARY_NAV.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`flex items-center rounded-lg px-3 py-2 text-xs transition ${
-                pathname === link.href
-                  ? "bg-white/10 text-white font-semibold"
-                  : "text-slate-500 hover:bg-white/5 hover:text-slate-300 font-medium"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <p className="mt-4 px-3 text-[11px] text-slate-600 leading-tight">
+        {/* Footer */}
+        <div className="border-t border-white/10 px-6 py-3 flex-shrink-0">
+          <p className="text-[11px] text-slate-600 leading-tight">
             © 2026 Dubai Expat
           </p>
         </div>
