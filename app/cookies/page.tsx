@@ -30,7 +30,7 @@ export default function CookiePolicy() {
 
           <h2>2. Who We Are</h2>
           <p>
-            Dubai Expat (<Link href="https://www.dubaiexpat.co.uk" className="text-[#C9A84C] underline">www.dubaiexpat.co.uk</Link>) is operated by NewDigitalWorld Pte. Ltd., a company incorporated in Singapore.
+            Dubai Expat (<Link href="https://www.dubaiexpat.co.uk" className="text-[#C9A84C] underline">www.dubaiexpat.co.uk</Link>) is operated by NewMediaWorld Pte. Ltd., a company incorporated in Singapore.
           </p>
 
           <h2>3. How We Use Cookies</h2>
@@ -185,7 +185,7 @@ export default function CookiePolicy() {
             If you have questions about this Cookie Policy or wish to exercise your data rights, please contact us at:
           </p>
           <p>
-            NewDigitalWorld Pte. Ltd.<br />
+            NewMediaWorld Pte. Ltd.<br />
             Email: <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>
           <p>

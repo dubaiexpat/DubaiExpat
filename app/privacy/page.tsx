@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
 
           <h2>1. Who We Are</h2>
           <p>
-            Dubai Expat is operated by <strong>NewDigitalWorld Pte. Ltd.</strong>, a company incorporated in Singapore.
+            Dubai Expat is operated by <strong>NewMediaWorld Pte. Ltd.</strong>, a company incorporated in Singapore.
           </p>
           <table className="w-full text-sm">
             <tbody>
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
             </tbody>
           </table>
           <p>
-            For the purposes of UK data-protection law, NewDigitalWorld Pte. Ltd. is the data controller.
+            For the purposes of UK data-protection law, NewMediaWorld Pte. Ltd. is the data controller.
           </p>
 
           <h2>2. What Data We Collect</h2>
@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
           </p>
           <ul>
             <li><strong>United States</strong> — Kit (email platform), Vercel (hosting), and Google (analytics). Kit maintains standard contractual clauses and a published data processing agreement. Vercel and Google maintain industry-standard security certifications and contractual data protection commitments.</li>
-            <li><strong>Singapore</strong> — our operating company (NewDigitalWorld Pte. Ltd.).</li>
+            <li><strong>Singapore</strong> — our operating company (NewMediaWorld Pte. Ltd.).</li>
           </ul>
           <p>
             Where data is transferred outside the UK, we rely on the UK international data transfer agreement (UK IDTA) or standard contractual clauses approved by the ICO, as applicable, to ensure an appropriate level of protection for your personal data.

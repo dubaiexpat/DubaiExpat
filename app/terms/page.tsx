@@ -23,7 +23,7 @@ export default function TermsOfUse() {
           <p>
             These Terms of Use apply to the website{" "}
             <Link href="https://www.dubaiexpat.co.uk" className="text-[#C9A84C] underline">www.dubaiexpat.co.uk</Link>{" "}
-            (the &ldquo;Site&rdquo;), which is operated by NewDigitalWorld Pte. Ltd., a company incorporated in Singapore.
+            (the &ldquo;Site&rdquo;), which is operated by NewMediaWorld Pte. Ltd., a company incorporated in Singapore.
           </p>
           <p>
             By accessing or using the Site, you agree to be bound by these Terms of Use. If you do not agree to these Terms, you should not use the Site.
@@ -87,7 +87,7 @@ export default function TermsOfUse() {
 
           <h2>7. Intellectual Property</h2>
           <p>
-            Unless otherwise stated, all content on the Site, including text, graphics, logos, images, design, layout, and code, is owned by or licensed to NewDigitalWorld Pte. Ltd. and is protected by applicable intellectual property laws.
+            Unless otherwise stated, all content on the Site, including text, graphics, logos, images, design, layout, and code, is owned by or licensed to NewMediaWorld Pte. Ltd. and is protected by applicable intellectual property laws.
           </p>
           <p>
             You may view the Site for your personal, non-commercial use only. You may not copy, reproduce, distribute, modify, publish, transmit, create derivative works from, or otherwise use any content from the Site without our prior written consent, except as permitted by law.
@@ -110,7 +110,7 @@ export default function TermsOfUse() {
             If the Site allows you to submit content, including comments, forms, messages, reviews, or other materials, you are responsible for ensuring that your submission is lawful, accurate, and does not infringe the rights of any third party.
           </p>
           <p>
-            By submitting content to us, you grant NewDigitalWorld Pte. Ltd. a non-exclusive, worldwide, royalty-free licence to use, reproduce, adapt, publish, and display that content for the purpose of operating, promoting, and improving the Site, unless we agree otherwise in writing.
+            By submitting content to us, you grant NewMediaWorld Pte. Ltd. a non-exclusive, worldwide, royalty-free licence to use, reproduce, adapt, publish, and display that content for the purpose of operating, promoting, and improving the Site, unless we agree otherwise in writing.
           </p>
           <p>
             We reserve the right to review, remove, or refuse to publish any user-submitted content at our discretion.
@@ -140,7 +140,7 @@ export default function TermsOfUse() {
 
           <h2>13. Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by law, NewDigitalWorld Pte. Ltd., its directors, employees, contractors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive losses or damages arising out of or in connection with your use of, or inability to use, the Site.
+            To the fullest extent permitted by law, NewMediaWorld Pte. Ltd., its directors, employees, contractors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive losses or damages arising out of or in connection with your use of, or inability to use, the Site.
           </p>
           <p>
             This includes, without limitation, loss of profits, loss of revenue, loss of data, business interruption, and loss arising from reliance on information provided on the Site.
@@ -151,7 +151,7 @@ export default function TermsOfUse() {
 
           <h2>14. Indemnity</h2>
           <p>
-            To the fullest extent permitted by law, you agree to indemnify and hold harmless NewDigitalWorld Pte. Ltd. and its directors, employees, contractors, and affiliates from and against any claims, liabilities, losses, damages, costs, and expenses arising out of or relating to:
+            To the fullest extent permitted by law, you agree to indemnify and hold harmless NewMediaWorld Pte. Ltd. and its directors, employees, contractors, and affiliates from and against any claims, liabilities, losses, damages, costs, and expenses arising out of or relating to:
           </p>
           <ul>
             <li>your misuse of the Site;</li>
@@ -186,7 +186,7 @@ export default function TermsOfUse() {
           <h2>19. Contact</h2>
           <p>If you have any questions about these Terms of Use, please contact us at:</p>
           <p>
-            NewDigitalWorld Pte. Ltd.<br />
+            NewMediaWorld Pte. Ltd.<br />
             Email:{" "}
             <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>

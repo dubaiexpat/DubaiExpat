@@ -67,7 +67,7 @@ export default function AffiliateDisclosure() {
             If you have any questions about this disclosure or our affiliate relationships, please contact us at:
           </p>
           <p>
-            NewDigitalWorld Pte. Ltd.<br />
+            NewMediaWorld Pte. Ltd.<br />
             Email:{" "}
             <a href="mailto:partnerships@dubaiexpat.co.uk" className="text-[#C9A84C] underline">partnerships@dubaiexpat.co.uk</a>
           </p>
