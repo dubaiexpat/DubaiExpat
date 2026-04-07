@@ -27,9 +27,9 @@ export default function DubaiSituationUpdate() {
       </div>
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden rounded-2xl mx-4 md:mx-8 mt-6 md:mt-8 mb-12">
           <img
-            src="https://images.unsplash.com/photo-1570731272624-c9271e0e0d24?w=1200&h=500&fit=crop&auto=format"
+            src="https://images.unsplash.com/photo-1634007626524-f47fa37810a7?w=1200&h=500&fit=crop&auto=format"
             alt=""
             className="absolute inset-0 h-full w-full object-cover"
           />

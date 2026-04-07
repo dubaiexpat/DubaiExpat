@@ -27,9 +27,9 @@ export default function IsDubaiSafe2026() {
       </div>
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden rounded-2xl mx-4 md:mx-8 mt-6 md:mt-8 mb-12">
           <img
-            src="https://images.unsplash.com/photo-1583202075264-1b4518e6e2cb?w=1200&h=500&fit=crop&auto=format"
+            src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=1200&h=500&fit=crop&auto=format"
             alt=""
             className="absolute inset-0 h-full w-full object-cover"
           />

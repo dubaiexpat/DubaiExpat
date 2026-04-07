@@ -18,26 +18,24 @@ export default function FurnitureGuide() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-none">
+      <section className="relative overflow-hidden rounded-2xl mx-4 md:mx-8 mt-6 md:mt-8 mb-12">
         <img
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=500&fit=crop&auto=format"
           alt=""
-          className="absolute inset-0 h-96 w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-left sm:text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
-              Furniture & Interiors
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-              Furniture & Interiors in Dubai
-            </h1>
-            <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
-              Your complete guide to furnishing an apartment in Dubai — from budget-friendly options to luxury designer pieces and bespoke custom carpentry.
-            </p>
+        <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20 max-w-4xl">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+            Furniture &amp; Interiors
           </div>
+          <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
+            Furniture &amp; Interiors in Dubai
+          </h1>
+          <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
+            Your complete guide to furnishing an apartment in Dubai — from budget-friendly options to luxury designer pieces and bespoke custom carpentry.
+          </p>
         </div>
       </section>
 
