@@ -14,15 +14,22 @@ export default function HousingGuide() {
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="px-4 py-16 md:px-8 md:py-24">
-          <div className="max-w-4xl mx-auto">
-            <h1
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#0A1628" }}
-            >
+        <section className="relative overflow-hidden rounded-2xl mx-4 md:mx-8 mt-6 md:mt-8 mb-12">
+          <img
+            src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+          <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20 max-w-4xl">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+              Housing & Accommodation
+            </div>
+            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
               Finding a Home in Dubai: A Complete Guide for UK Expats (2026)
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
               Master the Dubai property market. From understanding the cheque system
               to choosing the perfect neighbourhood, we cover everything you need to
               rent or buy with confidence.

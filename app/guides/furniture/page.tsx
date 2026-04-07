@@ -18,19 +18,31 @@ export default function FurnitureGuide() {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-6" style={{ color: '#C9A84C' }}>
-            Furniture & Interiors in Dubai
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Your complete guide to furnishing an apartment in Dubai — from budget-friendly options to luxury designer pieces and bespoke custom carpentry.
-          </p>
+      <section className="relative overflow-hidden rounded-none">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=500&fit=crop&auto=format"
+          alt=""
+          className="absolute inset-0 h-96 w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-4xl mx-auto text-left sm:text-center">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+              Furniture & Interiors
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+              Furniture & Interiors in Dubai
+            </h1>
+            <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+              Your complete guide to furnishing an apartment in Dubai — from budget-friendly options to luxury designer pieces and bespoke custom carpentry.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Breadcrumb */}
-      <div className="px-4 sm:px-6 lg:px-8 py-4 bg-white">
+      <div className="px-4 sm:px-6 lg:px-8 py-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-sm" style={{ color: '#C9A84C' }}>
             ← Home

@@ -27,23 +27,26 @@ export default function IsDubaiSafe2026() {
       </div>
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="px-4 py-16 md:px-8 md:py-24">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-[#C9A84C] bg-opacity-20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
-                Safety &amp; Security
-              </span>
-              <span className="text-sm text-gray-500">Updated 4 April 2026</span>
+        <section className="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1583202075264-1b4518e6e2cb?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+          <div className="relative z-10 px-4 sm:px-8 py-14 sm:py-20">
+            <div className="max-w-4xl mx-auto">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+                Safety Guide
+              </div>
+              <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
+                Is Dubai Safe for Expats in 2026? What UK Citizens Need to Know
+              </h1>
+              <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
+                The Iran&ndash;UAE conflict has changed the conversation about relocating to Dubai. Here&rsquo;s an honest, up-to-date assessment of what life is really like on the ground &mdash; and what the FCDO is telling British nationals.
+              </p>
             </div>
-            <h1
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-              style={{ color: "#0A1628" }}
-            >
-              Is Dubai Safe for Expats in 2026? What UK Citizens Need to Know
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              The Iran&ndash;UAE conflict has changed the conversation about relocating to Dubai. Here&rsquo;s an honest, up-to-date assessment of what life is really like on the ground &mdash; and what the FCDO is telling British nationals.
-            </p>
           </div>
         </section>
 

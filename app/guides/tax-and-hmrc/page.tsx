@@ -41,27 +41,30 @@ export default function TaxAndHmrcGuide() {
       <main style={s.main}>
 
         {/* Hero */}
-        <section style={s.hero}>
-          <div style={{ marginBottom: '0.75rem' }}>
-            <Link href="/" style={{ color: '#94a3b8', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
-            <span style={{ color: '#475569', margin: '0 0.5rem' }}>/</span>
-            <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Tax & HMRC</span>
+        <section style={{ ...s.hero, position: 'relative', overflow: 'hidden', backgroundImage: 'url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop&auto=format")', backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '3rem' }}>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(to right, rgba(10, 22, 40, 0.9), rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.4))' }} />
+          <div style={{ position: 'relative', zIndex: 10 }}>
+            <div style={{ marginBottom: '0.75rem' }}>
+              <Link href="/" style={{ color: '#e2e8f0', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
+              <span style={{ color: '#cbd5e1', margin: '0 0.5rem' }}>/</span>
+              <span style={{ color: '#e2e8f0', fontSize: '0.85rem' }}>Tax & HMRC</span>
+            </div>
+            <h1 style={{ ...s.h1, color: '#FFFFFF', fontSize: '2.25rem' }}>
+              Leaving the UK Tax System: HMRC, Residency &amp; What Dubai Expats Need to Know
+            </h1>
+            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+              The UAE charges zero personal income tax. That is one of the most powerful financial reasons
+              UK professionals move to Dubai. But here is the part that catches people out: that zero-tax
+              benefit only applies once you have properly exited the UK tax system. Simply boarding a plane
+              to Dubai does not make you a non-UK resident for tax purposes. HMRC has a strict statutory
+              framework for determining where you are tax-resident — and getting it wrong can result in
+              unexpected UK tax bills, penalties, and years of correspondence with HMRC.
+            </p>
+            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+              This guide explains everything UK expats moving to Dubai need to understand about their
+              UK tax position — in plain English, with the key steps clearly laid out.
+            </p>
           </div>
-          <h1 style={s.h1}>
-            Leaving the UK Tax System: HMRC, Residency &amp; What Dubai Expats Need to Know
-          </h1>
-          <p style={s.intro}>
-            The UAE charges zero personal income tax. That is one of the most powerful financial reasons
-            UK professionals move to Dubai. But here is the part that catches people out: that zero-tax
-            benefit only applies once you have properly exited the UK tax system. Simply boarding a plane
-            to Dubai does not make you a non-UK resident for tax purposes. HMRC has a strict statutory
-            framework for determining where you are tax-resident — and getting it wrong can result in
-            unexpected UK tax bills, penalties, and years of correspondence with HMRC.
-          </p>
-          <p style={{ ...s.intro, marginTop: '1rem' }}>
-            This guide explains everything UK expats moving to Dubai need to understand about their
-            UK tax position — in plain English, with the key steps clearly laid out.
-          </p>
         </section>
 
         {/* Upfront advisory notice */}

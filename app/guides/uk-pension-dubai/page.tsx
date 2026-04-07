@@ -44,27 +44,30 @@ export default function UkPensionDubaiGuide() {
       <main style={s.main}>
 
         {/* Hero */}
-        <section style={s.hero}>
-          <div style={{ marginBottom: '0.75rem' }}>
-            <Link href="/" style={{ color: '#94a3b8', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
-            <span style={{ color: '#475569', margin: '0 0.5rem' }}>/</span>
-            <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>UK Pension</span>
+        <section style={{ ...s.hero, position: 'relative', overflow: 'hidden', backgroundImage: 'url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=500&fit=crop&auto=format")', backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '3rem' }}>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(to right, rgba(10, 22, 40, 0.9), rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.4))' }} />
+          <div style={{ position: 'relative', zIndex: 10 }}>
+            <div style={{ marginBottom: '0.75rem' }}>
+              <Link href="/" style={{ color: '#e2e8f0', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
+              <span style={{ color: '#cbd5e1', margin: '0 0.5rem' }}>/</span>
+              <span style={{ color: '#e2e8f0', fontSize: '0.85rem' }}>UK Pension</span>
+            </div>
+            <h1 style={{ ...s.h1, color: '#FFFFFF', fontSize: '2.25rem' }}>
+              Your UK Pension as a Dubai Expat: What to Do, What to Avoid, and When to Get Advice
+            </h1>
+            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+              Pensions are the most overlooked financial issue for UK professionals moving to Dubai.
+              In the excitement of negotiating a tax-free package and planning a new life, most
+              people give their pension barely a second thought. That is understandable — and
+              it is also a significant mistake. The decisions you make about your UK pension
+              in the first few years of living in Dubai can have consequences worth tens or
+              even hundreds of thousands of pounds over the course of your lifetime. This
+              guide sets out the key things you need to understand: what happens to your
+              workplace pension, how to protect your State Pension, what QROPS and SIPPs
+              are, how to avoid the scams that target expats, and when you genuinely need
+              professional advice.
+            </p>
           </div>
-          <h1 style={s.h1}>
-            Your UK Pension as a Dubai Expat: What to Do, What to Avoid, and When to Get Advice
-          </h1>
-          <p style={s.intro}>
-            Pensions are the most overlooked financial issue for UK professionals moving to Dubai.
-            In the excitement of negotiating a tax-free package and planning a new life, most
-            people give their pension barely a second thought. That is understandable — and
-            it is also a significant mistake. The decisions you make about your UK pension
-            in the first few years of living in Dubai can have consequences worth tens or
-            even hundreds of thousands of pounds over the course of your lifetime. This
-            guide sets out the key things you need to understand: what happens to your
-            workplace pension, how to protect your State Pension, what QROPS and SIPPs
-            are, how to avoid the scams that target expats, and when you genuinely need
-            professional advice.
-          </p>
         </section>
 
         {/* TOC */}

@@ -60,28 +60,36 @@ export default function PetsGuidePage() {
         <main className="mt-8 space-y-12">
 
           {/* Hero */}
-          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-[#0A1628] sm:px-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
-              Pets &amp; Animal Relocation
-            </div>
-            <h1 className="text-3xl font-bold sm:text-4xl">
-              Bringing Your Pet to Dubai from the UK
-            </h1>
-            <p className="mt-4 max-w-2xl text-slate-300 leading-relaxed">
-              The UAE has strict pet import rules, and the process takes longer than most people expect — often four to six months from start to finish. The good news is that thousands of British expat families do it every year, and with the right preparation, it is completely manageable. This guide covers everything you need to know.
-            </p>
-            <div className="mt-6 grid grid-cols-3 gap-4 text-center">
-              {[
-                { label: "Typical Timeline", value: "4–6 months" },
-                { label: "Approx. Total Cost", value: "£800–£2,500" },
-                { label: "Process Steps", value: "6 key steps" },
-              ].map((stat) => (
-                <div key={stat.label} className="rounded-xl bg-white/10 p-3">
-                  <p className="text-xl font-bold text-[#C9A84C]">{stat.value}</p>
-                  <p className="mt-1 text-xs text-slate-300">{stat.label}</p>
-                </div>
-              ))}
+          <section className="relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&h=500&fit=crop&auto=format"
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+            <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+                Pets &amp; Animal Relocation
+              </div>
+              <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
+                Bringing Your Pet to Dubai from the UK
+              </h1>
+              <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
+                The UAE has strict pet import rules, and the process takes longer than most people expect — often four to six months from start to finish. The good news is that thousands of British expat families do it every year, and with the right preparation, it is completely manageable. This guide covers everything you need to know.
+              </p>
+              <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                {[
+                  { label: "Typical Timeline", value: "4–6 months" },
+                  { label: "Approx. Total Cost", value: "£800–£2,500" },
+                  { label: "Process Steps", value: "6 key steps" },
+                ].map((stat) => (
+                  <div key={stat.label} className="rounded-xl bg-white/10 p-3">
+                    <p className="text-xl font-bold text-[#C9A84C]">{stat.value}</p>
+                    <p className="mt-1 text-xs text-slate-300">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 

@@ -46,26 +46,35 @@ export default function CostOfLivingPage() {
       <main style={s.main}>
 
         {/* Hero */}
-        <section style={s.hero}>
-          <div style={{ marginBottom: '0.75rem' }}>
-            <Link href="/" style={{ color: '#94a3b8', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
-            <span style={{ color: '#475569', margin: '0 0.5rem' }}>/</span>
-            <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Cost of Living</span>
+        <section style={{ position: 'relative', overflow: 'hidden', marginBottom: '3rem' }}>
+          <img
+            src="https://images.unsplash.com/photo-1546412414-e1885259563a?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            style={{ position: 'absolute', inset: 0, height: '100%', width: '100%', objectFit: 'cover' }}
+          />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(10, 22, 40, 0.9), rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.4))' }} />
+          <div style={{ position: 'relative', zIndex: 10, padding: '3.5rem 1.5rem' }}>
+            <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderRadius: '9999px', backgroundColor: 'rgba(201, 168, 76, 0.2)', padding: '0.25rem 0.75rem', fontSize: '0.75rem', fontWeight: '600', color: '#C9A84C', marginBottom: '1rem', backdropFilter: 'blur(4px)' }}>
+                <span style={{ height: '0.375rem', width: '0.375rem', borderRadius: '9999px', backgroundColor: '#C9A84C' }} />
+                Cost of Living
+              </div>
+              <h1 style={{ fontSize: '2rem', fontWeight: '700', color: 'white', lineHeight: '1.2', maxWidth: '800px', marginBottom: '1rem' }}>Cost of Living in Dubai vs London: A Realistic 2026 Comparison for UK Expats</h1>
+              <p style={{ fontSize: '1rem', lineHeight: '1.8', color: '#e2e8f0', maxWidth: '700px', marginBottom: '1rem' }}>
+                The honest version. Dubai is not uniformly cheaper than London — and for families with
+                children, it can easily cost more once school fees are factored in. But for single
+                professionals and couples without children, the combination of zero income tax, lower
+                rent for equivalent space, and no council tax can produce a dramatic improvement in
+                real take-home wealth. This guide gives you the numbers across three realistic
+                lifestyle tiers, explains where you will genuinely save, and where you should
+                budget more carefully than you might expect.
+              </p>
+              <p style={{ fontSize: '0.85rem', color: '#cbd5e1', maxWidth: '700px' }}>
+                Exchange rate used: £1 = AED 4.65 (approximate 2026 rate). All figures are
+                approximate monthly costs unless stated.
+              </p>
+            </div>
           </div>
-          <h1 style={s.h1}>Cost of Living in Dubai vs London: A Realistic 2026 Comparison for UK Expats</h1>
-          <p style={s.intro}>
-            The honest version. Dubai is not uniformly cheaper than London — and for families with
-            children, it can easily cost more once school fees are factored in. But for single
-            professionals and couples without children, the combination of zero income tax, lower
-            rent for equivalent space, and no council tax can produce a dramatic improvement in
-            real take-home wealth. This guide gives you the numbers across three realistic
-            lifestyle tiers, explains where you will genuinely save, and where you should
-            budget more carefully than you might expect.
-          </p>
-          <p style={{ ...s.intro, marginTop: '1rem', fontSize: '0.85rem', color: '#94a3b8' }}>
-            Exchange rate used: £1 = AED 4.65 (approximate 2026 rate). All figures are
-            approximate monthly costs unless stated.
-          </p>
         </section>
 
         {/* TOC */}

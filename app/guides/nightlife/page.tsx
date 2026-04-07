@@ -67,17 +67,25 @@ export default function NightlifeGuidePage() {
         <main className="mt-8 space-y-12">
 
           {/* Hero */}
-          <section className="rounded-2xl bg-[#0A1628] px-6 py-10 text-[#0A1628] sm:px-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
-              Nightlife &amp; Social Scene
+          <section className="relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200&h=500&fit=crop&auto=format"
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+            <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+                Nightlife &amp; Social Scene
+              </div>
+              <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
+                Nightlife in Dubai: What UK Expats Need to Know
+              </h1>
+              <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
+                Dubai has one of the most vibrant social scenes in the world — world-class restaurants, rooftop bars with skyline views, beach clubs, and nightclubs hosting globally renowned DJs. But it operates within rules that are very different from the UK. Understanding them is what separates expats who thrive socially from those who run into trouble.
+              </p>
             </div>
-            <h1 className="text-3xl font-bold sm:text-4xl">
-              Nightlife in Dubai: What UK Expats Need to Know
-            </h1>
-            <p className="mt-4 max-w-2xl text-slate-300 leading-relaxed">
-              Dubai has one of the most vibrant social scenes in the world — world-class restaurants, rooftop bars with skyline views, beach clubs, and nightclubs hosting globally renowned DJs. But it operates within rules that are very different from the UK. Understanding them is what separates expats who thrive socially from those who run into trouble.
-            </p>
           </section>
 
           {/* Alcohol rules */}

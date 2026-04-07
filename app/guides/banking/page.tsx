@@ -15,13 +15,25 @@ export default function BankingGuide() {
 
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
         {/* Hero Section */}
-        <section style={{ marginBottom: '3rem', paddingBottom: '2rem', borderBottom: `3px solid #C9A84C` }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#0A1628' }}>
-            Banking & Finance in Dubai: A Guide for UK Expats (2026)
-          </h1>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#374151' }}>
-            Dubai operates a zero personal income tax environment, which is one of its biggest attractions for UK professionals. But managing the financial transition from the UK involves more than just opening a new bank account. You need to think carefully about your UK obligations, your pension, and how you'll move money efficiently.
-          </p>
+        <section className="relative overflow-hidden rounded-2xl mb-12" style={{ marginBottom: '3rem' }}>
+          <img
+            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+          <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20" style={{ maxWidth: '900px' }}>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+              Banking & Finance
+            </div>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', color: '#FFFFFF' }}>
+              Banking & Finance in Dubai: A Guide for UK Expats (2026)
+            </h1>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#E0E7FF', maxWidth: '600px' }}>
+              Dubai operates a zero personal income tax environment, which is one of its biggest attractions for UK professionals. But managing the financial transition from the UK involves more than just opening a new bank account. You need to think carefully about your UK obligations, your pension, and how you'll move money efficiently.
+            </p>
+          </div>
         </section>
 
         {/* Opening a UAE Bank Account */}
