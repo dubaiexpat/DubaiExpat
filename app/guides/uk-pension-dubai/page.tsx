@@ -44,28 +44,33 @@ export default function UkPensionDubaiGuide() {
       <main style={s.main}>
 
         {/* Hero */}
-        <section style={{ ...s.hero, position: 'relative', overflow: 'hidden', backgroundImage: 'url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=500&fit=crop&auto=format")', backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '3rem' }}>
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(to right, rgba(10, 22, 40, 0.9), rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.4))' }} />
-          <div style={{ position: 'relative', zIndex: 10 }}>
-            <div style={{ marginBottom: '0.75rem' }}>
-              <Link href="/" style={{ color: '#e2e8f0', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
-              <span style={{ color: '#cbd5e1', margin: '0 0.5rem' }}>/</span>
-              <span style={{ color: '#e2e8f0', fontSize: '0.85rem' }}>UK Pension</span>
+        <section className="relative overflow-hidden rounded-2xl mb-12">
+          <img
+            src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+          <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20 max-w-4xl">
+            <div className="flex items-center gap-2 mb-3 text-sm text-slate-300">
+              <Link href="/" className="hover:text-white">Home</Link>
+              <span>/</span>
+              <span>UK Pension</span>
             </div>
-            <h1 style={{ ...s.h1, color: '#FFFFFF', fontSize: '2.25rem' }}>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+              UK Pensions
+            </div>
+            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
               Your UK Pension as a Dubai Expat: What to Do, What to Avoid, and When to Get Advice
             </h1>
-            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+            <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
               Pensions are the most overlooked financial issue for UK professionals moving to Dubai.
-              In the excitement of negotiating a tax-free package and planning a new life, most
-              people give their pension barely a second thought. That is understandable — and
-              it is also a significant mistake. The decisions you make about your UK pension
-              in the first few years of living in Dubai can have consequences worth tens or
-              even hundreds of thousands of pounds over the course of your lifetime. This
-              guide sets out the key things you need to understand: what happens to your
-              workplace pension, how to protect your State Pension, what QROPS and SIPPs
-              are, how to avoid the scams that target expats, and when you genuinely need
-              professional advice.
+              The decisions you make about your UK pension in the first few years of living in Dubai
+              can have consequences worth tens or even hundreds of thousands of pounds over your
+              lifetime. This guide sets out the key things you need to understand: what happens to
+              your workplace pension, how to protect your State Pension, what QROPS and SIPPs are,
+              how to avoid the scams that target expats, and when you genuinely need professional advice.
             </p>
           </div>
         </section>

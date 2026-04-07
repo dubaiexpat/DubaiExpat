@@ -41,28 +41,37 @@ export default function TaxAndHmrcGuide() {
       <main style={s.main}>
 
         {/* Hero */}
-        <section style={{ ...s.hero, position: 'relative', overflow: 'hidden', backgroundImage: 'url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop&auto=format")', backgroundSize: 'cover', backgroundPosition: 'center', marginBottom: '3rem' }}>
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(to right, rgba(10, 22, 40, 0.9), rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.4))' }} />
-          <div style={{ position: 'relative', zIndex: 10 }}>
-            <div style={{ marginBottom: '0.75rem' }}>
-              <Link href="/" style={{ color: '#e2e8f0', fontSize: '0.85rem', textDecoration: 'none' }}>Home</Link>
-              <span style={{ color: '#cbd5e1', margin: '0 0.5rem' }}>/</span>
-              <span style={{ color: '#e2e8f0', fontSize: '0.85rem' }}>Tax & HMRC</span>
+        <section className="relative overflow-hidden rounded-2xl mb-12">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=500&fit=crop&auto=format"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/90 via-[#0A1628]/70 to-[#0A1628]/40" />
+          <div className="relative z-10 px-6 py-14 sm:px-10 sm:py-20 max-w-4xl">
+            <div className="flex items-center gap-2 mb-3 text-sm text-slate-300">
+              <Link href="/" className="hover:text-white">Home</Link>
+              <span>/</span>
+              <span>Tax &amp; HMRC</span>
             </div>
-            <h1 style={{ ...s.h1, color: '#FFFFFF', fontSize: '2.25rem' }}>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#C9A84C]/20 px-3 py-1 text-xs font-semibold text-[#C9A84C] mb-4 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A84C]" />
+              Tax &amp; HMRC
+            </div>
+            <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight max-w-3xl">
               Leaving the UK Tax System: HMRC, Residency &amp; What Dubai Expats Need to Know
             </h1>
-            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+            <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
               The UAE charges zero personal income tax. That is one of the most powerful financial reasons
               UK professionals move to Dubai. But here is the part that catches people out: that zero-tax
               benefit only applies once you have properly exited the UK tax system. Simply boarding a plane
               to Dubai does not make you a non-UK resident for tax purposes. HMRC has a strict statutory
-              framework for determining where you are tax-resident — and getting it wrong can result in
+              framework for determining where you are tax-resident &mdash; and getting it wrong can result in
               unexpected UK tax bills, penalties, and years of correspondence with HMRC.
             </p>
-            <p style={{ ...s.intro, color: '#e5e7eb', marginTop: '1rem' }}>
+            <p className="mt-4 max-w-2xl text-slate-200 leading-relaxed text-base sm:text-lg">
               This guide explains everything UK expats moving to Dubai need to understand about their
-              UK tax position — in plain English, with the key steps clearly laid out.
+              UK tax position &mdash; in plain English, with the key steps clearly laid out.
             </p>
           </div>
         </section>
