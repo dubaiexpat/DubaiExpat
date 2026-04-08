@@ -422,6 +422,67 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Articles */}
+          <section id="articles" className="space-y-6">
+            <div>
+              <h2 className="text-xl font-semibold text-[#0A1628] sm:text-2xl">
+                Articles
+              </h2>
+              <p className="mt-1 max-w-2xl text-sm text-slate-600">
+                In-depth reads on the topics that matter most to UK expats considering Dubai.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <Link
+                href="/articles/is-dubai-safe-2026"
+                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                  Safety
+                </span>
+                <h3 className="mt-2 text-base font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors">
+                  Is Dubai Safe for Expats in 2026?
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-slate-600">
+                  An honest look at the safety situation — FCDO advice, daily life, and what to consider before relocating.
+                </p>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">Read article →</p>
+              </Link>
+
+              <Link
+                href="/articles/should-i-still-move-to-dubai"
+                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                  Decision
+                </span>
+                <h3 className="mt-2 text-base font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors">
+                  Should I Still Move to Dubai?
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-slate-600">
+                  Weighing up the pros and cons — security, finances, lifestyle, and whether now is the right time.
+                </p>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">Read article →</p>
+              </Link>
+
+              <Link
+                href="/articles/dubai-situation-update"
+                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A84C]/80 hover:shadow-md"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#C9A84C]">
+                  Update
+                </span>
+                <h3 className="mt-2 text-base font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors">
+                  Dubai Situation Update: What British Expats Are Saying
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-slate-600">
+                  Hear from the community — who&apos;s staying, who&apos;s leaving, and what daily life actually looks like.
+                </p>
+                <p className="mt-4 text-xs font-medium text-[#C9A84C]">Read article →</p>
+              </Link>
+            </div>
+          </section>
+
           {/* Meet Patrick */}
           <section id="meet-patrick" className="space-y-6">
             <h2 className="text-xl font-semibold text-[#0A1628] sm:text-2xl">

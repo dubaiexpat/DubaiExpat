@@ -40,7 +40,20 @@ const s = {
 export default function UkPensionDubaiGuide() {
   return (
     <div style={s.page}>
-      <Header />
+      <div className="px-4 sm:px-8">
+        <div className="mx-auto max-w-4xl">
+          <Header />
+          <div className="flex items-center gap-2 py-3 text-sm text-slate-500">
+            <Link href="/" className="flex items-center gap-1 hover:text-[#0A1628]">
+              <span>←</span><span>Home</span>
+            </Link>
+            <span>/</span>
+            <Link href="/#categories" className="hover:text-[#0A1628]">Guides</Link>
+            <span>/</span>
+            <span className="font-medium text-[#0A1628]">UK Pension</span>
+          </div>
+        </div>
+      </div>
       <main style={s.main}>
 
         {/* Hero */}

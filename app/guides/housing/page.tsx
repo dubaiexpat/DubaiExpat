@@ -11,7 +11,20 @@ export const metadata: Metadata = {
 export default function HousingGuide() {
   return (
     <>
-      <Header />
+      <div className="bg-white px-4 sm:px-8">
+        <div className="mx-auto max-w-4xl">
+          <Header />
+          <div className="flex items-center gap-2 py-3 text-sm text-slate-500">
+            <Link href="/" className="flex items-center gap-1 hover:text-[#0A1628]">
+              <span>←</span><span>Home</span>
+            </Link>
+            <span>/</span>
+            <Link href="/#categories" className="hover:text-[#0A1628]">Guides</Link>
+            <span>/</span>
+            <span className="font-medium text-[#0A1628]">Housing &amp; Rental</span>
+          </div>
+        </div>
+      </div>
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative overflow-hidden rounded-2xl mx-4 md:mx-8 mt-6 md:mt-8 mb-12">
