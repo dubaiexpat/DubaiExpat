@@ -37,6 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="msvalidate.01" content="440E4F10AB276DE366BC65DDF98B51EA" />
+        <meta name="impact-site-verification" content="adde694d-006b-4488-8e06-6d77e86a02dc" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q93X7TD1X2"
           strategy="afterInteractive"
