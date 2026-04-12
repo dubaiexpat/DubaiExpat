@@ -37,6 +37,27 @@ export const MAGNETS: Record<string, MagnetConfig> = {
     intro:
       "Thanks for signing up. Here's your UK to Dubai Relocation Checklist — a practical, step-by-step guide covering visas, banking, housing, shipping, schools, and the first-90-days admin most people miss.",
   },
+  "dx-budget-planner": {
+    subject: "Your Dubai Budget Planner is ready",
+    pdfPath: "/magnets/dx-budget-planner.pdf",
+    displayName: "Dubai Budget Planner",
+    intro:
+      "Here's your Dubai Budget Planner — a side-by-side UK vs Dubai cost comparison covering housing, utilities, transport, food, education, healthcare, and lifestyle. Fill in the 'Your Budget' column to build a realistic picture of what your move will cost.",
+  },
+  "dx-tax-exit-checklist": {
+    subject: "Your UK Tax Exit Checklist is ready",
+    pdfPath: "/magnets/dx-tax-exit-checklist.pdf",
+    displayName: "UK Tax Exit Checklist",
+    intro:
+      "Here's your UK Tax Exit Checklist — a step-by-step guide to everything you need to sort with HMRC before and after your move to Dubai, including P85 filing, National Insurance decisions, and the key deadlines you can't miss.",
+  },
+  "dx-pension-guide": {
+    subject: "Your UK Pension Guide for Dubai Expats is ready",
+    pdfPath: "/magnets/dx-pension-guide.pdf",
+    displayName: "UK Pension Guide for Dubai Expats",
+    intro:
+      "Here's your pension guide — covering your UK State Pension, workplace pensions, and the key decisions you need to make as a Dubai expat. Includes an action plan and warnings about common mistakes like QROPS transfers.",
+  },
 };
 
 /**

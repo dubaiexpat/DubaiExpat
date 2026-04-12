@@ -451,10 +451,11 @@ export default function UkPensionDubaiGuide() {
         {/* CTA */}
         <section style={{ marginBottom: '3rem' }}>
           <EmailCapture
-            headline="Get the UK to Dubai Relocation Checklist — Free"
-            subheading="Covers pensions, HMRC exit, National Insurance decisions, banking setup, visa admin and everything else you need to sort before and after your move."
-            cta="Send me the checklist →"
-            successMessage="✓ Check your inbox — your checklist is on its way."
+            headline="Get the UK Pension Guide for Dubai Expats — Free"
+            subheading="Covers your State Pension, workplace pensions, QROPS warnings, voluntary NI contributions and an action plan for protecting your retirement income from abroad."
+            cta="Send me the pension guide →"
+            successMessage="✓ Check your inbox — your pension guide is on its way."
+            firstMagnet="dx-pension-guide"
             guideTopic="pension"
           />
         </section>

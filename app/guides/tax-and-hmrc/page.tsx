@@ -488,10 +488,11 @@ export default function TaxAndHmrcGuide() {
         {/* CTA */}
         <section style={{ marginBottom: '3rem' }}>
           <EmailCapture
-            headline="Get the UK to Dubai Relocation Checklist — Free"
-            subheading="Covers the full HMRC exit process, P85 timing, National Insurance decisions, banking setup and everything else you need to sort before and after you move."
-            cta="Send me the checklist →"
-            successMessage="✓ Check your inbox — your checklist is on its way."
+            headline="Get the UK Tax Exit Checklist — Free"
+            subheading="A step-by-step checklist covering P85 filing, split-year treatment, National Insurance decisions, Self Assessment deadlines and everything else HMRC needs from you."
+            cta="Send me the tax checklist →"
+            successMessage="✓ Check your inbox — your tax checklist is on its way."
+            firstMagnet="dx-tax-exit-checklist"
             guideTopic="tax"
           />
         </section>

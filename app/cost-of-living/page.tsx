@@ -434,10 +434,11 @@ export default function CostOfLivingPage() {
         {/* CTA */}
         <section style={{ marginBottom: '3rem' }}>
           <EmailCapture
-            headline="Get the UK to Dubai Relocation Checklist — Free"
-            subheading="A step-by-step checklist covering visas, banking, housing, shipping, schools and the first-90-days admin most people miss — including budgeting for the two-cheque system."
-            cta="Send me the checklist →"
-            successMessage="✓ Check your inbox — your checklist is on its way."
+            headline="Get the Dubai Budget Planner — Free"
+            subheading="A side-by-side UK vs Dubai cost comparison covering housing, utilities, transport, food, education, healthcare and lifestyle — with a 'Your Budget' column to plan your own move."
+            cta="Send me the budget planner →"
+            successMessage="✓ Check your inbox — your budget planner is on its way."
+            firstMagnet="dx-budget-planner"
             guideTopic="cost-of-living"
           />
         </section>
