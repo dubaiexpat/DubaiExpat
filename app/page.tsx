@@ -419,6 +419,31 @@ export default function Home() {
                 </div>
               </Link>
 
+              {/* 13 — Internet & VPNs */}
+              <Link
+                href="/guides/internet-and-vpn"
+                id="internet-and-vpn"
+                className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ minHeight: "230px" }}
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&auto=format"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/55 to-transparent" />
+                <div className="relative z-10 p-5">
+                  <span className="mb-2 inline-flex items-center rounded-full bg-white/15 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    13 <span className="ml-2 h-1 w-1 rounded-full bg-[#C9A84C]" />
+                  </span>
+                  <h3 className="text-base font-semibold text-white">Internet &amp; VPNs</h3>
+                  <p className="mt-1 text-sm text-white/75">
+                    UAE VPN laws, what&apos;s blocked on Etisalat and du, and keeping UK banking and iPlayer working.
+                  </p>
+                  <p className="mt-3 text-xs font-medium text-[#C9A84C]">Read the guide →</p>
+                </div>
+              </Link>
+
             </div>
           </section>
 
