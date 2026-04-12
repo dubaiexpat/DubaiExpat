@@ -63,7 +63,7 @@ export default function EmailCapture({
           </div>
           <p className="text-lg font-semibold text-[#C9A84C]">{successMessage}</p>
           <p className="mt-2 text-sm text-slate-300">
-            One more step — click the confirm link in the email we just sent you.
+            Your checklist should arrive in the next few minutes.
           </p>
         </div>
       </section>

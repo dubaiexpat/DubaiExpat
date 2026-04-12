@@ -488,10 +488,10 @@ export default function TaxAndHmrcGuide() {
         {/* CTA */}
         <section style={{ marginBottom: '3rem' }}>
           <EmailCapture
-            headline="Need help with your UK tax exit?"
-            subheading="We can connect you with a vetted cross-border tax adviser who specialises in UK expats moving to Dubai. Leave your email and we'll be in touch."
-            cta="Connect me with an adviser →"
-            successMessage="✓ Thanks — we'll be in touch with adviser recommendations shortly."
+            headline="Get the UK to Dubai Relocation Checklist — Free"
+            subheading="Covers the full HMRC exit process, P85 timing, National Insurance decisions, banking setup and everything else you need to sort before and after you move."
+            cta="Send me the checklist →"
+            successMessage="✓ Check your inbox — your checklist is on its way."
           />
         </section>
 

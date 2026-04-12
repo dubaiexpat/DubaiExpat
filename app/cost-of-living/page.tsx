@@ -434,10 +434,10 @@ export default function CostOfLivingPage() {
         {/* CTA */}
         <section style={{ marginBottom: '3rem' }}>
           <EmailCapture
-            headline="Get our Dubai Budget Planner Spreadsheet — Free"
-            subheading="A ready-to-use spreadsheet to plan your Dubai budget by tier, compare to your current UK spend, and model the two-cheque cash flow requirement."
-            cta="Send me the budget planner →"
-            successMessage="✓ Check your inbox — your budget planner is on its way."
+            headline="Get the UK to Dubai Relocation Checklist — Free"
+            subheading="A step-by-step checklist covering visas, banking, housing, shipping, schools and the first-90-days admin most people miss — including budgeting for the two-cheque system."
+            cta="Send me the checklist →"
+            successMessage="✓ Check your inbox — your checklist is on its way."
           />
         </section>
 
