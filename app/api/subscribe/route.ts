@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
-import { MAGNETS, buildMagnetEmailHtml } from "./magnets";
+import {
+  MAGNETS,
+  VISA_EMAIL_DETAILS,
+  buildMagnetEmailHtml,
+} from "./magnets";
+import type { VisaContext } from "./magnets";
 
 /**
  * Unified Brevo subscribe endpoint.
@@ -150,10 +155,32 @@ export async function POST(request: Request) {
     // Magnet delivery — look up the magnet by slug and send the email
     // inline via Brevo's transactional endpoint. This is the ONLY email
     // the user receives from this endpoint. No Automations, no DOI.
+    //
+    // When the submission came from the visa checker, we enrich the email
+    // with the personalised visa recommendation (route name, summary,
+    // next steps) so the subscriber gets their result in their inbox too.
     const magnetKey = firstMagnet || "dx-relocation-checklist";
     const magnet = MAGNETS[magnetKey];
     if (magnet) {
       try {
+        // Build visa context for visa-checker submissions
+        let visaCtx: VisaContext | undefined;
+        if (visaRoute && visaRouteName) {
+          const details = VISA_EMAIL_DETAILS[visaRoute];
+          if (details) {
+            visaCtx = {
+              routeName: visaRouteName,
+              summary: details.summary,
+              nextSteps: details.nextSteps,
+            };
+          }
+        }
+
+        // Personalise the subject line for visa-checker submissions
+        const emailSubject = visaCtx
+          ? `Your visa result: ${visaRouteName} — plus your Relocation Checklist`
+          : magnet.subject;
+
         const emailRes = await fetch("https://api.brevo.com/v3/smtp/email", {
           method: "POST",
           headers: {
@@ -167,8 +194,8 @@ export async function POST(request: Request) {
               email: "partnerships@dubaiexpat.co.uk",
             },
             to: [{ email }],
-            subject: magnet.subject,
-            htmlContent: buildMagnetEmailHtml(magnet),
+            subject: emailSubject,
+            htmlContent: buildMagnetEmailHtml(magnet, visaCtx),
             tags: ["magnet-delivery", magnetKey],
           }),
         });

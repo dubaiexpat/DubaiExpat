@@ -124,6 +124,69 @@ const VISA_NAMES: Record<VisaType, string> = {
   explore: "Multiple visa routes",
 };
 
+const VISA_DETAILS: Record<VisaType, { summary: string; nextSteps: string[] }> = {
+  golden: {
+    summary:
+      "The Golden Visa gives you 10-year residency with no employer sponsor needed. You can live, work, and study in the UAE with the freedom to enter and exit as you please. Your family can be sponsored under the same visa.",
+    nextSteps: [
+      "Gather qualification certificates (attested by your home country + UAE embassy)",
+      "Prepare proof of income or property ownership",
+      "Apply through ICP or GDRFA — processing takes 2–4 weeks",
+      "Speak to a visa specialist for document attestation guidance",
+    ],
+  },
+  green: {
+    summary:
+      "The Green Visa offers 5-year self-sponsored residency — no employer needed. Ideal for skilled professionals and freelancers earning a steady income. You can sponsor your family and have a 6-month grace period if it lapses.",
+    nextSteps: [
+      "Confirm your qualification meets the approved occupations list",
+      "Prepare salary evidence (contract or bank statements)",
+      "Apply via the ICA smart services portal",
+      "Budget around AED 2,500–3,500 for processing fees",
+    ],
+  },
+  freelance: {
+    summary:
+      "The Freelance Visa lets you work independently in the UAE for 2 years. You'll register through a free zone and receive a residence visa, Emirates ID, and the ability to sponsor dependants.",
+    nextSteps: [
+      "Choose a free zone (popular: Dubai Media City, DMCC, IFZA)",
+      "Prepare a portfolio or proof of freelance experience",
+      "Budget AED 7,500–15,000 for the free zone licence + visa package",
+      "A free zone consultant can help you compare options",
+    ],
+  },
+  employment: {
+    summary:
+      "Your employer will sponsor your Employment Visa (2–3 years). They handle most of the paperwork and costs. You'll receive a residence visa, Emirates ID, and labour card.",
+    nextSteps: [
+      "Get your offer letter and employment contract finalised",
+      "Have your degree certificates attested (home country + UAE embassy)",
+      "Complete a medical fitness test on arrival in Dubai",
+      "Your employer's PRO will guide you through the process",
+    ],
+  },
+  retirement: {
+    summary:
+      "The Retirement Visa gives you 5-year renewable residency if you're 55 or over. You'll need to meet one of the financial requirements: property worth AED 2M, savings of AED 1M, or active income of AED 20,000/month.",
+    nextSteps: [
+      "Choose which financial requirement you'll meet (property, savings, or income)",
+      "Prepare supporting documents (bank statements, title deeds, pension letters)",
+      "Apply through the GDRFA portal or a registered typing centre",
+      "Consider speaking to a UAE retirement planning specialist",
+    ],
+  },
+  explore: {
+    summary:
+      "Based on your answers, several visa routes could work for you. The best option depends on factors like your exact income, qualifications, and whether you plan to be employed or self-employed in the UAE.",
+    nextSteps: [
+      "Review the different visa categories in your relocation checklist",
+      "Consider whether employment, freelance, or investor visas suit your situation",
+      "A free consultation with a visa specialist can clarify the best route",
+      "Start gathering your qualification and financial documents now — they're needed for all routes",
+    ],
+  },
+};
+
 export default function VisaCheckerPage() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
@@ -225,26 +288,82 @@ export default function VisaCheckerPage() {
               </section>
             </>
           ) : emailSubmitted ? (
-            /* ── Success state ─────────────────────────────── */
-            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 text-center">
-              <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-2xl">
-                ✓
+            /* ── Success state — show visa result + next steps ── */
+            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+              {/* Result header */}
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-semibold text-emerald-700">
+                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                Your recommendation
               </div>
-              <h1 className="text-2xl font-bold text-[#0A1628]">
-                Check your inbox
+
+              <h1 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
+                You likely qualify for the{" "}
+                <span className="text-[#C9A84C]">{visaName}</span>
               </h1>
-              <p className="mt-3 text-slate-600">
-                Your visa recommendation and UK to Dubai Relocation Checklist are on their way.
-              </p>
-              <p className="mt-4 text-sm text-slate-500">
-                We&apos;ve also included a link to our recommended visa specialist in your email — they offer a free initial consultation for UK expats.
-              </p>
-              <Link
-                href="/"
-                className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#0A1628] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1a2f4a]"
-              >
-                Browse all guides →
-              </Link>
+
+              {resultType && VISA_DETAILS[resultType] && (
+                <>
+                  <p className="mt-4 text-slate-600 leading-relaxed">
+                    {VISA_DETAILS[resultType].summary}
+                  </p>
+
+                  <div className="mt-6 rounded-xl border border-slate-100 bg-slate-50/50 p-5">
+                    <h2 className="text-sm font-bold uppercase tracking-wide text-[#0A1628]">
+                      Your next steps
+                    </h2>
+                    <ol className="mt-3 space-y-2">
+                      {VISA_DETAILS[resultType].nextSteps.map((step, i) => (
+                        <li key={i} className="flex gap-3 text-sm text-slate-700">
+                          <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#C9A84C]/20 text-xs font-bold text-[#0A1628]">
+                            {i + 1}
+                          </span>
+                          {step}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </>
+              )}
+
+              {/* Email confirmation */}
+              <div className="mt-6 flex items-start gap-3 rounded-xl border border-emerald-200 bg-emerald-50 p-4">
+                <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm">
+                  ✓
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-emerald-800">
+                    Check your inbox
+                  </p>
+                  <p className="mt-1 text-sm text-emerald-700">
+                    We&apos;ve emailed your personalised visa recommendation and the
+                    free <strong>UK to Dubai Relocation Checklist</strong> PDF.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/guides"
+                  className="inline-flex items-center justify-center rounded-xl bg-[#0A1628] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1a2f4a]"
+                >
+                  Browse all guides
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowEmailGate(false);
+                    setStep(0);
+                    setAnswers({});
+                    setEmailSubmitted(false);
+                    setEmail("");
+                    setConsent(false);
+                  }}
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-600 transition hover:bg-slate-50"
+                >
+                  Start again
+                </button>
+              </div>
+
               <p className="mt-6 text-xs text-slate-400">
                 This tool provides guidance only and is not legal advice.
                 Always verify requirements with a qualified UAE immigration specialist.
