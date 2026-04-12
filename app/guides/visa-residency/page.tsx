@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "Everything UK expats need to know about UAE visas — Golden Visa, Green Visa, Employment Visa, Freelancer Visa and Retirement Visa. Costs, timelines and how to apply.",
 };
 
+// SafetyWing Ambassador link — referenceID 26507814, placement-tracked
+const SAFETYWING_VISA =
+  "https://safetywing.com/?referenceID=26507814&utm_source=26507814&utm_medium=Ambassador&utm_campaign=dx-visa-residency-freelancer";
+
 export default function VisaResidencyGuide() {
   return (
     <>
@@ -252,6 +256,22 @@ export default function VisaResidencyGuide() {
                 facilities and networks. It's a straightforward pathway for digital
                 nomads, consultants, designers, writers, and other creative professionals
                 who want to formalize their work in Dubai while retaining flexibility.
+              </p>
+              <p>
+                One thing to be aware of: freelancer health insurance packages from free
+                zones can be basic. Many digital nomads and remote workers supplement with{" "}
+                <a
+                  href={SAFETYWING_VISA}
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="text-[#c8102e] underline hover:text-[#0A1628]"
+                >
+                  SafetyWing Nomad Insurance
+                </a>
+                , which is designed specifically for remote workers and covers you globally
+                — including medical, travel, and emergency evacuation — from around $45/month.
+                It's particularly useful during the initial setup period before your UAE
+                health cover is fully active.
               </p>
             </div>
           </div>

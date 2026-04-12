@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     'A genuine like-for-like cost comparison across three lifestyle tiers — single professional, couple, and family of four. Covers rent, schools, tax savings, the two-cheque system, and monthly budget breakdowns.',
 };
 
+// SafetyWing Ambassador link — referenceID 26507814, placement-tracked
+const SAFETYWING_COL =
+  "https://safetywing.com/?referenceID=26507814&utm_source=26507814&utm_medium=Ambassador&utm_campaign=dx-cost-of-living-healthcare";
+
 const s = {
   page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
   main: { maxWidth: '900px', margin: '0 auto', padding: '2rem' } as React.CSSProperties,
@@ -251,6 +255,20 @@ export default function CostOfLivingPage() {
               which is what most people coming from an NHS background want — typically costs
               AED 5,000–15,000 per year per person. Dental treatment is notably expensive,
               with routine fillings costing £150–£300 and a crown easily running to £700–£1,200.
+            </p>
+            <p style={s.p}>
+              For freelancers, remote workers, or anyone in between jobs, it's worth
+              considering{' '}
+              <a
+                href={SAFETYWING_COL}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                style={{ color: '#c8102e', textDecoration: 'underline' }}
+              >
+                SafetyWing Nomad Insurance
+              </a>
+              {' '}as affordable backup cover — from around $45/month it covers medical,
+              travel, and emergency evacuation globally, with no lock-in.
             </p>
 
             <h3 style={s.h3}>Alcohol</h3>

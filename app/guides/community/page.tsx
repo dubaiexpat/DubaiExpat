@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     'Day-to-day life in Dubai for UK expats — healthcare, driving, culture, expat communities, things to do, and practical tips to help you settle quickly.',
 };
 
+// SafetyWing Ambassador link — referenceID 26507814, placement-tracked
+const SAFETYWING_COMMUNITY =
+  "https://safetywing.com/?referenceID=26507814&utm_source=26507814&utm_medium=Ambassador&utm_campaign=dx-community-healthcare";
+
 export default function CommunityGuide() {
   return (
     <div style={{ backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' }}>
@@ -66,6 +70,18 @@ export default function CommunityGuide() {
             </ul>
             <p style={{ marginBottom: '1rem' }}>
               NHS-style care does not exist — all healthcare is private and insurance-funded. Prescriptions work differently: many UK medications require a new UAE prescription. Bring a 3-month supply of any regular medication and a letter from your UK GP.
+            </p>
+            <p style={{ marginBottom: '1rem' }}>
+              If you're arriving before your employer insurance kicks in, or you're on a freelancer visa with basic cover, many expats use{' '}
+              <a
+                href={SAFETYWING_COMMUNITY}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                style={{ color: '#c8102e', textDecoration: 'underline' }}
+              >
+                SafetyWing Nomad Insurance
+              </a>
+              {' '}as bridge cover. It's designed for remote workers and expats, covers medical and travel emergencies globally, and runs from around $45/month with no long-term commitment.
             </p>
           </div>
         </section>
