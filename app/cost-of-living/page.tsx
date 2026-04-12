@@ -438,6 +438,7 @@ export default function CostOfLivingPage() {
             subheading="A step-by-step checklist covering visas, banking, housing, shipping, schools and the first-90-days admin most people miss — including budgeting for the two-cheque system."
             cta="Send me the checklist →"
             successMessage="✓ Check your inbox — your checklist is on its way."
+            guideTopic="cost-of-living"
           />
         </section>
 

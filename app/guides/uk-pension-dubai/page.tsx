@@ -455,6 +455,7 @@ export default function UkPensionDubaiGuide() {
             subheading="Covers pensions, HMRC exit, National Insurance decisions, banking setup, visa admin and everything else you need to sort before and after your move."
             cta="Send me the checklist →"
             successMessage="✓ Check your inbox — your checklist is on its way."
+            guideTopic="pension"
           />
         </section>
 

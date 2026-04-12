@@ -14,6 +14,8 @@ interface EmailCaptureProps {
   firstMagnet?: string;
   /** Optional explicit override for SOURCE_PAGE (defaults to current pathname) */
   sourcePage?: string;
+  /** Topic for email segmentation (e.g. "tax", "pension", "cost-of-living") */
+  guideTopic?: string;
 }
 
 export default function EmailCapture({
@@ -24,6 +26,7 @@ export default function EmailCapture({
   sourceType = "inline-cta",
   firstMagnet = "dx-relocation-checklist",
   sourcePage,
+  guideTopic = "relocation",
 }: EmailCaptureProps) {
   const pathname = usePathname();
   const [email, setEmail] = useState("");
@@ -43,6 +46,7 @@ export default function EmailCapture({
           sourcePage: sourcePage || pathname || "unknown",
           sourceType,
           firstMagnet,
+          guideTopic,
         }),
       });
     } catch {

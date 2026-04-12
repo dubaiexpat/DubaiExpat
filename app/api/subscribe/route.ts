@@ -28,6 +28,8 @@ import type { VisaContext } from "./magnets";
  *   SITE          — "dubaiexpat"
  *   CITY          — "dubai"
  *   FIRST_MAGNET  — e.g. "dx-relocation-checklist" (optional)
+ *   GUIDE_TOPIC   — e.g. "relocation", "tax", "pension", "cost-of-living",
+ *                   "visa-checker", "general" (enables topic-based segmentation)
  *   SUBSCRIBED_AT — ISO timestamp
  *
  * Visa Checker attributes (only set when sourceType === "visa-checker"):
@@ -61,6 +63,35 @@ type VisaAnswers = {
   family?: string;
 };
 
+/* ── Brevo attribute pre-declaration ──────────────────────
+ * Brevo silently drops attributes not pre-declared in the schema.
+ * We ensure GUIDE_TOPIC exists on every cold start (idempotent).
+ */
+let _attrsDeclared = false;
+async function ensureBrevoAttributes(apiKey: string) {
+  if (_attrsDeclared) return;
+  const attrs = ["GUIDE_TOPIC"];
+  for (const name of attrs) {
+    try {
+      await fetch(
+        `https://api.brevo.com/v3/contacts/attributes/normal/${name}`,
+        {
+          method: "POST",
+          headers: {
+            "api-key": apiKey,
+            "Content-Type": "application/json",
+            accept: "application/json",
+          },
+          body: JSON.stringify({ type: "text" }),
+        }
+      );
+    } catch {
+      // Non-critical — attribute may already exist
+    }
+  }
+  _attrsDeclared = true;
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({}));
@@ -69,6 +100,7 @@ export async function POST(request: Request) {
       sourcePage,
       sourceType,
       firstMagnet,
+      guideTopic,
       visaRoute,
       visaRouteName,
       visaAnswers,
@@ -77,6 +109,7 @@ export async function POST(request: Request) {
       sourcePage?: string;
       sourceType?: string;
       firstMagnet?: string;
+      guideTopic?: string;
       visaRoute?: string;
       visaRouteName?: string;
       visaAnswers?: VisaAnswers;
@@ -97,6 +130,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
+    // Ensure new attributes exist in Brevo schema (idempotent, cached).
+    await ensureBrevoAttributes(apiKey);
+
+    // Resolve guide topic: visa-checker gets its own topic, otherwise
+    // use what the client sent or fall back to "relocation" (default guide).
+    const resolvedTopic =
+      sourceType === "visa-checker"
+        ? "visa-checker"
+        : guideTopic || "relocation";
+
     // Base attributes written on every subscribe.
     const attributes: Record<string, string> = {
       SOURCE_PAGE: sourcePage || "unknown",
@@ -104,6 +147,7 @@ export async function POST(request: Request) {
       SITE: "dubaiexpat",
       CITY: "dubai",
       FIRST_MAGNET: firstMagnet || "",
+      GUIDE_TOPIC: resolvedTopic,
       SUBSCRIBED_AT: new Date().toISOString(),
     };
 

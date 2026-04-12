@@ -492,6 +492,7 @@ export default function TaxAndHmrcGuide() {
             subheading="Covers the full HMRC exit process, P85 timing, National Insurance decisions, banking setup and everything else you need to sort before and after you move."
             cta="Send me the checklist →"
             successMessage="✓ Check your inbox — your checklist is on its way."
+            guideTopic="tax"
           />
         </section>
 
