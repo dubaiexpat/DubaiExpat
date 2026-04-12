@@ -274,10 +274,22 @@ export default function VisaCheckerPage() {
                   e.preventDefault();
                   if (email.trim() && consent) {
                     try {
+                      // Compute visa recommendation at submit time so we
+                      // send the exact same result the user just saw.
+                      const computedRoute = getVisaResult(answers);
+                      const computedName = VISA_NAMES[computedRoute];
                       await fetch("/api/subscribe", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ email, source: "visa_checker" }),
+                        body: JSON.stringify({
+                          email,
+                          sourcePage: "/visa-checker",
+                          sourceType: "visa-checker",
+                          firstMagnet: "dx-relocation-checklist",
+                          visaRoute: computedRoute,
+                          visaRouteName: computedName,
+                          visaAnswers: answers,
+                        }),
                       });
                     } catch {}
                     setEmailSubmitted(true);
