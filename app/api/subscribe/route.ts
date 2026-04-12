@@ -64,13 +64,46 @@ export async function GET(request: Request) {
     return NextResponse.json({ ok: true, gated: true });
   }
 
-  if (!emailParam) {
-    return NextResponse.json({ error: "email param required" }, { status: 400 });
-  }
-
   const apiKey = process.env.BREVO_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: "BREVO_API_KEY missing" }, { status: 500 });
+  }
+
+  // One-shot mode: ?create=visa creates the VISA_* schema attributes.
+  if (url.searchParams.get("create") === "visa") {
+    const attrs = [
+      "VISA_ROUTE",
+      "VISA_ROUTE_NAME",
+      "VISA_REASON",
+      "VISA_SALARY",
+      "VISA_QUAL",
+      "VISA_PROPERTY_2M",
+      "VISA_FREELANCE",
+      "VISA_AGE",
+      "VISA_SPONSOR",
+      "VISA_FAMILY",
+    ];
+    const results: Record<string, number> = {};
+    for (const name of attrs) {
+      const r = await fetch(
+        `https://api.brevo.com/v3/contacts/attributes/normal/${name}`,
+        {
+          method: "POST",
+          headers: {
+            "api-key": apiKey,
+            "Content-Type": "application/json",
+            accept: "application/json",
+          },
+          body: JSON.stringify({ type: "text" }),
+        }
+      );
+      results[name] = r.status;
+    }
+    return NextResponse.json({ created: results });
+  }
+
+  if (!emailParam) {
+    return NextResponse.json({ error: "email param required" }, { status: 400 });
   }
 
   const res = await fetch(
