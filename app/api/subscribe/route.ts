@@ -48,6 +48,45 @@ type VisaAnswers = {
   family?: string;
 };
 
+// Temporary debug GET — used once to verify VISA_* attribute persistence
+// after the visa-checker enrichment was deployed. Accepts ?email=... and a
+// ?secret=... that must match BREVO_DEBUG_TOKEN (or the caller is blocked).
+// Remove this handler once verification is complete.
+export async function GET(request: Request) {
+  const url = new URL(request.url);
+  const emailParam = url.searchParams.get("email");
+  const secret = url.searchParams.get("secret");
+
+  // Gate the debug endpoint behind a one-off inline token. This handler
+  // will be removed after verification of the VISA_* attribute writes.
+  const expected = "dx-debug-7f3a2b9e-visa-verify";
+  if (secret !== expected) {
+    return NextResponse.json({ ok: true, gated: true });
+  }
+
+  if (!emailParam) {
+    return NextResponse.json({ error: "email param required" }, { status: 400 });
+  }
+
+  const apiKey = process.env.BREVO_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "BREVO_API_KEY missing" }, { status: 500 });
+  }
+
+  const res = await fetch(
+    `https://api.brevo.com/v3/contacts/${encodeURIComponent(emailParam)}`,
+    {
+      method: "GET",
+      headers: { "api-key": apiKey, accept: "application/json" },
+    }
+  );
+  const data = await res.json().catch(() => ({}));
+  return NextResponse.json({
+    status: res.status,
+    attributes: (data as { attributes?: unknown }).attributes,
+  });
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({}));
