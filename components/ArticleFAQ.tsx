@@ -7,7 +7,8 @@ interface ArticleFAQProps {
   items: FAQItem[];
 }
 
-export default function ArticleFAQ({ items }: ArticleFAQProps) {
+export default function ArticleFAQ({ items = [] }: ArticleFAQProps) {
+  if (!items || items.length === 0) return null;
   return (
     <div className="space-y-4">
       {items.map((item, index) => (
