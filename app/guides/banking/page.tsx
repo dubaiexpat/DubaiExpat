@@ -1,16 +1,31 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Banking & Personal Finance in Dubai: A Guide for UK Expats (2026)',
+  title: 'Open a Dubai Bank Account as a UK Expat: Best Banks & 2026 Process',
   description:
-    'How to open a bank account in Dubai, the best banks for UK expats, sending money back to the UK, understanding UAE tax, and managing your UK financial obligations.',
+    'How UK expats open a bank account in Dubai — Emirates NBD, ADCB, HSBC, Mashreq compared. Documents needed, opening times, salary transfer, and sending money back to the UK.',
 };
+
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/banking';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'Banking & Finance', url: SCHEMA_URL },
+];
 
 export default function BankingGuide() {
   return (
     <div style={{ backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' }}>
+      <SchemaJsonLd
+        type="Article"
+        title="Open a Dubai Bank Account as a UK Expat: Best Banks & 2026 Process"
+        description="How UK expats open a bank account in Dubai — Emirates NBD, ADCB, HSBC, Mashreq compared."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

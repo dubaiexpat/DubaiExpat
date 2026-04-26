@@ -23,8 +23,11 @@
   <url><loc>https://www.dubaiexpat.co.uk/guides/furniture</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/pets</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Articles (long-form, MDX + page.tsx) — WERE MISSING UNTIL 2026-04-26 -->
+  <!-- Articles (long-form, MDX + page.tsx) -->
   <url><loc>https://www.dubaiexpat.co.uk/articles/moving-money-uk-to-dubai-wise-revolut-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/cheap-flights-dubai-to-uk-british-expats</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/uk-pension-options-dubai-qrops-sipp</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/expat-health-insurance-dubai-cigna-bupa-allianz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/articles/should-i-still-move-to-dubai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/articles/is-dubai-safe-2026</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/articles/dubai-situation-update</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>

@@ -3,9 +3,9 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Community & Life in Dubai: A Guide for UK Expats (2026)',
+  title: 'Dubai Expat Community: Best Facebook Groups & Where to Meet UK Expats (2026)',
   description:
-    'Day-to-day life in Dubai for UK expats — healthcare, driving, culture, expat communities, things to do, and practical tips to help you settle quickly.',
+    'Where UK expats actually meet in Dubai — best Facebook groups (Dubai Buy & Sell, expat networks), social clubs, healthcare, and how to find your community fast.',
 };
 
 // SafetyWing Ambassador link — referenceID 26507814, placement-tracked

@@ -1,16 +1,31 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
 
 export const metadata: Metadata = {
-  title: "Finding a Home in Dubai: A Complete Guide for UK Expats (2026)",
+  title: "Renting in Dubai as a UK Expat (2026): Best Areas, Prices & Cheque System",
   description:
-    "How to rent or buy property in Dubai as a UK expat — neighbourhoods, average prices, the cheque system, EJARI, estate agents and avoiding common pitfalls.",
+    "How UK expats rent property in Dubai — best neighbourhoods (JLT, Marina, Downtown), 2026 rent prices, the cheque payment system, EJARI registration, and agent fees.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/housing";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Housing", url: SCHEMA_URL },
+];
 
 export default function HousingGuide() {
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title="Renting in Dubai as a UK Expat (2026): Best Areas, Prices & Cheque System"
+        description="How UK expats rent property in Dubai — best neighbourhoods, 2026 rent prices, the cheque system, EJARI."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

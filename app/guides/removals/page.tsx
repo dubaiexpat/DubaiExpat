@@ -2,12 +2,12 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Removals & Shipping to Dubai: What UK Expats Need to Know (2026)",
-  description: "How to move your belongings from the UK to Dubai — sea freight vs air freight, costs, customs rules, what to bring and what to buy when you arrive.",
+  title: "UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs",
+  description: "How UK expats ship belongings to Dubai in 2026 — sea freight vs air freight costs (£3-8k typical), UAE customs rules, prohibited items, and what to buy locally instead.",
   keywords: "removals Dubai, shipping to Dubai, customs, sea freight, air freight, relocation",
   openGraph: {
-    title: "Removals & Shipping to Dubai: What UK Expats Need to Know (2026)",
-    description: "How to move your belongings from the UK to Dubai — sea freight vs air freight, costs, customs rules, what to bring and what to buy when you arrive.",
+    title: "UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs",
+    description: "How UK expats ship belongings to Dubai in 2026 — sea freight vs air freight costs (£3-8k typical), UAE customs rules, prohibited items, and what to buy locally instead.",
   },
 };
 

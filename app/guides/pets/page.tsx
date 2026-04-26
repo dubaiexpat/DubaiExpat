@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bringing Your Pet to Dubai from the UK: The Complete Guide (2026)",
+  title: "Pet Relocation UK to Dubai (2026): Costs, Timeline, Rabies Test & Vets",
   description:
-    "Everything UK expats need to know about relocating a dog or cat to Dubai — UAE import requirements, the rabies titre test, approved vets, timelines, costs, and the specialist companies that handle it all for you.",
+    "How to move your dog or cat from the UK to Dubai in 2026: UAE import permit, rabies titre test, approved vets, total costs (£2,000-4,000), 4-month timeline, and pet-relocation specialists.",
 };
 
 const PARTNERS = [

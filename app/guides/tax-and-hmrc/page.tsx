@@ -2,12 +2,20 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Leaving the UK Tax System: HMRC, Residency & What Dubai Expats Need to Know (2026)',
+  title: 'UK Tax When Moving to Dubai (2026): HMRC Residency, P85 & Double Tax Treaty',
   description:
-    'A practical guide for UK expats moving to Dubai — covering the Statutory Residence Test, P85 form, HMRC notification, UK property, National Insurance, and the UK-UAE Double Taxation Agreement.',
+    'UK tax rules for expats moving to Dubai — Statutory Residence Test, P85 form, HMRC notification, UK property income, National Insurance, and the UK-UAE Double Taxation Agreement.',
 };
+
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/tax-and-hmrc';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'UK Tax & HMRC', url: SCHEMA_URL },
+];
 
 const s = {
   page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
@@ -37,6 +45,13 @@ const s = {
 export default function TaxAndHmrcGuide() {
   return (
     <div style={s.page}>
+      <SchemaJsonLd
+        type="Article"
+        title="UK Tax When Moving to Dubai (2026): HMRC Residency, P85 & Double Tax Treaty"
+        description="UK tax rules for expats moving to Dubai — Statutory Residence Test, P85, HMRC notification."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

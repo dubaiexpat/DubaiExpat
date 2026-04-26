@@ -4,9 +4,9 @@ import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
 
 export const metadata: Metadata = {
-  title: 'Your UK Pension as a Dubai Expat: What to Do, What to Avoid, and When to Get Advice (2026)',
+  title: 'UK Pension in Dubai (2026): QROPS, SIPP, State Pension & What to Avoid',
   description:
-    'A practical guide for UK expats in Dubai covering workplace pensions, the State Pension, QROPS, SIPPs, pension scams, and how to find a regulated adviser.',
+    'How UK expats in Dubai manage workplace pensions, QROPS, SIPPs, and the UK State Pension. Pension scam warnings, regulated adviser checks, and 2026 transfer rules.',
 };
 
 const s = {

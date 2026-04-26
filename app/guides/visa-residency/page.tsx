@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
 
 export const metadata: Metadata = {
-  title: "Visa & Residency in Dubai: A Complete Guide for UK Expats (2026)",
+  title: "Dubai Visa & Residency for UK Expats: 2026 Complete Guide",
   description:
-    "Everything UK expats need to know about UAE visas — Golden Visa, Green Visa, Employment Visa, Freelancer Visa and Retirement Visa. Costs, timelines and how to apply.",
+    "Dubai visa options for UK residents — Golden Visa, Green Visa, Employment, Freelancer and Retirement Visa. Costs, eligibility, timelines and step-by-step application process.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/visa-residency";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Visa & Residency", url: SCHEMA_URL },
+];
 
 // SafetyWing Ambassador link — referenceID 26507814, placement-tracked
 const SAFETYWING_VISA =
@@ -15,6 +23,13 @@ const SAFETYWING_VISA =
 export default function VisaResidencyGuide() {
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title="Dubai Visa & Residency for UK Expats: 2026 Complete Guide"
+        description="Dubai visa options for UK residents — Golden Visa, Green Visa, Employment, Freelancer and Retirement Visa."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

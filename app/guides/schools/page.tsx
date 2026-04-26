@@ -2,12 +2,12 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Schools in Dubai: A Guide for UK Expat Families (2026)",
-  description: "The best British curriculum schools in Dubai, KHDA ratings explained, school fees, how to apply, waiting lists and what to expect as a UK expat family.",
+  title: "Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply",
+  description: "Best British curriculum schools in Dubai for UK expat families — 2026 fees, KHDA ratings, GEMS vs Repton vs Dubai College, how to apply, waiting lists and term dates.",
   keywords: "Dubai schools, British curriculum, KHDA ratings, expat families, school fees",
   openGraph: {
-    title: "Schools in Dubai: A Guide for UK Expat Families (2026)",
-    description: "The best British curriculum schools in Dubai, KHDA ratings explained, school fees, how to apply, waiting lists and what to expect as a UK expat family.",
+    title: "Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply",
+    description: "Best British curriculum schools in Dubai for UK expat families — 2026 fees, KHDA ratings, GEMS vs Repton vs Dubai College, how to apply, waiting lists and term dates.",
   },
 };
 

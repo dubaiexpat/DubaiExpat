@@ -1,12 +1,20 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
 
 export const metadata: Metadata = {
-  title: "VPNs in the UAE: The Honest Guide for UK Expats (2026)",
+  title: "Best VPN for UAE 2026: Are VPNs Legal in Dubai? (UK Expat Guide)",
   description:
-    "Are VPNs legal in Dubai? What's actually blocked? When do UK expats really need one? An honest, up-to-date guide to UAE internet rules, the TDRA, WhatsApp and FaceTime restrictions, and choosing a VPN that works in the Emirates.",
+    "Are VPNs legal in Dubai in 2026? What apps are blocked? Honest guide for UK expats — UAE internet rules, WhatsApp & FaceTime restrictions, and the VPNs that actually work.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/internet-and-vpn";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Internet & VPN", url: SCHEMA_URL },
+];
 
 // NordVPN affiliate tracking URLs — aff_id 145336, source=dx (dubaiexpat), one slug per placement for attribution
 const NORD_HERO =
@@ -28,6 +36,13 @@ const SURFSHARK_ALT = "[SURFSHARK_VPN_DX_vpn_guide_alt]";
 export default function InternetAndVpnGuide() {
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title="Best VPN for UAE 2026: Are VPNs Legal in Dubai? (UK Expat Guide)"
+        description="Are VPNs legal in Dubai in 2026? Honest guide for UK expats — UAE internet rules, WhatsApp & FaceTime restrictions, and the VPNs that work."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
