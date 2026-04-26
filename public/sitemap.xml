@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.dubaiexpat.co.uk/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Tools -->
   <url><loc>https://www.dubaiexpat.co.uk/visa-checker</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/cost-of-living</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Guides -->
   <url><loc>https://www.dubaiexpat.co.uk/guides/visa-residency</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/housing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/schools</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/banking</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/tax-and-hmrc</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/removals</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.dubaiexpat.co.uk/cost-of-living</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/guides/uk-pension-dubai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/guides/internet-and-vpn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/community</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/nightlife</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/concierge</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -16,11 +22,21 @@
   <url><loc>https://www.dubaiexpat.co.uk/guides/food-drink</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/furniture</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/guides/pets</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.dubaiexpat.co.uk/guides/uk-pension-dubai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Articles (long-form, MDX + page.tsx) — WERE MISSING UNTIL 2026-04-26 -->
+  <url><loc>https://www.dubaiexpat.co.uk/articles/moving-money-uk-to-dubai-wise-revolut-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/should-i-still-move-to-dubai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/is-dubai-safe-2026</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dubaiexpat.co.uk/articles/dubai-situation-update</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Case studies -->
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/sarah</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/james-and-emma</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/marcus</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/case-studies/priya</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Utility -->
+  <url><loc>https://www.dubaiexpat.co.uk/contact</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.dubaiexpat.co.uk/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
