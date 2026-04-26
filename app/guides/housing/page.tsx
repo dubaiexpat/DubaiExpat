@@ -352,7 +352,20 @@ export default function HousingGuide() {
                 committing to a long lease on your first day in Dubai. Instead, book a
                 serviced apartment or hotel apartment for your first one to two months. Yes,
                 it's more expensive per night than long-term rent, but it provides invaluable
-                flexibility and peace of mind while you adjust to the city.
+                flexibility and peace of mind while you adjust to the city. We've found{" "}
+                <a
+                  href="https://clk.omgt6.com/?PID=12746&AID=2361711&MID=guide-housing-short-term-body"
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="font-semibold underline hover:text-[#C9A84C]"
+                  style={{ color: "#0A1628" }}
+                >
+                  Trip.com
+                </a>{" "}
+                consistently has Dubai serviced-apartment inventory that doesn&apos;t show on
+                Booking.com or Expedia — particularly in JLT, Marina and Downtown — and their
+                month-long booking flow tends to be cleaner than the Western sites for
+                expat-grade stays.
               </p>
               <p>
                 During this period, you'll explore different neighbourhoods, get a feel for
