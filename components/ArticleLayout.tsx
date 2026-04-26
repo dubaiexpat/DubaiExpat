@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
 
 interface ArticleFrontmatter {
   title: string;
@@ -19,10 +20,28 @@ interface ArticleLayoutProps {
 }
 
 export default function ArticleLayout({ frontmatter, children }: ArticleLayoutProps) {
-  const { title, hero_image, category, subtitle } = frontmatter;
+  const { title, hero_image, category, subtitle, meta_description, slug, date } = frontmatter;
+
+  const canonicalUrl = slug
+    ? `https://www.dubaiexpat.co.uk/articles/${slug}`
+    : "https://www.dubaiexpat.co.uk/";
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Articles", url: "https://www.dubaiexpat.co.uk/#articles" },
+    { name: title, url: canonicalUrl },
+  ];
 
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title={title}
+        description={meta_description || subtitle || title}
+        url={canonicalUrl}
+        datePublished={date}
+        dateModified={date}
+        breadcrumbs={breadcrumbs}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
