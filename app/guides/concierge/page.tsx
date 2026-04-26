@@ -1,12 +1,28 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Concierge Recommendations: Dubai Expat Guide (2026)",
+  title: "Dubai Concierge Services for UK Expats (2026): Tailors, Vets, Tutors, Clubs",
   description:
-    "Trusted recommendations for tailors, jewellers, vets, music and academic tutors, members clubs, sports clubs and kids' party venues in Dubai.",
+    "Trusted concierge recommendations for UK expats in Dubai — tailors, jewellers, vets, music & academic tutors, members clubs, sports clubs, and kids' party venues.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/concierge";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Concierge", url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: "Domestic Help in Dubai", href: "/guides/domestic-help", description: "Maids, drivers, nannies — the household staff side" },
+  { title: "Dubai Expat Community", href: "/guides/community", description: "How to find your network in the first months" },
+  { title: "Renting in Dubai", href: "/guides/housing", description: "Where you live shapes which concierge contacts matter" },
+  { title: "Dubai Cost of Living", href: "/cost-of-living", description: "Budgeting for tutors, clubs, and household services" },
+];
 
 const CATEGORIES = [
   {
@@ -256,6 +272,13 @@ const CATEGORIES = [
 export default function ConciergeGuidePage() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="Article"
+        title="Dubai Concierge Services for UK Expats (2026): Tailors, Vets, Tutors, Clubs"
+        description="Trusted concierge recommendations for UK expats in Dubai — tailors, jewellers, vets, tutors, members clubs."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="mx-auto flex min-h-screen max-w-4xl flex-col px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-8">
         <Header />
 
@@ -355,6 +378,8 @@ export default function ConciergeGuidePage() {
           </section>
 
         </main>
+
+        <RelatedGuides items={RELATED} />
 
         <footer className="mt-12 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">

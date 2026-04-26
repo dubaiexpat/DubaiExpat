@@ -1,20 +1,43 @@
 
 import Header from '@/components/Header';
 import Link from 'next/link';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
+import RelatedGuides from '@/components/RelatedGuides';
 
 export const metadata = {
-  title: 'Furniture & Interiors in Dubai | Dubai Expat Guides',
-  description: 'Complete guide to buying furniture in Dubai — from IKEA and budget options to high-end designer stores, bespoke carpentry, and second-hand finds.',
+  title: 'Buying Furniture in Dubai (2026): IKEA, Designer Stores & Bespoke Guide for UK Expats',
+  description: 'How UK expats furnish their Dubai home in 2026 — IKEA, Home Centre, West Elm, designer showrooms, bespoke carpenters in Al Quoz, and the best second-hand marketplaces.',
   openGraph: {
-    title: 'Furniture & Interiors in Dubai | Dubai Expat Guides',
-    description: 'Complete guide to buying furniture in Dubai — from IKEA and budget options to high-end designer stores, bespoke carpentry, and second-hand finds.',
+    title: 'Buying Furniture in Dubai (2026): UK Expat Guide',
+    description: 'IKEA to designer stores, bespoke carpenters and second-hand finds in Dubai for UK expats.',
     type: 'article',
   },
 };
 
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/furniture';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'Furniture', url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: 'Renting in Dubai', href: '/guides/housing', description: 'Furnished vs unfurnished — what determines your shopping list' },
+  { title: 'UK to Dubai Removals & Shipping', href: '/guides/removals', description: 'What to ship vs buy locally' },
+  { title: 'Dubai Cost of Living', href: '/cost-of-living', description: 'Furnishing-cost benchmarks for a 2BR apartment' },
+  { title: 'Dubai Concierge Services', href: '/guides/concierge', description: 'Bespoke tailoring, upholstery, and home services' },
+];
+
 export default function FurnitureGuide() {
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title="Buying Furniture in Dubai (2026): IKEA, Designer Stores & Bespoke Guide for UK Expats"
+        description="How UK expats furnish their Dubai home — IKEA, Home Centre, designer showrooms, bespoke carpenters, second-hand marketplaces."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
@@ -373,6 +396,7 @@ export default function FurnitureGuide() {
           </Link>
         </div>
       </div>
+      <RelatedGuides items={RELATED} />
     </>
   );
 }

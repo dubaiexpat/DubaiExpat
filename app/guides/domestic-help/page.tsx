@@ -1,12 +1,28 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Domestic Help & Drivers in Dubai: A Guide for UK Expats (2026)",
+  title: "Hire Domestic Help in Dubai (2026): Maids, Drivers, Visa Sponsorship Guide for UK Expats",
   description:
-    "How to hire a live-in housekeeper, part-time cleaner or private driver in Dubai — visas, contracts, costs and what you need to know.",
+    "How UK expats hire a live-in housekeeper, part-time cleaner or private driver in Dubai — visa sponsorship, AED 1,500-2,500/mo costs, contracts, and what to expect.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/domestic-help";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Domestic Help", url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: "Renting in Dubai", href: "/guides/housing", description: "Maid's-room provisions and live-in considerations" },
+  { title: "Concierge Services", href: "/guides/concierge", description: "Tailors, tutors, vets — the rest of the household stack" },
+  { title: "Dubai Expat Community", href: "/guides/community", description: "Where expat families source domestic-help recommendations" },
+  { title: "Dubai Cost of Living", href: "/cost-of-living", description: "Budgeting for household staff and visa fees" },
+];
 
 const ROLES = [
   {
@@ -90,6 +106,13 @@ const PROCESS_STEPS = [
 export default function DomesticHelpGuidePage() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="Article"
+        title="Hire Domestic Help in Dubai (2026): Maids, Drivers, Visa Sponsorship Guide for UK Expats"
+        description="How UK expats hire a live-in housekeeper, part-time cleaner or private driver in Dubai — visa sponsorship, costs, contracts."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="mx-auto flex min-h-screen max-w-4xl flex-col px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-8">
         <Header />
 
@@ -266,6 +289,8 @@ export default function DomesticHelpGuidePage() {
           </section>
 
         </main>
+
+        <RelatedGuides items={RELATED} />
 
         <footer className="mt-12 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">

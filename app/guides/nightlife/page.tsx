@@ -1,12 +1,28 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Nightlife in Dubai: A Guide for UK Expats (2026)",
+  title: "Dubai Nightlife for UK Expats (2026): Bars, Brunches, Rooftops & Alcohol Rules",
   description:
-    "Bars, clubs, rooftop lounges, brunch culture and the rules around alcohol in Dubai. Everything UK expats need to know about Dubai's social scene.",
+    "UK-expat guide to Dubai nightlife in 2026 — best bars, rooftop lounges, Friday brunch culture, alcohol licence rules, and how the social scene actually works.",
 };
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/nightlife";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Nightlife", url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: "Food & Drink in Dubai", href: "/guides/food-drink", description: "Friday brunch culture and where to eat" },
+  { title: "Dubai Expat Community", href: "/guides/community", description: "Where the social scene actually happens" },
+  { title: "Renting in Dubai", href: "/guides/housing", description: "Best areas for walkable nightlife (Marina, Downtown, JBR)" },
+  { title: "Dubai Concierge Services", href: "/guides/concierge", description: "Members clubs and curated venue access" },
+];
 
 const AREAS = [
   {
@@ -50,6 +66,13 @@ const AREAS = [
 export default function NightlifeGuidePage() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="Article"
+        title="Dubai Nightlife for UK Expats (2026): Bars, Brunches, Rooftops & Alcohol Rules"
+        description="UK-expat guide to Dubai nightlife — best bars, rooftop lounges, Friday brunch culture, alcohol licence rules."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="mx-auto flex min-h-screen max-w-4xl flex-col px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-8">
         <Header />
 
@@ -270,6 +293,8 @@ export default function NightlifeGuidePage() {
           </section>
 
         </main>
+
+        <RelatedGuides items={RELATED} />
 
         <footer className="mt-12 border-t border-slate-200 pt-4">
           <div className="flex flex-col items-center justify-between gap-2 text-xs text-slate-500 sm:flex-row">

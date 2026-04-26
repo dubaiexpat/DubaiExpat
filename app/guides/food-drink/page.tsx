@@ -1,20 +1,43 @@
 
 import Header from '@/components/Header';
 import Link from 'next/link';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
+import RelatedGuides from '@/components/RelatedGuides';
 
 export const metadata = {
-  title: 'Food & Drink in Dubai | Dubai Expat Guides',
-  description: 'Essential guide to groceries, restaurants, Friday brunch, wine & spirits, and organic food delivery in Dubai for expats.',
+  title: 'Food & Drink in Dubai (2026): Groceries, Brunch, Alcohol License Guide for UK Expats',
+  description: 'Essential UK-expat guide to Dubai food & drink — groceries, restaurants, Friday brunch culture, alcohol licence rules, wine merchants, and organic food delivery.',
   openGraph: {
-    title: 'Food & Drink in Dubai | Dubai Expat Guides',
-    description: 'Essential guide to groceries, restaurants, Friday brunch, wine & spirits, and organic food delivery in Dubai for expats.',
+    title: 'Food & Drink in Dubai (2026): UK Expat Guide',
+    description: 'Groceries, Friday brunch, alcohol licences, wine merchants and organic delivery in Dubai for UK expats.',
     type: 'article',
   },
 };
 
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/food-drink';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'Food & Drink', url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: 'Dubai Cost of Living', href: '/cost-of-living', description: 'Where groceries and dining sit in the monthly budget' },
+  { title: 'Dubai Expat Community', href: '/guides/community', description: 'Brunches, supper clubs and the Dubai social scene' },
+  { title: 'Dubai Nightlife', href: '/guides/nightlife', description: 'Bars, licensed venues and weekend culture' },
+  { title: 'Renting in Dubai', href: '/guides/housing', description: 'Walkable neighbourhoods near the best restaurants' },
+];
+
 export default function FoodDrinkGuide() {
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title="Food & Drink in Dubai (2026): Groceries, Brunch, Alcohol License Guide for UK Expats"
+        description="UK-expat guide to Dubai food & drink — groceries, restaurants, Friday brunch, alcohol licence rules, wine merchants."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
@@ -343,6 +366,7 @@ export default function FoodDrinkGuide() {
           </div>
         </section>
       </main>
+      <RelatedGuides items={RELATED} />
     </>
   );
 }
