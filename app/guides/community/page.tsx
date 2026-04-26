@@ -1,12 +1,28 @@
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
+import RelatedGuides from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Dubai Expat Community: Best Facebook Groups & Where to Meet UK Expats (2026)',
   description:
     'Where UK expats actually meet in Dubai — best Facebook groups (Dubai Buy & Sell, expat networks), social clubs, healthcare, and how to find your community fast.',
 };
+
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/community';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'Community', url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: 'Dubai Visa & Residency', href: '/guides/visa-residency', description: 'Sort the visa first, then build the network' },
+  { title: 'Renting in Dubai', href: '/guides/housing', description: 'Best areas to find your tribe' },
+  { title: 'Dubai Cost of Living', href: '/cost-of-living', description: 'Budget for socialising and clubs' },
+  { title: 'Dubai Expat Health Insurance', href: '/articles/expat-health-insurance-dubai-cigna-bupa-allianz', description: 'Health network as part of your support system' },
+];
 
 // SafetyWing Ambassador link — referenceID 26507814, placement-tracked
 const SAFETYWING_COMMUNITY =
@@ -15,6 +31,13 @@ const SAFETYWING_COMMUNITY =
 export default function CommunityGuide() {
   return (
     <div style={{ backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' }}>
+      <SchemaJsonLd
+        type="Article"
+        title="Dubai Expat Community: Best Facebook Groups & Where to Meet UK Expats (2026)"
+        description="Where UK expats actually meet in Dubai — best Facebook groups, social clubs, and how to find your community fast."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
@@ -250,6 +273,7 @@ export default function CommunityGuide() {
           </ul>
         </section>
       </main>
+      <RelatedGuides items={RELATED} />
     </div>
   );
 }

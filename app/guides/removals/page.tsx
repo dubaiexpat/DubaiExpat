@@ -1,5 +1,21 @@
 import Header from "@/components/Header";
 import Link from "next/link";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import RelatedGuides from "@/components/RelatedGuides";
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/removals";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Removals & Shipping", url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: "Renting in Dubai", href: "/guides/housing", description: "Furnished or unfurnished — what to ship vs buy locally" },
+  { title: "Pet Relocation UK to Dubai", href: "/guides/pets", description: "Coordinate pet move with household shipment" },
+  { title: "Furniture & Setting Up Home", href: "/guides/furniture", description: "What's worth shipping, what to buy in Dubai" },
+  { title: "UK Tax When Moving to Dubai", href: "/guides/tax-and-hmrc", description: "Tax implications of relocation" },
+];
 
 export const metadata = {
   title: "UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs",
@@ -14,6 +30,13 @@ export const metadata = {
 export default function RemovalsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <SchemaJsonLd
+        type="Article"
+        title="UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs"
+        description="How UK expats ship belongings to Dubai in 2026 — sea vs air freight costs, UAE customs rules, what to buy locally instead."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
@@ -161,6 +184,7 @@ export default function RemovalsPage() {
 
         </div>
       </main>
+      <RelatedGuides items={RELATED} />
     </div>
   );
 }

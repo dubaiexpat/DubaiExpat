@@ -33,6 +33,10 @@ const NORD_CTA =
 // Surfshark alternative — URL placeholder, swap with live tracking URL from surfshark.hasoffers.com once captured
 const SURFSHARK_ALT = "[SURFSHARK_VPN_DX_vpn_guide_alt]";
 
+// Incogni — data-broker removal complement to a VPN. aff_id 2544, offer_id 2 (40% CPS).
+const INCOGNI_PRIVACY =
+  "https://deal.incogni.io/aff_c?offer_id=2&aff_id=2544&source=dx&aff_sub=guide-internet-and-vpn-data-removal";
+
 export default function InternetAndVpnGuide() {
   return (
     <>
@@ -302,6 +306,10 @@ export default function InternetAndVpnGuide() {
               </ul>
               <p className="mt-6">
                 There are good alternatives. ExpressVPN and Proton VPN both have genuine merits. And if price is your single biggest factor, <a href={SURFSHARK_ALT} target="_blank" rel="noopener noreferrer sponsored" className="font-semibold underline hover:text-[#C9A84C]" style={{ color: "#0A1628" }}>Surfshark</a> is the most credible cheaper option &mdash; their entry plan comes in roughly a pound a month below NordVPN&rsquo;s and they support unlimited simultaneous devices on one subscription, which is a good fit for a multi-device expat family. But when we looked at price versus reliability in the UAE specifically &mdash; speed holding up under Etisalat&rsquo;s throttling, obfuscated server stability, and track record of working for UK banking apps that are unusually aggressive about foreign IPs &mdash; NordVPN was the provider we kept coming back to. At the time of writing, their two-year plan is roughly &pound;2.50 per month on the standard tier and under &pound;4 on the plus tier that bundles their password manager and data breach scanner.
+              </p>
+              <h3 className="mt-10 text-xl font-bold" style={{ color: "#0A1628" }}>One more layer worth knowing about: data-broker removal</h3>
+              <p className="mt-4">
+                A VPN protects your traffic in flight. It doesn&rsquo;t do anything about the data brokers who already have your name, address, phone number and email — and resell that data to anyone willing to pay. For UK expats this matters more than you&rsquo;d think: scam calls and phishing emails targeting Dubai-based UK nationals are a known industry, and the source data overwhelmingly comes from broker leaks. <a href={INCOGNI_PRIVACY} target="_blank" rel="noopener noreferrer sponsored" className="font-semibold underline hover:text-[#C9A84C]" style={{ color: "#0A1628" }}>Incogni</a> automates the GDPR/CCPA opt-out requests across hundreds of brokers on your behalf — independently audited by Deloitte, around &pound;5/month annual, and they handle the multi-jurisdiction admin (UK ICO and EU DPAs) which is the part that&rsquo;s genuinely tedious to do manually. We see it as the natural complement to a VPN: traffic protection plus background-data cleanup. Not strictly UAE-specific, but worth setting up before the inevitable wave of post-relocation scam calls starts.
               </p>
               <div className="mt-6">
                 <a

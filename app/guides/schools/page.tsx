@@ -1,5 +1,21 @@
 import Header from "@/components/Header";
 import Link from "next/link";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import RelatedGuides from "@/components/RelatedGuides";
+
+const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/schools";
+const BREADCRUMBS = [
+  { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+  { name: "Guides", url: "https://www.dubaiexpat.co.uk/#categories" },
+  { name: "Schools", url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: "Renting in Dubai as a UK Expat", href: "/guides/housing", description: "Best areas near top British schools" },
+  { title: "Dubai Visa & Residency", href: "/guides/visa-residency", description: "Family visa requirements for school enrolment" },
+  { title: "UK to Dubai Removals & Shipping", href: "/guides/removals", description: "Timing your move with the school year" },
+  { title: "Dubai Cost of Living", href: "/cost-of-living", description: "How school fees fit the family monthly budget" },
+];
 
 export const metadata = {
   title: "Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply",
@@ -14,6 +30,13 @@ export const metadata = {
 export default function SchoolsPage() {
   return (
     <div className="min-h-screen bg-white">
+      <SchemaJsonLd
+        type="Article"
+        title="Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply"
+        description="Best British curriculum schools in Dubai for UK expat families — 2026 fees, KHDA ratings, GEMS, Repton, Dubai College compared."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

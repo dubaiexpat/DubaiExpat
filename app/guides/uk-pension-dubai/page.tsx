@@ -2,12 +2,28 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
+import RelatedGuides from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'UK Pension in Dubai (2026): QROPS, SIPP, State Pension & What to Avoid',
   description:
     'How UK expats in Dubai manage workplace pensions, QROPS, SIPPs, and the UK State Pension. Pension scam warnings, regulated adviser checks, and 2026 transfer rules.',
 };
+
+const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/uk-pension-dubai';
+const BREADCRUMBS = [
+  { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
+  { name: 'Guides', url: 'https://www.dubaiexpat.co.uk/#categories' },
+  { name: 'UK Pension', url: SCHEMA_URL },
+];
+
+const RELATED = [
+  { title: 'QROPS vs SIPP Deep Dive', href: '/articles/uk-pension-options-dubai-qrops-sipp', description: 'Detailed comparison and red flags' },
+  { title: 'UK Tax When Moving to Dubai', href: '/guides/tax-and-hmrc', description: 'Statutory Residence Test and HMRC rules' },
+  { title: 'Open a Dubai Bank Account', href: '/guides/banking', description: 'Where pension income lands' },
+  { title: 'Moving Money UK to Dubai', href: '/articles/moving-money-uk-to-dubai-wise-revolut-guide', description: 'Currency transfer for retirement income' },
+];
 
 const s = {
   page: { backgroundColor: '#FFFFFF', color: '#1a1a1a', minHeight: '100vh' } as React.CSSProperties,
@@ -477,6 +493,7 @@ export default function UkPensionDubaiGuide() {
         </section>
 
       </main>
+      <RelatedGuides items={RELATED} />
     </div>
   );
 }
