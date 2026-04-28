@@ -243,17 +243,6 @@ export async function POST(request: Request) {
             htmlContent: buildMagnetEmailHtml(magnet, visaCtx, magnetKey),
             textContent: buildMagnetEmailText(magnet, visaCtx, magnetKey),
             tags: ["magnet-delivery", magnetKey],
-            // Disable Brevo's click + open tracking. Click tracking
-            // wraps every <a href> through sendibt2.com, which Yahoo
-            // and Gmail spam-filters often neutralise — meaning the
-            // Download PDF button silently breaks. Open tracking
-            // injects a pixel that triggers spam heuristics. We don't
-            // need either for transactional magnet delivery; the goal
-            // is the download, not analytics.
-            headers: {
-              "X-Mailin-track-click": "0",
-              "X-Mailin-track-open": "0",
-            },
           }),
         });
         if (!emailRes.ok) {
