@@ -6,7 +6,7 @@ import SchemaJsonLd from '@/components/SchemaJsonLd';
 import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "UK Tax When Moving to Dubai (2026): HMRC Residency, P85 & Double Tax Treaty",
-  description: "UK tax rules for expats moving to Dubai — Statutory Residence Test, P85 form, HMRC notification, UK property income, National Insurance, and the UK-UAE Double Taxation Agreement.",
+  description: "UK tax for expats moving to Dubai — Statutory Residence Test, P85, HMRC, UK property income, National Insurance, UK-UAE Double Tax Treaty.",
   path: "/guides/tax-and-hmrc",
 });
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/tax-and-hmrc';

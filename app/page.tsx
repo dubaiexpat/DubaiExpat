@@ -1,10 +1,17 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import PatrickPhoto from "@/components/PatrickPhoto";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="WebPage"
+        title="Dubai Expat | Your Complete Guide to Moving to Dubai"
+        description="Relocation guide for UK expats moving to Dubai and the UAE — visas, housing, schools, removals, banking, and community life."
+        url="https://www.dubaiexpat.co.uk/"
+      />
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-10 pt-6 sm:px-6 lg:px-8 lg:pt-8">
         <header className="mb-8">
           <Header />

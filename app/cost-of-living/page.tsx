@@ -3,11 +3,15 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
 import { pageMetadata } from '@/lib/metadata';
+import SchemaJsonLd from '@/components/SchemaJsonLd';
+
+const TITLE = 'Cost of Living in Dubai vs London 2026: UK Expat Comparison';
+const DESCRIPTION = 'Like-for-like Dubai vs London cost comparison across single, couple, and family tiers. Rent, schools, tax savings, two-cheque system, monthly budgets.';
+const URL_ABS = 'https://www.dubaiexpat.co.uk/cost-of-living';
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Cost of Living in Dubai vs London 2026: UK Expat Comparison',
-  description:
-    'Like-for-like Dubai vs London cost comparison across single, couple, and family tiers. Rent, schools, tax savings, two-cheque system, monthly budgets.',
+  title: TITLE,
+  description: DESCRIPTION,
   path: '/cost-of-living',
 });
 
@@ -48,6 +52,16 @@ const s = {
 export default function CostOfLivingPage() {
   return (
     <div style={s.page}>
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={URL_ABS}
+        breadcrumbs={[
+          { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+          { name: "Cost of Living", url: URL_ABS },
+        ]}
+      />
       <Header />
       <main style={s.main}>
 

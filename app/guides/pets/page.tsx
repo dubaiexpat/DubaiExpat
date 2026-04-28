@@ -6,7 +6,7 @@ import RelatedGuides from "@/components/RelatedGuides";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Pet Relocation UK to Dubai (2026): Costs, Timeline, Rabies Test & Vets",
-  description: "How to move your dog or cat from the UK to Dubai in 2026: UAE import permit, rabies titre test, approved vets, total costs (£2,000-4,000), 4-month timeline, and pet-relocation specialists.",
+  description: "How to move your dog or cat UK to Dubai 2026: UAE import permit, rabies titre test, approved vets, costs (£2-4k), 4-month timeline, specialists.",
   path: "/guides/pets",
 });
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/pets";

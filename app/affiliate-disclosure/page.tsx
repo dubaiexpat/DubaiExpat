@@ -2,11 +2,15 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+
+const TITLE = "Affiliate Disclosure";
+const DESCRIPTION = "How Dubai Expat earns revenue through affiliate partnerships, and what this means for you.";
+const URL_ABS = "https://www.dubaiexpat.co.uk/affiliate-disclosure";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Affiliate Disclosure",
-  description:
-    "How Dubai Expat earns revenue through affiliate partnerships, and what this means for you.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/affiliate-disclosure",
   type: "website",
 });
@@ -14,6 +18,16 @@ export const metadata: Metadata = pageMetadata({
 export default function AffiliateDisclosure() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="WebPage"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={URL_ABS}
+        breadcrumbs={[
+          { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+          { name: "Affiliate Disclosure", url: URL_ABS },
+        ]}
+      />
       <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
         <header className="mb-8">
           <Header />

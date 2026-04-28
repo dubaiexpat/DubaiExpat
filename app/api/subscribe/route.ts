@@ -3,6 +3,8 @@ import {
   MAGNETS,
   VISA_EMAIL_DETAILS,
   buildMagnetEmailHtml,
+  buildMagnetEmailText,
+  EMAIL_SENDER,
 } from "./magnets";
 import type { VisaContext } from "./magnets";
 
@@ -233,13 +235,11 @@ export async function POST(request: Request) {
             accept: "application/json",
           },
           body: JSON.stringify({
-            sender: {
-              name: "Dubai Expat",
-              email: "partnerships@dubaiexpat.co.uk",
-            },
+            sender: EMAIL_SENDER,
             to: [{ email }],
             subject: emailSubject,
-            htmlContent: buildMagnetEmailHtml(magnet, visaCtx),
+            htmlContent: buildMagnetEmailHtml(magnet, visaCtx, magnetKey),
+            textContent: buildMagnetEmailText(magnet, visaCtx, magnetKey),
             tags: ["magnet-delivery", magnetKey],
           }),
         });

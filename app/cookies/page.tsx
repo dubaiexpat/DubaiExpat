@@ -2,11 +2,15 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+
+const TITLE = "Cookie Policy";
+const DESCRIPTION = "How Dubai Expat uses cookies and similar technologies, and how to manage your preferences.";
+const URL_ABS = "https://www.dubaiexpat.co.uk/cookies";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Cookie Policy",
-  description:
-    "How Dubai Expat uses cookies and similar technologies, and how to manage your preferences.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/cookies",
   type: "website",
 });
@@ -14,6 +18,16 @@ export const metadata: Metadata = pageMetadata({
 export default function CookiePolicy() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="WebPage"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={URL_ABS}
+        breadcrumbs={[
+          { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+          { name: "Cookie Policy", url: URL_ABS },
+        ]}
+      />
       <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
         <header className="mb-8">
           <Header />

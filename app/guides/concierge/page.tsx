@@ -6,7 +6,7 @@ import RelatedGuides from "@/components/RelatedGuides";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = pageMetadata({
   title: "Dubai Concierge Services for UK Expats (2026): Tailors, Vets, Tutors, Clubs",
-  description: "Trusted concierge recommendations for UK expats in Dubai — tailors, jewellers, vets, music & academic tutors, members clubs, sports clubs, and kids' party venues.",
+  description: "Trusted concierge picks for UK expats in Dubai — tailors, jewellers, vets, music & academic tutors, clubs, and kids' party venues.",
   path: "/guides/concierge",
 });
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/concierge";

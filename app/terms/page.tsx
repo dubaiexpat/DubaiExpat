@@ -2,11 +2,15 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+
+const TITLE = "Terms of Use";
+const DESCRIPTION = "Terms and conditions for using the Dubai Expat website and tools, including disclaimers and limitations of liability for affiliate-supported content.";
+const URL_ABS = "https://www.dubaiexpat.co.uk/terms";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Terms of Use",
-  description:
-    "Terms and conditions for using the Dubai Expat website and tools, including disclaimers and limitations of liability for affiliate-supported content.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/terms",
   type: "website",
 });
@@ -14,6 +18,16 @@ export const metadata: Metadata = pageMetadata({
 export default function TermsOfUse() {
   return (
     <div className="min-h-screen bg-zinc-50 text-slate-900">
+      <SchemaJsonLd
+        type="WebPage"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={URL_ABS}
+        breadcrumbs={[
+          { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+          { name: "Terms of Use", url: URL_ABS },
+        ]}
+      />
       <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
         <header className="mb-8">
           <Header />

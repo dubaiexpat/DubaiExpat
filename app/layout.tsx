@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.dubaiexpat.co.uk"),
   title: {
     default: "Dubai Expat | Your Complete Guide to Moving to Dubai",
-    template: "%s | Dubai Expat",
+    // No template — pages set their own complete title. Templates push every
+    // title over Google's ~60-char SERP truncation budget.
+    template: "%s",
   },
   description:
     "Dubai Expat is a relocation guide for UK expats moving to Dubai and the UAE — covering visas, housing, schools, removals, banking, and community life.",

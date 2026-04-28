@@ -55,6 +55,13 @@ const s = {
 export default function UkPensionDubaiGuide() {
   return (
     <div style={s.page}>
+      <SchemaJsonLd
+        type="Article"
+        title="UK Pension in Dubai (2026): QROPS, SIPP, State Pension & What to Avoid"
+        description="How UK expats in Dubai manage workplace pensions, QROPS, SIPPs, and the UK State Pension. Pension scam warnings, regulated adviser checks, and 2026 transfer rules."
+        url={SCHEMA_URL}
+        breadcrumbs={BREADCRUMBS}
+      />
       <div className="px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />
