@@ -243,15 +243,22 @@ export async function POST(request: Request) {
             htmlContent: buildMagnetEmailHtml(magnet, visaCtx, magnetKey),
             textContent: buildMagnetEmailText(magnet, visaCtx, magnetKey),
             tags: ["magnet-delivery", magnetKey],
-            // Attach the PDF so the recipient gets the file directly,
-            // regardless of whether Brevo's click-tracking wrapper
-            // causes problems on the link in their inbox. Brevo fetches
-            // the URL server-side and embeds the bytes as a real RFC
-            // attachment. The Download PDF button in the body becomes
-            // a fallback rather than the primary delivery channel.
+            // List-Unsubscribe is Yahoo's strongest signal for "this
+            // is legitimate transactional/opt-in email" — without it,
+            // Yahoo aggressively spam-routes new-sender domains. RFC
+            // 2369 mailto: form works with all major receivers.
+            headers: {
+              "List-Unsubscribe": `<mailto:unsubscribe@dubaiexpat.co.uk?subject=unsubscribe%20${encodeURIComponent(email)}>`,
+            },
+            // Attach the PDF so delivery doesn't depend on Brevo's
+            // wrapped link working — confirmed working on Gmail. Yahoo
+            // strips attachments when emails land in its spam folder,
+            // so List-Unsubscribe (above) does the heavier lifting for
+            // Yahoo placement. Using apex URL (no www) so Brevo's
+            // fetcher avoids the 301 redirect — belt and braces.
             attachment: [
               {
-                url: `https://www.dubaiexpat.co.uk${magnet.pdfPath}`,
+                url: `https://dubaiexpat.co.uk${magnet.pdfPath}`,
                 name: `${magnet.pdfPath.split("/").pop()}`,
               },
             ],
