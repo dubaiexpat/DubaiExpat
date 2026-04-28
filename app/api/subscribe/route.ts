@@ -243,6 +243,18 @@ export async function POST(request: Request) {
             htmlContent: buildMagnetEmailHtml(magnet, visaCtx, magnetKey),
             textContent: buildMagnetEmailText(magnet, visaCtx, magnetKey),
             tags: ["magnet-delivery", magnetKey],
+            // Attach the PDF so the recipient gets the file directly,
+            // regardless of whether Brevo's click-tracking wrapper
+            // causes problems on the link in their inbox. Brevo fetches
+            // the URL server-side and embeds the bytes as a real RFC
+            // attachment. The Download PDF button in the body becomes
+            // a fallback rather than the primary delivery channel.
+            attachment: [
+              {
+                url: `https://www.dubaiexpat.co.uk${magnet.pdfPath}`,
+                name: `${magnet.pdfPath.split("/").pop()}`,
+              },
+            ],
           }),
         });
         if (!emailRes.ok) {
