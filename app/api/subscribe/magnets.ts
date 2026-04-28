@@ -37,7 +37,8 @@ export type VisaContext = {
 
 export const SITE_BASE_URL = "https://www.dubaiexpat.co.uk";
 const SENDER_NAME = "Patrick at Dubai Expat";
-const SENDER_EMAIL = "partnerships@dubaiexpat.co.uk";
+const SENDER_EMAIL = "patrick@dubaiexpat.co.uk";
+const REPLY_TO_EMAIL = "newmediaworldpte@gmail.com";
 
 // Affiliate URL helpers — keep tracking suffixes unique per placement
 const NORDVPN = (sub: string) =>
@@ -183,6 +184,7 @@ function siteLinkUrl(magnetSlug: string, path: string): string {
 
 /** Sender details exported so the subscribe route stays in sync with the template. */
 export const EMAIL_SENDER = { name: SENDER_NAME, email: SENDER_EMAIL };
+export const EMAIL_REPLY_TO = { email: REPLY_TO_EMAIL, name: "Patrick at Dubai Expat" };
 
 /**
  * Build the HTML body for a magnet delivery email.

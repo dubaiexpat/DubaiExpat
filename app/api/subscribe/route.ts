@@ -5,6 +5,7 @@ import {
   buildMagnetEmailHtml,
   buildMagnetEmailText,
   EMAIL_SENDER,
+  EMAIL_REPLY_TO,
 } from "./magnets";
 import type { VisaContext } from "./magnets";
 
@@ -236,6 +237,7 @@ export async function POST(request: Request) {
           },
           body: JSON.stringify({
             sender: EMAIL_SENDER,
+            replyTo: EMAIL_REPLY_TO,
             to: [{ email }],
             subject: emailSubject,
             htmlContent: buildMagnetEmailHtml(magnet, visaCtx, magnetKey),

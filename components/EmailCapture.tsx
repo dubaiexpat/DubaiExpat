@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 interface EmailCaptureProps {
@@ -32,9 +32,17 @@ export default function EmailCapture({
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
 
+  // Re-entry guard: a useRef sets synchronously, so a fast double-click
+  // (or a mobile double-tap) can't race past the button-disabled state
+  // before React commits it. Without this, the same /api/subscribe call
+  // fires twice → two identical magnet emails delivered. (28 Apr 2026.)
+  const submittingRef = useRef(false);
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (submittingRef.current) return;
     if (!email || !email.includes("@")) return;
+    submittingRef.current = true;
     setStatus("loading");
 
     try {
