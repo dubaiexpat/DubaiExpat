@@ -231,10 +231,13 @@ export default function VisaCheckerPage() {
           <span className="font-medium text-[#0A1628]">Visa Checker</span>
         </div>
 
-        <main className="mt-6 flex flex-1 flex-col">
+        <main id="main-content" className="mt-6 flex flex-1 flex-col" aria-labelledby="visa-checker-heading">
           <header className="mb-6">
-            <h1 className="text-2xl font-bold tracking-tight text-[#0A1628] sm:text-3xl">
-              UAE Visa Eligibility Tool
+            <h1
+              id="visa-checker-heading"
+              className="text-2xl font-bold tracking-tight text-[#0A1628] sm:text-3xl"
+            >
+              Dubai Visa Checker — UAE Residency Eligibility for UK Expats
             </h1>
             <p className="mt-2 text-sm text-slate-600 sm:text-base">
               Eight quick questions to find out which UAE visa route you most likely qualify for — Golden, Green, Freelance, Employment or Retirement. Built for UK expats.
@@ -252,6 +255,7 @@ export default function VisaCheckerPage() {
                 <div
                   className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-200"
                   role="progressbar"
+                  aria-label={`Question ${step + 1} of ${QUESTIONS.length}`}
                   aria-valuenow={step + 1}
                   aria-valuemin={1}
                   aria-valuemax={QUESTIONS.length}
@@ -266,20 +270,26 @@ export default function VisaCheckerPage() {
               <section
                 key={step}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 sm:p-8"
+                aria-live="polite"
+                aria-atomic="true"
               >
-                <h2 className="text-xl font-semibold text-[#0A1628] sm:text-2xl">
+                <h2 className="text-xl font-semibold text-[#0A1628] sm:text-2xl" id={`question-${step}`}>
                   {currentQuestion.question}
                 </h2>
-                <ul className="mt-6 space-y-3">
+                <ul
+                  className="mt-6 space-y-3"
+                  aria-labelledby={`question-${step}`}
+                  role="list"
+                >
                   {currentQuestion.options.map((opt) => (
                     <li key={opt.value}>
                       <button
                         type="button"
                         onClick={() => handleSelect(opt.value)}
-                        className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-left text-sm font-medium text-slate-800 transition hover:border-[#C9A84C]/60 hover:bg-[#0A1628]/5 focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 sm:py-4 sm:text-base"
+                        className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-left text-sm font-medium text-slate-800 transition hover:border-[#C9A84C]/60 hover:bg-[#0A1628]/5 focus-visible:border-[#C9A84C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/40 focus-visible:ring-offset-2 sm:py-4 sm:text-base"
                       >
                         {opt.label}
-                        <span className="text-[#C9A84C]">→</span>
+                        <span className="text-[#C9A84C]" aria-hidden="true">→</span>
                       </button>
                     </li>
                   ))}
@@ -425,13 +435,20 @@ export default function VisaCheckerPage() {
                 className="mt-6 flex flex-col gap-3"
               >
                 <div className="flex flex-col gap-3 sm:flex-row">
+                  <label htmlFor="visa-checker-email" className="sr-only">
+                    Your email address
+                  </label>
                   <input
+                    id="visa-checker-email"
                     type="email"
                     required
+                    autoComplete="email"
+                    aria-required="true"
+                    aria-describedby="visa-checker-email-help"
                     placeholder="Your email address"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm focus:border-[#C9A84C] focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30"
+                    className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-sm focus-visible:border-[#C9A84C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/40 focus-visible:ring-offset-1"
                   />
                   <button
                     type="submit"
@@ -459,7 +476,7 @@ export default function VisaCheckerPage() {
                 </label>
               </form>
 
-              <p className="mt-3 text-xs text-slate-400">
+              <p id="visa-checker-email-help" className="mt-3 text-xs text-slate-400">
                 No spam. Unsubscribe any time. We&apos;re GDPR compliant.
               </p>
 
