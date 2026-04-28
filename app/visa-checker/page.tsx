@@ -232,6 +232,14 @@ export default function VisaCheckerPage() {
         </div>
 
         <main className="mt-6 flex flex-1 flex-col">
+          <header className="mb-6">
+            <h1 className="text-2xl font-bold tracking-tight text-[#0A1628] sm:text-3xl">
+              UAE Visa Eligibility Tool
+            </h1>
+            <p className="mt-2 text-sm text-slate-600 sm:text-base">
+              Eight quick questions to find out which UAE visa route you most likely qualify for — Golden, Green, Freelance, Employment or Retirement. Built for UK expats.
+            </p>
+          </header>
           {!showEmailGate ? (
             /* ── Questionnaire ─────────────────────────────── */
             <>
@@ -296,10 +304,10 @@ export default function VisaCheckerPage() {
                 Your recommendation
               </div>
 
-              <h1 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
+              <h2 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
                 You likely qualify for the{" "}
                 <span className="text-[#C9A84C]">{visaName}</span>
-              </h1>
+              </h2>
 
               {resultType && VISA_DETAILS[resultType] && (
                 <>
@@ -378,10 +386,10 @@ export default function VisaCheckerPage() {
                 Your result is ready
               </div>
 
-              <h1 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
+              <h2 className="text-2xl font-bold text-[#0A1628] sm:text-3xl">
                 Based on your answers, you likely qualify for the{" "}
                 <span className="text-[#C9A84C]">{visaName}</span>
-              </h1>
+              </h2>
 
               <p className="mt-4 text-slate-600">
                 Enter your email and we&apos;ll send you the full details — costs, timeline, key benefits, and next steps — along with the free{" "}
