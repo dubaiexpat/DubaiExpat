@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "prebuild": "node scripts/check-public-app-conflicts.mjs",
-    "verify-deploy": "bash scripts/verify-deploy.sh"
+    "verify-deploy": "bash scripts/verify-deploy.sh",
+    "seo:audit": "node ../../SHARED/scripts/seo-page-audit.mjs --site=dx",
+    "seo:audit:strict": "node ../../SHARED/scripts/seo-page-audit.mjs --site=dx --strict"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",

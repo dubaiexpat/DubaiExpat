@@ -1,12 +1,15 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Terms of Use | Dubai Expat",
+export const metadata: Metadata = pageMetadata({
+  title: "Terms of Use",
   description:
-    "Terms and conditions for using the Dubai Expat website and tools.",
-};
+    "Terms and conditions for using the Dubai Expat website and tools, including disclaimers and limitations of liability for affiliate-supported content.",
+  path: "/terms",
+  type: "website",
+});
 
 export default function TermsOfUse() {
   return (

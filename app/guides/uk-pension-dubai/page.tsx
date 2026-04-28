@@ -4,13 +4,12 @@ import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import RelatedGuides from '@/components/RelatedGuides';
-
-export const metadata: Metadata = {
-  title: 'UK Pension in Dubai (2026): QROPS, SIPP, State Pension & What to Avoid',
-  description:
-    'How UK expats in Dubai manage workplace pensions, QROPS, SIPPs, and the UK State Pension. Pension scam warnings, regulated adviser checks, and 2026 transfer rules.',
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
+  title: "UK Pension in Dubai (2026): QROPS, SIPP, State Pension & What to Avoid",
+  description: "How UK expats in Dubai manage workplace pensions, QROPS, SIPPs, and the UK State Pension. Pension scam warnings, regulated adviser checks, and 2026 transfer rules.",
+  path: "/guides/uk-pension-dubai",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/uk-pension-dubai';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },

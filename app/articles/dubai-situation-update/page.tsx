@@ -1,16 +1,44 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Dubai Situation Update: What British Expats Are Saying (April 2026)",
-  description:
-    "Hear from the British expat community in Dubai — who's staying, who's leaving, and what daily life actually looks like during the Iran–UAE conflict.",
-};
+const TITLE = "Dubai Situation Update: What British Expats Are Saying (April 2026)";
+const DESCRIPTION =
+  "Hear from the British expat community in Dubai — who's staying, who's leaving, and what daily life actually looks like during the Iran-UAE conflict.";
+const URL_PATH = "/articles/dubai-situation-update";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+const HERO_IMAGE = "https://images.unsplash.com/photo-1634007626524-f47fa37810a7?w=1200&h=500&fit=crop&auto=format";
+const PUBLISHED_AT = "2026-04-13";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: HERO_IMAGE,
+  publishedTime: PUBLISHED_AT,
+});
 
 export default function DubaiSituationUpdate() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Articles", url: "https://www.dubaiexpat.co.uk/#articles" },
+    { name: "Dubai Situation Update", url: ABSOLUTE_URL },
+  ];
+
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        datePublished={PUBLISHED_AT}
+        dateModified={PUBLISHED_AT}
+        breadcrumbs={breadcrumbs}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

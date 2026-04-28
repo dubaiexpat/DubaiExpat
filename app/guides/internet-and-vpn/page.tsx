@@ -2,13 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Best VPN for UAE 2026: Are VPNs Legal in Dubai? (UK Expat Guide)",
-  description:
-    "Are VPNs legal in Dubai in 2026? What apps are blocked? Honest guide for UK expats — UAE internet rules, WhatsApp & FaceTime restrictions, and the VPNs that actually work.",
-};
-
+  description: "Are VPNs legal in Dubai in 2026? What apps are blocked? Honest guide for UK expats — UAE internet rules, WhatsApp & FaceTime restrictions, and the VPNs that actually work.",
+  path: "/guides/internet-and-vpn",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/internet-and-vpn";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

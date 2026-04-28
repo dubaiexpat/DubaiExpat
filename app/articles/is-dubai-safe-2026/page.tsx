@@ -1,16 +1,44 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Is Dubai Safe for Expats in 2026? What UK Citizens Need to Know",
-  description:
-    "An honest look at the safety situation in Dubai for British expats in 2026 — covering the Iran–UAE conflict, FCDO travel advice, daily life, and what to consider before relocating.",
-};
+const TITLE = "Is Dubai Safe for Expats in 2026? UK Citizen Guide";
+const DESCRIPTION =
+  "Honest look at safety in Dubai for British expats in 2026 — Iran-UAE conflict, FCDO advice, daily life, and what to consider before relocating.";
+const URL_PATH = "/articles/is-dubai-safe-2026";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+const HERO_IMAGE = "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=1200&h=500&fit=crop&auto=format";
+const PUBLISHED_AT = "2026-04-13";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: HERO_IMAGE,
+  publishedTime: PUBLISHED_AT,
+});
 
 export default function IsDubaiSafe2026() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Articles", url: "https://www.dubaiexpat.co.uk/#articles" },
+    { name: "Is Dubai Safe in 2026?", url: ABSOLUTE_URL },
+  ];
+
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        datePublished={PUBLISHED_AT}
+        dateModified={PUBLISHED_AT}
+        breadcrumbs={breadcrumbs}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

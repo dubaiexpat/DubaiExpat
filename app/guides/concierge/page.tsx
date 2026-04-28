@@ -3,13 +3,12 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import RelatedGuides from "@/components/RelatedGuides";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Dubai Concierge Services for UK Expats (2026): Tailors, Vets, Tutors, Clubs",
-  description:
-    "Trusted concierge recommendations for UK expats in Dubai — tailors, jewellers, vets, music & academic tutors, members clubs, sports clubs, and kids' party venues.",
-};
-
+  description: "Trusted concierge recommendations for UK expats in Dubai — tailors, jewellers, vets, music & academic tutors, members clubs, sports clubs, and kids' party venues.",
+  path: "/guides/concierge",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/concierge";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

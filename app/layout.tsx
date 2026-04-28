@@ -17,9 +17,39 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dubaiexpat.co.uk"),
-  title: "Dubai Expat | Your Complete Guide to Moving to Dubai",
+  title: {
+    default: "Dubai Expat | Your Complete Guide to Moving to Dubai",
+    template: "%s | Dubai Expat",
+  },
   description:
     "Dubai Expat is a relocation guide for UK expats moving to Dubai and the UAE — covering visas, housing, schools, removals, banking, and community life.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Dubai Expat",
+    title: "Dubai Expat | Your Complete Guide to Moving to Dubai",
+    description:
+      "Relocation guide for UK expats moving to Dubai and the UAE — visas, housing, schools, removals, banking, and community life.",
+    url: "/",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Dubai Expat — UK expat relocation guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dubai Expat | Your Complete Guide to Moving to Dubai",
+    description:
+      "Relocation guide for UK expats moving to Dubai and the UAE.",
+    images: ["/og-default.png"],
+  },
   verification: {
     google: "_GzRZEQg7lLjGNegr_mfBtbKyG3nLfaHNed1_9TsJwg",
   },

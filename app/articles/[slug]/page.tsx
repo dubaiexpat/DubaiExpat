@@ -38,9 +38,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   try {
     const raw = readFileSync(filePath, "utf-8");
     const { data } = matter(raw);
+    const title = data.meta_title ?? data.title ?? slug;
+    const description = data.meta_description ?? data.subtitle ?? "";
+    const url = `/articles/${slug}`;
+    const heroImage: string | undefined = data.hero_image;
+    const ogImage = heroImage && /^https?:\/\//.test(heroImage) ? heroImage : "/og-default.png";
+    const datePublished: string | undefined = data.date;
     return {
-      title: data.meta_title ?? data.title ?? slug,
-      description: data.meta_description ?? "",
+      title,
+      description,
+      alternates: { canonical: url },
+      openGraph: {
+        type: "article",
+        title,
+        description,
+        url,
+        images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+        publishedTime: datePublished,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+        images: [ogImage],
+      },
     };
   } catch {
     return { title: slug };

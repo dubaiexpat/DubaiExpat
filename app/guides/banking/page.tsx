@@ -2,13 +2,12 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
-
-export const metadata: Metadata = {
-  title: 'Open a Dubai Bank Account as a UK Expat: Best Banks & 2026 Process',
-  description:
-    'How UK expats open a bank account in Dubai — Emirates NBD, ADCB, HSBC, Mashreq compared. Documents needed, opening times, salary transfer, and sending money back to the UK.',
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
+  title: "Open a Dubai Bank Account as a UK Expat: Best Banks & 2026 Process",
+  description: "How UK expats open a bank account in Dubai — Emirates NBD, ADCB, HSBC, Mashreq compared. Documents needed, opening times, salary transfer, and sending money back to the UK.",
+  path: "/guides/banking",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/banking';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },

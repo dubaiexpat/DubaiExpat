@@ -3,13 +3,12 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import RelatedGuides from '@/components/RelatedGuides';
-
-export const metadata: Metadata = {
-  title: 'Dubai Expat Community: Best Facebook Groups & Where to Meet UK Expats (2026)',
-  description:
-    'Where UK expats actually meet in Dubai — best Facebook groups (Dubai Buy & Sell, expat networks), social clubs, healthcare, and how to find your community fast.',
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
+  title: "Dubai Expat Community: Best Facebook Groups & Where to Meet UK Expats (2026)",
+  description: "Where UK expats actually meet in Dubai — best Facebook groups (Dubai Buy & Sell, expat networks), social clubs, healthcare, and how to find your community fast.",
+  path: "/guides/community",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/community';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },

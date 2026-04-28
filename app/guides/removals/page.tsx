@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import RelatedGuides from "@/components/RelatedGuides";
-
+import { pageMetadata } from "@/lib/metadata";
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/removals";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
@@ -17,16 +17,11 @@ const RELATED = [
   { title: "UK Tax When Moving to Dubai", href: "/guides/tax-and-hmrc", description: "Tax implications of relocation" },
 ];
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs",
   description: "How UK expats ship belongings to Dubai in 2026 — sea freight vs air freight costs (£3-8k typical), UAE customs rules, prohibited items, and what to buy locally instead.",
-  keywords: "removals Dubai, shipping to Dubai, customs, sea freight, air freight, relocation",
-  openGraph: {
-    title: "UK to Dubai Removals & Shipping (2026): Costs, Sea vs Air Freight, Customs",
-    description: "How UK expats ship belongings to Dubai in 2026 — sea freight vs air freight costs (£3-8k typical), UAE customs rules, prohibited items, and what to buy locally instead.",
-  },
-};
-
+  path: "/guides/removals",
+});
 export default function RemovalsPage() {
   return (
     <div className="min-h-screen bg-white">

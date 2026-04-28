@@ -1,12 +1,15 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Affiliate Disclosure | Dubai Expat",
+export const metadata: Metadata = pageMetadata({
+  title: "Affiliate Disclosure",
   description:
     "How Dubai Expat earns revenue through affiliate partnerships, and what this means for you.",
-};
+  path: "/affiliate-disclosure",
+  type: "website",
+});
 
 export default function AffiliateDisclosure() {
   return (

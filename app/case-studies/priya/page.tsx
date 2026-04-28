@@ -1,14 +1,38 @@
 import Header from "@/components/Header";
 import Link from "next/link";
+import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Priya's Story - Dubai Expat",
-  description: "How an NHS healthcare manager found career growth and work-life balance in Dubai",
-};
+const TITLE = "Priya's Story: NHS Manager to Dubai Healthcare (UK Expat)";
+const DESCRIPTION = "How an NHS healthcare manager found career growth and work-life balance in Dubai — visa, salary, and lessons for UK expats considering the move.";
+const URL_PATH = "/case-studies/priya";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: "/priya.jpg",
+});
 
 export default function PriyaPage() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Case Studies", url: "https://www.dubaiexpat.co.uk/case-studies" },
+    { name: "Priya", url: ABSOLUTE_URL },
+  ];
+
   return (
     <main className="min-h-screen bg-white">
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        breadcrumbs={breadcrumbs}
+      />
       <Header />
 
       {/* Breadcrumb Navigation */}

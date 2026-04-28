@@ -2,13 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Renting in Dubai as a UK Expat (2026): Best Areas, Prices & Cheque System",
-  description:
-    "How UK expats rent property in Dubai — best neighbourhoods (JLT, Marina, Downtown), 2026 rent prices, the cheque payment system, EJARI registration, and agent fees.",
-};
-
+  description: "How UK expats rent property in Dubai — best neighbourhoods (JLT, Marina, Downtown), 2026 rent prices, the cheque payment system, EJARI registration, and agent fees.",
+  path: "/guides/housing",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/housing";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

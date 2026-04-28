@@ -1,12 +1,15 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Dubai Expat",
+export const metadata: Metadata = pageMetadata({
+  title: "Privacy Policy",
   description:
     "How Dubai Expat collects, uses and protects your personal data. Covers UK GDPR, PECR and UAE PDPL compliance.",
-};
+  path: "/privacy",
+  type: "website",
+});
 
 export default function PrivacyPolicy() {
   return (

@@ -3,17 +3,12 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import RelatedGuides from '@/components/RelatedGuides';
-
-export const metadata = {
-  title: 'Food & Drink in Dubai (2026): Groceries, Brunch, Alcohol License Guide for UK Expats',
-  description: 'Essential UK-expat guide to Dubai food & drink — groceries, restaurants, Friday brunch culture, alcohol licence rules, wine merchants, and organic food delivery.',
-  openGraph: {
-    title: 'Food & Drink in Dubai (2026): UK Expat Guide',
-    description: 'Groceries, Friday brunch, alcohol licences, wine merchants and organic delivery in Dubai for UK expats.',
-    type: 'article',
-  },
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
+  title: "Food & Drink in Dubai (2026): Groceries, Brunch, Alcohol License Guide for UK Expats",
+  description: "Essential UK-expat guide to Dubai food & drink — groceries, restaurants, Friday brunch culture, alcohol licence rules, wine merchants, and organic food delivery.",
+  path: "/guides/food-drink",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/food-drink';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },

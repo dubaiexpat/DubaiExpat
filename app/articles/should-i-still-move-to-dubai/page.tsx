@@ -1,16 +1,44 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Should I Still Move to Dubai? An Honest Assessment (April 2026)",
-  description:
-    "Weighing up the pros and cons of relocating to Dubai in 2026 — covering security, finances, lifestyle, visa options, and whether now is the right time to make the move.",
-};
+const TITLE = "Should I Still Move to Dubai? Honest 2026 Assessment";
+const DESCRIPTION =
+  "Pros and cons of relocating to Dubai in 2026 — security, finances, lifestyle, visa options, and whether now is the right time to make the move.";
+const URL_PATH = "/articles/should-i-still-move-to-dubai";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+const HERO_IMAGE = "https://images.unsplash.com/photo-1543579596-2c11997c7706?w=1200&h=500&fit=crop&auto=format";
+const PUBLISHED_AT = "2026-04-13";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: HERO_IMAGE,
+  publishedTime: PUBLISHED_AT,
+});
 
 export default function ShouldIStillMoveToDubai() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Articles", url: "https://www.dubaiexpat.co.uk/#articles" },
+    { name: "Should I Still Move to Dubai?", url: ABSOLUTE_URL },
+  ];
+
   return (
     <>
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        datePublished={PUBLISHED_AT}
+        dateModified={PUBLISHED_AT}
+        breadcrumbs={breadcrumbs}
+      />
       <div className="bg-white px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <Header />

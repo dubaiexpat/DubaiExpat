@@ -1,12 +1,15 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Cookie Policy | Dubai Expat",
+export const metadata: Metadata = pageMetadata({
+  title: "Cookie Policy",
   description:
     "How Dubai Expat uses cookies and similar technologies, and how to manage your preferences.",
-};
+  path: "/cookies",
+  type: "website",
+});
 
 export default function CookiePolicy() {
   return (

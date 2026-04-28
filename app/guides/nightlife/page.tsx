@@ -3,13 +3,12 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import RelatedGuides from "@/components/RelatedGuides";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Dubai Nightlife for UK Expats (2026): Bars, Brunches, Rooftops & Alcohol Rules",
-  description:
-    "UK-expat guide to Dubai nightlife in 2026 — best bars, rooftop lounges, Friday brunch culture, alcohol licence rules, and how the social scene actually works.",
-};
-
+  description: "UK-expat guide to Dubai nightlife in 2026 — best bars, rooftop lounges, Friday brunch culture, alcohol licence rules, and how the social scene actually works.",
+  path: "/guides/nightlife",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/nightlife";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

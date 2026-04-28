@@ -2,12 +2,14 @@ import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
+import { pageMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Cost of Living in Dubai vs London: A Realistic 2026 Comparison for UK Expats',
+export const metadata: Metadata = pageMetadata({
+  title: 'Cost of Living in Dubai vs London 2026: UK Expat Comparison',
   description:
-    'A genuine like-for-like cost comparison across three lifestyle tiers — single professional, couple, and family of four. Covers rent, schools, tax savings, the two-cheque system, and monthly budget breakdowns.',
-};
+    'Like-for-like Dubai vs London cost comparison across single, couple, and family tiers. Rent, schools, tax savings, two-cheque system, monthly budgets.',
+  path: '/cost-of-living',
+});
 
 // SafetyWing Ambassador link — referenceID 26507814, placement-tracked
 const SAFETYWING_COL =

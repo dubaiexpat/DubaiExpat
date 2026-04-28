@@ -3,13 +3,12 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import RelatedGuides from "@/components/RelatedGuides";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Hire Domestic Help in Dubai (2026): Maids, Drivers, Visa Sponsorship Guide for UK Expats",
-  description:
-    "How UK expats hire a live-in housekeeper, part-time cleaner or private driver in Dubai — visa sponsorship, AED 1,500-2,500/mo costs, contracts, and what to expect.",
-};
-
+  description: "How UK expats hire a live-in housekeeper, part-time cleaner or private driver in Dubai — visa sponsorship, AED 1,500-2,500/mo costs, contracts, and what to expect.",
+  path: "/guides/domestic-help",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/domestic-help";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import RelatedGuides from "@/components/RelatedGuides";
-
+import { pageMetadata } from "@/lib/metadata";
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/schools";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
@@ -17,16 +17,11 @@ const RELATED = [
   { title: "Dubai Cost of Living", href: "/cost-of-living", description: "How school fees fit the family monthly budget" },
 ];
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply",
   description: "Best British curriculum schools in Dubai for UK expat families — 2026 fees, KHDA ratings, GEMS vs Repton vs Dubai College, how to apply, waiting lists and term dates.",
-  keywords: "Dubai schools, British curriculum, KHDA ratings, expat families, school fees",
-  openGraph: {
-    title: "Best British Schools in Dubai for UK Expat Families (2026): Fees, KHDA Ratings & How to Apply",
-    description: "Best British curriculum schools in Dubai for UK expat families — 2026 fees, KHDA ratings, GEMS vs Repton vs Dubai College, how to apply, waiting lists and term dates.",
-  },
-};
-
+  path: "/guides/schools",
+});
 export default function SchoolsPage() {
   return (
     <div className="min-h-screen bg-white">

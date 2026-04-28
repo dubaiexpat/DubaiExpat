@@ -1,9 +1,38 @@
 import Header from "@/components/Header";
 import Link from "next/link";
+import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
+
+const TITLE = "Sarah's Story: London Family Relocates to Dubai";
+const DESCRIPTION = "How a London family of four made the move to Dubai — schools, housing, lifestyle, and the practicalities of relocating with kids.";
+const URL_PATH = "/case-studies/sarah";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: "/sarah.jpg",
+});
 
 export default function SarahCaseStudy() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Case Studies", url: "https://www.dubaiexpat.co.uk/case-studies" },
+    { name: "Sarah", url: ABSOLUTE_URL },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        breadcrumbs={breadcrumbs}
+      />
       <Header />
       
       <main className="max-w-4xl mx-auto px-6 py-12">

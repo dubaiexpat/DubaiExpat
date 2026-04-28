@@ -1,14 +1,38 @@
 import Header from "@/components/Header";
 import Link from "next/link";
+import type { Metadata } from "next";
+import SchemaJsonLd from "@/components/SchemaJsonLd";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Marcus's Story - Dubai Expat",
-  description: "How a London entrepreneur built a fintech business in Dubai using the UAE Green Visa",
-};
+const TITLE = "Marcus's Story: Building a Fintech in Dubai (Green Visa)";
+const DESCRIPTION = "How a London entrepreneur built a fintech business in Dubai using the UAE Green Visa — practical lessons on company setup, tax, and team-building for UK expats.";
+const URL_PATH = "/case-studies/marcus";
+const ABSOLUTE_URL = `https://www.dubaiexpat.co.uk${URL_PATH}`;
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: URL_PATH,
+  type: "article",
+  ogImage: "/marcus.jpg",
+});
 
 export default function MarcusPage() {
+  const breadcrumbs = [
+    { name: "Home", url: "https://www.dubaiexpat.co.uk/" },
+    { name: "Case Studies", url: "https://www.dubaiexpat.co.uk/case-studies" },
+    { name: "Marcus", url: ABSOLUTE_URL },
+  ];
+
   return (
     <main className="min-h-screen bg-white">
+      <SchemaJsonLd
+        type="Article"
+        title={TITLE}
+        description={DESCRIPTION}
+        url={ABSOLUTE_URL}
+        breadcrumbs={breadcrumbs}
+      />
       <Header />
 
       {/* Breadcrumb Navigation */}

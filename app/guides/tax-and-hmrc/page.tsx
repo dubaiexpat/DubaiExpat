@@ -3,13 +3,12 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import EmailCapture from '@/components/EmailCapture';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
-
-export const metadata: Metadata = {
-  title: 'UK Tax When Moving to Dubai (2026): HMRC Residency, P85 & Double Tax Treaty',
-  description:
-    'UK tax rules for expats moving to Dubai — Statutory Residence Test, P85 form, HMRC notification, UK property income, National Insurance, and the UK-UAE Double Taxation Agreement.',
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
+  title: "UK Tax When Moving to Dubai (2026): HMRC Residency, P85 & Double Tax Treaty",
+  description: "UK tax rules for expats moving to Dubai — Statutory Residence Test, P85 form, HMRC notification, UK property income, National Insurance, and the UK-UAE Double Taxation Agreement.",
+  path: "/guides/tax-and-hmrc",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/tax-and-hmrc';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },

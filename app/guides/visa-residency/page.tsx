@@ -2,13 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
-
-export const metadata: Metadata = {
+import { pageMetadata } from "@/lib/metadata";
+export const metadata: Metadata = pageMetadata({
   title: "Dubai Visa & Residency for UK Expats: 2026 Complete Guide",
-  description:
-    "Dubai visa options for UK residents — Golden Visa, Green Visa, Employment, Freelancer and Retirement Visa. Costs, eligibility, timelines and step-by-step application process.",
-};
-
+  description: "Dubai visa options for UK residents — Golden Visa, Green Visa, Employment, Freelancer and Retirement Visa. Costs, eligibility, timelines and step-by-step application process.",
+  path: "/guides/visa-residency",
+});
 const SCHEMA_URL = "https://www.dubaiexpat.co.uk/guides/visa-residency";
 const BREADCRUMBS = [
   { name: "Home", url: "https://www.dubaiexpat.co.uk/" },

@@ -3,17 +3,12 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import RelatedGuides from '@/components/RelatedGuides';
-
-export const metadata = {
-  title: 'Buying Furniture in Dubai (2026): IKEA, Designer Stores & Bespoke Guide for UK Expats',
-  description: 'How UK expats furnish their Dubai home in 2026 — IKEA, Home Centre, West Elm, designer showrooms, bespoke carpenters in Al Quoz, and the best second-hand marketplaces.',
-  openGraph: {
-    title: 'Buying Furniture in Dubai (2026): UK Expat Guide',
-    description: 'IKEA to designer stores, bespoke carpenters and second-hand finds in Dubai for UK expats.',
-    type: 'article',
-  },
-};
-
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata({
+  title: "Buying Furniture in Dubai (2026): IKEA, Designer Stores & Bespoke Guide for UK Expats",
+  description: "How UK expats furnish their Dubai home in 2026 — IKEA, Home Centre, West Elm, designer showrooms, bespoke carpenters in Al Quoz, and the best second-hand marketplaces.",
+  path: "/guides/furniture",
+});
 const SCHEMA_URL = 'https://www.dubaiexpat.co.uk/guides/furniture';
 const BREADCRUMBS = [
   { name: 'Home', url: 'https://www.dubaiexpat.co.uk/' },
